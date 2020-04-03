@@ -1,0 +1,108 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background: $bgColor;
+  .wrap {
+    height: 100px;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__search {
+    width: 630px;
+    height: 35px;
+    position: relative;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    overflow: hidden;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background: $green;
+      opacity: 0.45;
+      z-index: 10;
+    }
+    .header__search-form {
+      position: absolute;
+      z-index: 30;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      input {
+        height: 100%;
+        flex: 1;
+        padding: 0 1rem;
+        font-size: 1rem;
+        color: $white;
+        max-width: calc(100% - 70px);
+      }
+      button {
+        width: 35px;
+        flex: none;
+        margin-left: auto;
+      }
+    }
+    .gradient-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 20;
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: calc(100% - 35px);
+        background: $green;
+        opacity: 0.45;
+        z-index: 20;
+      }
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: calc(100% - 70px);
+        background: $green;
+        opacity: 0.45;
+        z-index: 30;
+      }
+    }
+  }
+
+  .header__links {
+    align-items: center;
+    a {
+      padding: 0 10px;
+      line-height: 1em;
+      border-right: 1px solid $green;
+      color: $white;
+      font-size: 12px;
+      &:nth-child(2) {
+        border-right: 0;
+      }
+    }
+    .header__menu {
+      width: 20px;
+      height: 20px;
+      background: #fff;
+    }
+  }
+}
