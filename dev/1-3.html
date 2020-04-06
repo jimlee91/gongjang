@@ -1,0 +1,158 @@
+@@include('./include/header_before_login.html')
+<div class="container">
+    <div class="content">
+        <div class="content__main">
+            <div class="breadcrumb">
+                <a href="" class="breadcrumb__item waves-effect">Home</a>
+                <a href="" class="breadcrumb__item waves-effect">회원가입</a>
+            </div>
+            <div class="content__body">
+                <div class="accounts registered">
+                    <section class="accounts__header">
+                        <h2 class="accounts__title">
+                            <span>
+                                회원가입
+                            </span>
+                        </h2>
+                        <div class="accounts__state step2-2">
+                            신청 마지막 단계
+                        </div>
+                    </section>
+
+                    <div class="registered__form ">
+
+                        <div class="form">
+                            <div class="form__row">
+                                <label for="id" class="form__row-title">아이디</label>
+                                <div class="box">
+                                    <input type="text" placeholder="최소 6자 이상 ~ 최대 12자 이하" />
+                                    <button class="btn waves-effect">중복확인</button>
+                                </div>
+                                <p class="form__help confirm">
+                                    사용가능한 아이디입니다.
+                                </p>
+                            </div>
+
+                            <div class="form__row">
+                                <label for="" class="form__row-title">비밀번호</label>
+                                <div class="box">
+                                    <input type="password" placeholder="영문자+숫자+특수문자 조합 8자 이상~16자 이하" />
+                                </div>
+                                <p class="form__help error">
+                                    사용 불가능한 비밀번호입니다.
+                                </p>
+                            </div>
+                            <div class="form__row">
+                                <label for="" class="form__row-title">비밀번호 확인</label>
+                                <div class="box">
+                                    <input type="password" placeholder="비밀번호 확인" />
+                                </div>
+                                <p class="form__help error">
+                                    비밀번호를 확인해주세요.
+                                </p>
+                            </div>
+                            <div class="form__row">
+                                <label for="" class="form__row-title">닉네임</label>
+                                <div class="box">
+                                    <input type="text" placeholder="닉네임 입력" />
+                                    <button class="btn waves-effect">중복확인</button>
+                                </div>
+                                <p class="form__help confirm">
+                                    사용가능한 닉네임입니다.
+                                </p>
+                            </div>
+                            <div class="form__row">
+                                <label for="" class="form__row-title">이름</label>
+                                <div class="box">
+                                    <input type="text" placeholder="이름 입력" />
+                                </div>
+                            </div>
+
+                            <div class="form__row">
+                                <label for="" class="form__row-title">성별</label>
+                                <div class="box">
+                                    <label for="m" class="checkbox">
+                                        <input type="radio" id="m" name="gender" hidden>
+                                        <span></span> 남성
+                                    </label>
+
+                                    <label for="F" class="checkbox">
+                                        <input type="radio" id="F" name="gender" hidden>
+                                        <span></span> 여성
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="form__row">
+                                <label for="" class="form__row-title">생년월일</label>
+                                <div class="box">
+                                    <input type="text" placeholder="8자리 입력" />
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <label for="" class="form__row-title">이메일</label>
+                                <div class="box">
+                                    <input type="email" placeholder="이메일 입력" />
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <label for="" class="form__row-title">휴대폰 번호</label>
+                                <div class="box">
+                                    <input type="email" placeholder="'-' 구분없이 입력" />
+                                    <button class="btn waves-effect">인증번호 전송</button>
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <label for="" class="form__row-title">인증번호</label>
+                                <div class="box">
+                                    <input type="email" placeholder="인증번호 입력" />
+                                    <button class="btn waves-effect">인증확인</button>
+                                    <span class="counter">3:00</span>
+                                </div>
+                            </div>
+
+
+                            <div class="form__row">
+                                <label for="" class="form__row-title">지역</label>
+                                <div class="box">
+                                    <select name="" id="">
+                                        <option value="" >거주지, 또는 가까운 지역 입력</option>
+                                        <option value="">서울, 경기 지역</option>
+                                        <option value="">광주, 전라 지역</option>
+                                        <option value="">대전, 충청 지역</option>
+                                        <option value="">부산, 경상 지역</option>
+                                        <option value="">제주 지역</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accounts__btnbox">
+                            <button class="btn btn-blue waves-effect" onclick="showModal('#pravicy')">완료</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="pravicy" style="display: none;">
+        <div class="modal__content">
+            <h2 class="modal__title">
+                부가정보를 <br/>
+                입력하시겠습니까?
+            </h2>
+            <div class="modal__body">
+                <p>
+                    선수정보와 같은 부가정보를 입력하시면 더 자세한 서비스를 받으실 수 있습니다.
+                </p>
+            </div>
+            <div class="modal__btnbox">
+                <a href="" class="modal__btn js-modal-close">네</a>
+                <a href="" class="modal__btn bg-white js-modal-close">아니요</a>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')
