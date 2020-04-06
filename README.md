@@ -12,6 +12,9 @@ gulp
 ## Design
 [https://app.zeplin.io/project/5e7848135ae5cd6d7ab959df](https://app.zeplin.io/project/5e7848135ae5cd6d7ab959df)
 
+## Issue
+[issue.txt](https://github.com/jimlee91/gongjang/blob/master/issue.txt)
+
 ## Urls
 
 ### 1번 그룹
