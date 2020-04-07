@@ -151,4 +151,4 @@ const clean = () => {
 
 exports.default = gulp.series(clean, gulp.parallel(html, scss, js, plugin, minImg), gulp.parallel(server, watchTask));
 
-exports.build = gulp.series(clean, html, scss, js, minImg);
+exports.build = gulp.series(clean, html, scss, js, plugin, minImg);
