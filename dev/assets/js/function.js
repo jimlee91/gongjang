@@ -1,4 +1,4 @@
-(function($, window, document, undefined){
+(function($, window, undefined){
 
     $(function(){
 
@@ -11,7 +11,7 @@
 
 
 
-})(jQuery, window, document);
+})(jQuery, window);
 
 function showModal(el) {
     document.querySelector(el).style.display = 'flex';
