@@ -11,11 +11,6 @@
   align-items: flex-start;
   justify-content: space-between;
   padding-top: 15px;
-
-  div {
-
-
-  }
   .content__left {
     width: 200px;
     flex: none;
@@ -32,5 +27,8 @@
   .content__right {
     width: 300px;
     flex: none;
+    min-height: calc(100vh - 165px);
+    display: flex;
+    flex-direction: column;
   }
 }
