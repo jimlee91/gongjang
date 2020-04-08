@@ -85,6 +85,10 @@
       width: 190px;
       transition: all .3s;
       text-align: center;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
 
       &.btn-blue {
         background:$blue;
@@ -96,7 +100,10 @@
       &.btn-white {
         color:#333;
         border: 1px solid $green;
-
+      }
+      &.btn-white2 {
+        color:#333;
+        border: 1px solid $border-color;
       }
     }
   }

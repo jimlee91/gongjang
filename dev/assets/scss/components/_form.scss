@@ -23,6 +23,12 @@
       font-size: 14px;
       font-weight: 600;
     }
+    .box.column {
+      flex-direction: column;
+      .checkbox {
+        width: 100%;
+      }
+    }
     .box {
       margin-top: 5px;
       display: flex;
@@ -32,6 +38,16 @@
         margin-top: 10px;
         width: auto;
         margin-right: 30px;
+      }
+      textarea {
+        flex: 1;
+        font-size: 12px;
+        line-height: 1.5em;
+        padding: 15px;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+        outline-width: 0;
+        min-height: 200px;
       }
       input {
         flex: 1;
@@ -75,6 +91,48 @@
       border: solid 1px rgba(0,0,0,0.5);
       padding:0 1em;
       font-size: 12px;
+    }
+  }
+
+  .form__fileFields {
+    width: 100%;
+    .fileField-empty {
+      line-height: 35px;
+      font-size: 12px;
+      width: 100%;
+      padding:0 10px;
+      text-align: left;
+      border-radius: 5px;
+      border: 1px solid $border-color;
+      background: url('../images/i-search-black.png') no-repeat calc(100% - 10px) center;
+      background-size: auto 14px;
+    }
+    .fileField-list {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid $border-color;
+    }
+    .fileField-item {
+      margin-bottom: 5px;
+      line-height: 35px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 300;
+      }
+      a {
+        @include text-indent;
+        width: 15px;
+        height: 15px;
+        background: url('../images/i-x.png') no-repeat center;
+        background-size: auto 10px;
+        margin-left: 5px;
+      }
     }
   }
 }

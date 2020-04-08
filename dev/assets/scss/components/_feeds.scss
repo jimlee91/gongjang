@@ -1,0 +1,237 @@
+.feeds {
+
+}
+.feed {
+
+  .feedDetail & {
+    // 상세 피드 디자인
+    .feed__content {
+      padding: 20px;
+      background:#d9d9d9;
+    }
+    .feed__util {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background:#383433;
+      padding: 15px 50px;
+
+      .detail__info {
+        text-align: right;
+        p {
+          font-size: 12px;
+          color:#fff;
+          margin-top: 10px;
+          font-weight: 300;
+        }
+      }
+      .feed__views{
+        background: url('../images/i-views-white.png') no-repeat left center;
+        background-size: auto 11px;
+        color:#fff;
+      }
+      .feed__likes{
+        background: url('../images/i-likes-white.png') no-repeat left center;
+        background-size: auto 11px;
+        color:#fff;
+      }
+      .feed__talks{
+        background: url('../images/i-talks-white.png') no-repeat left center;
+        background-size: auto 11px;
+        color:#fff;
+      }
+
+      .feed__actions {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .feed__action-btn {
+        // 좌측 버튼 고통
+        text-align: center;
+        font-size: 12px;
+        color:#fff;
+        padding-top: 25px;
+        margin-right: 20px;
+        &:last-child {
+          margin-right: 0;
+        }
+        &.active {
+          color:$green;
+        }
+        &.feed__action-like {
+          background: url('../images/detail-like.png') no-repeat center top;
+          background-size: auto 18px;
+          &.active {
+            background: url('../images/detail-like-active.png') no-repeat center top;
+            background-size: auto 18px;
+          }
+        }
+        &.feed__action-unlike {
+          background: url('../images/detail-unlike.png') no-repeat center top;
+          background-size: auto 20px;
+          &.active {
+            background: url('../images/detail-unlike-active.png') no-repeat center top;
+            background-size: auto 18px;
+          }
+        }
+        &.feed__action-share {
+          background: url('../images/detail-share.png') no-repeat center top;
+          background-size: auto 18px;
+          &:hover {
+            background: url('../images/detail-share-active.png') no-repeat center top;
+            background-size: auto 18px;
+            color:$green;
+          }
+        }
+        &.feed__action-report {
+          background: url('../images/detail-report.png') no-repeat center top;
+          background-size: auto 20px;
+          &:hover {
+            background: url('../images/detail-report-active.png') no-repeat center top;
+            background-size: auto 18px;
+            color:$green;
+          }
+        }
+      }
+
+    }
+  }
+  background:#fff;
+  border-bottom: 10px solid #eaeaea;
+  &:last-child {
+    border-bottom: 0;
+  }
+  .feed__content {
+    border: 1px solid $border-color;
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+    overflow: auto;
+    .feed__video {
+      background:#d9d9d9;
+      text-align: center;
+      iframe {
+        height: 250px;
+        width: 100%;
+      }
+    }
+    .feed__images {
+      display: flex;
+      overflow: auto;
+      align-items: center;
+      .feed__image-item {
+        width: 150px;
+        margin-right: 5px;
+        &:last-child {
+          margin-right: 0;
+        }
+        flex: none;
+        a {
+          display: block;
+          width: 100%;
+          height: 150px;
+          position: relative;
+          background-size: cover;
+          background-position: center center;
+          @include text-indent;
+        }
+      }
+    }
+  }
+  .feed__info {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .feed__state {
+    display: flex;
+    flex-wrap: wrap;
+    span {
+      margin-left: 10px;
+    }
+    .feed__views{
+      background: url('../images/i-views.png') no-repeat left center;
+      background-size: auto 11px;
+      padding-left: 1.5em;
+    }
+    .feed__likes{
+      background: url('../images/i-likes.png') no-repeat left center;
+      background-size: auto 11px;
+      padding-left: 1.25em;
+    }
+    .feed__talks{
+      background: url('../images/i-talks.png') no-repeat left center;
+      background-size: auto 11px;
+      padding-left: 1.25em;
+    }
+  }
+  .feed__title {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.5em;
+    font-weight: 500;
+    word-break: keep-all;
+    a {
+      color:#333;
+    }
+  }
+  .feed__label {
+    color: $blue;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .feed__header {
+    display: block;
+    padding: 15px 15px;
+  }
+  .feed__header-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .feed__author {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .thumb {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      img {
+        border-radius: 50%;
+      }
+    }
+    p {
+      padding-left: 10px;
+      font-size: 12px;
+      color:#333;
+    }
+    .is_new {
+      @include text-indent;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: $green;
+      display: block;
+    }
+  }
+  .feed__etc {
+    button {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: url('../images/i-more.png') no-repeat center;
+      background-size: auto 18px;
+      @include text-indent;
+    }
+  }
+
+}
