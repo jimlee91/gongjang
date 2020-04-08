@@ -1,0 +1,161 @@
+.oauth {
+
+  .oauth__info {
+    margin-top: 10px;
+    .oauth__content {
+      background:#fff;
+      border-radius: 5px;
+      width: 100%;
+      height: 100px;
+      padding: 0 15px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .oauth__content--after {
+      align-items: center;
+      .oauth__thumb {
+        flex: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        width: 55px;
+        position: relative;
+        .is_new {
+          @include text-indent;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: $green;
+          display: block;
+        }
+        img {
+          object-fit: cover;
+          max-width: 100%;
+          max-height: 100%;
+          border-radius: 50%;
+        }
+      }
+      .oauth__user {
+        flex: 1;
+        max-width: calc(100% - 65px);
+        .oauth__name {
+          color:#333;
+          font-size: 16px;
+          font-weight: 500;
+          span {
+            font-size: 10px;
+            vertical-align: baseline;
+            font-weight: 300;
+          }
+        }
+        .oauth__team {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          margin-top: 5px;
+          img {
+            max-width: 15px;
+          }
+          p {
+            @include truncate;
+            flex: 1;
+            max-width: calc(100% - 15px);
+            font-size: 12px;
+            color:$green;
+            margin-left: 5px;
+          }
+        }
+      }
+
+    }
+    .oauth__content--before {
+      flex-direction: column;
+      justify-content: center;
+      h2 {
+        font-size: 16px;
+        font-weight: 300;
+      }
+      a {
+        display: block;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid rgba(0, 0, 0, 0.16);
+        font-size: 12px;
+        color:#333;
+      }
+    }
+  }
+
+
+  .oauth__state {
+    height: 30px;
+    position: relative;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    overflow: hidden;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background: $green;
+      opacity: 0.45;
+      z-index: 10;
+    }
+    a {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 20;
+      span {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 50;
+        font-size: 12px;
+        line-height: 30px;
+        color:#fff;
+        padding:0 10px;
+      }
+      &:after {
+        content:'';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: calc(100% - 30px);
+        background: $green;
+        opacity: 0.45;
+        z-index: 10;
+      }
+      &:before {
+        content:'';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: calc(100% - 60px);
+        background: $green;
+        opacity: 0.45;
+        z-index: 10;
+      }
+    }
+  }
+}
