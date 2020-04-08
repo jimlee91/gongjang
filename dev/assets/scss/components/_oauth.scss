@@ -13,64 +13,7 @@
     }
     .oauth__content--after {
       align-items: center;
-      .oauth__thumb {
-        flex: none;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 10px;
-        width: 55px;
-        position: relative;
-        .is_new {
-          @include text-indent;
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 10px;
-          height: 10px;
-          border-radius: 50%;
-          background: $green;
-          display: block;
-        }
-        img {
-          object-fit: cover;
-          max-width: 100%;
-          max-height: 100%;
-          border-radius: 50%;
-        }
-      }
-      .oauth__user {
-        flex: 1;
-        max-width: calc(100% - 65px);
-        .oauth__name {
-          color:#333;
-          font-size: 16px;
-          font-weight: 500;
-          span {
-            font-size: 10px;
-            vertical-align: baseline;
-            font-weight: 300;
-          }
-        }
-        .oauth__team {
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-          margin-top: 5px;
-          img {
-            max-width: 15px;
-          }
-          p {
-            @include truncate;
-            flex: 1;
-            max-width: calc(100% - 15px);
-            font-size: 12px;
-            color:$green;
-            margin-left: 5px;
-          }
-        }
-      }
+
 
     }
     .oauth__content--before {
