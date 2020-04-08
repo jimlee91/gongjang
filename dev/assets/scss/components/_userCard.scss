@@ -2,7 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
+  .news & {
+    align-items: flex-start;
+  }
   .userCard__thumb {
     flex: none;
     border-radius: 50%;
@@ -13,9 +15,13 @@
     width: 55px;
     position: relative;
 
-    // 뉴스
+    // 소식
     .alarm & {
       width: 30px;
+    }
+    // 뉴스
+    .news & {
+      width: 60px;
     }
 
     .is_new {
