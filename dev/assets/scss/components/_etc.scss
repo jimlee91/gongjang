@@ -86,8 +86,24 @@
       }
     }
 
-    // 푸터
+    // 친구
+    &.friends {
+      .friends__item {
+        border-bottom: 1px solid $border-color;
+        &:last-child {
+          border-bottom: 0;
+        }
 
+        .userCard {
+          padding:0 15px;
+          height: 65px;
+        }
+        .userCard__name {
+          font-size: 14px;
+        }
+      }
+
+    }
   }
 
 
