@@ -31,12 +31,12 @@ gulp
 - [https://confident-kepler-4a5a7c.netlify.com/1-10](https://confident-kepler-4a5a7c.netlify.com/1-10)
 
 ### 2번 그룹
-- [https://confident-kepler-4a5a7c.netlify.com/1-0](https://confident-kepler-4a5a7c.netlify.com/2-0)
-- [https://confident-kepler-4a5a7c.netlify.com/1-0](https://confident-kepler-4a5a7c.netlify.com/2-1)
-- [https://confident-kepler-4a5a7c.netlify.com/1-0](https://confident-kepler-4a5a7c.netlify.com/2-2-img)
-- [https://confident-kepler-4a5a7c.netlify.com/1-0](https://confident-kepler-4a5a7c.netlify.com/2-2-video)
-- [https://confident-kepler-4a5a7c.netlify.com/1-0](https://confident-kepler-4a5a7c.netlify.com/2-3)
-- [https://confident-kepler-4a5a7c.netlify.com/1-0](https://confident-kepler-4a5a7c.netlify.com/2-4)
-- [https://confident-kepler-4a5a7c.netlify.com/1-0](https://confident-kepler-4a5a7c.netlify.com/2-5)
+- [https://confident-kepler-4a5a7c.netlify.com/2-0](https://confident-kepler-4a5a7c.netlify.com/2-0)
+- [https://confident-kepler-4a5a7c.netlify.com/2-1](https://confident-kepler-4a5a7c.netlify.com/2-1)
+- [https://confident-kepler-4a5a7c.netlify.com/2-2-img](https://confident-kepler-4a5a7c.netlify.com/2-2-img)
+- [https://confident-kepler-4a5a7c.netlify.com/2-2-video](https://confident-kepler-4a5a7c.netlify.com/2-2-video)
+- [https://confident-kepler-4a5a7c.netlify.com/2-3](https://confident-kepler-4a5a7c.netlify.com/2-3)
+- [https://confident-kepler-4a5a7c.netlify.com/2-4](https://confident-kepler-4a5a7c.netlify.com/2-4)
+- [https://confident-kepler-4a5a7c.netlify.com/2-5](https://confident-kepler-4a5a7c.netlify.com/2-5)
 
 ### 3번 그룹
