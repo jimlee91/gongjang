@@ -232,6 +232,53 @@
 
     }
 
+    // 관련 게시물
+    &.relation {
+      background: none;
+      border-radius: 0;
+      .relation__item {
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          border-radius: 5px;
+          padding: 15px 10px;
+          display: flex;
+          flex-wrap: wrap;
+          background:#fff;
+          align-items: stretch;
+          color:#333;
+        }
+        .relation__thumb {
+          width: 130px;
+          flex: none;
+        }
+        .relation__content {
+          flex: 1;
+          padding-left: 10px;
+          display: flex;
+          flex-direction: column;
+          .relation__title {
+            font-size: 14px;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+            border-bottom: 1px solid $border-color;
+          }
+          .relation__description {
+            font-size: 12px;
+          }
+          .userCard {
+            margin-top: auto;
+            padding-top: 10px;
+            font-size: 12px;
+          }
+          .userCard__thumb {
+            width: 30px;
+          }
+        }
+      }
+    }
   }
 
 

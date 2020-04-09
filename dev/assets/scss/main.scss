@@ -11,6 +11,8 @@
 @import "components/etc";
 @import "components/userCard";
 @import "components/feeds";
+@import "components/comment";
+@import "components/userHeader";
 
 @import "base/reset";
 @import "base/form";
@@ -19,3 +21,4 @@
 @import "layouts/container";
 
 @import "pages/accounts";
+@import "pages/detail";

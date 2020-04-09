@@ -1,7 +1,11 @@
 (function($, window, undefined){
 
     $(function(){
-
+        $('.feed__slider').slick({
+            dots: true,
+            arrows: true,
+            adaptiveHeight: true,
+        })
     });
 
     $('.js-modal-close').on('click', function(e){

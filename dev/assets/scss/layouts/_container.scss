@@ -8,9 +8,9 @@
   margin:0 auto;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
   justify-content: space-between;
   padding-top: 15px;
+  align-items: stretch;
   .content__left {
     width: 200px;
     flex: none;
