@@ -1,0 +1,242 @@
+@@include('./include/header.html')
+<div class="container playerInfo">
+    <div class="content">
+        <div class="content__left">
+            @@include('./include/oauth_after_login.html')
+            @@include('./include/gnb.html')
+        </div>
+        <div class="content__main">
+            <div class="breadcrumb">
+                <div class="breadcrumb__list">
+                    <a href="" class="breadcrumb__item waves-effect">Home</a>
+                    <a href="" class="breadcrumb__item waves-effect">마이페이지</a>
+                    <a href="" class="breadcrumb__item waves-effect">선수정보 수정</a>
+                </div>
+                <a href="" class="more waves-effct"></a>
+            </div>
+            <div class="content__body">
+                <form action="" enctype="multipart/form-data">
+                    <div class="accounts registered">
+                        <section class="accounts__header">
+                            <h2 class="accounts__title">
+                                <span>
+                                    선수정보 수정
+                                </span>
+                            </h2>
+                        </section>
+
+                        <div class="registered__form ">
+                            <div class="playerInfo__section playerInfo__open">
+                               <div>
+                                   <h3 class="playerInfo__section-title">공개</h3>
+                                   <p class="playerInfo__section-desc">김공장님의 선수 홈을 전체공개 하시겠습니까?</p>
+                               </div>
+
+                                <label for="switch" class="switch">
+                                    <div class="switch__layout">
+                                        <input type="checkbox" hidden id="switch" checked>
+                                        <span></span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="playerInfo__section ">
+                                <h3 class="playerInfo__section-title">선수 정보</h3>
+                                <div class="playerInfo__content">
+                                    <div class="playerInfo__thumb">
+                                        <img src="//via.placeholder.com/200x200" alt="">
+
+                                        <div class="accounts__btnbox mt-0">
+                                            <label for="playerThumb" class="btn btn-blue waves-effect">
+                                                <input type="file" hidden id="playerThumb">
+                                                사진변경
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="form">
+                                    <div class="form__row column">
+                                        <label for="" class="form__row-title">이름</label>
+                                        <div class="box">
+                                            <input type="text" placeholder="이름 입력" value="김공장" readonly />
+                                        </div>
+                                    </div>
+                                    <div class="form__row column">
+                                        <label for="" class="form__row-title">생년월일</label>
+                                        <div class="box">
+                                            <input type="text" placeholder="이름 입력" value="970503" readonly />
+                                        </div>
+                                    </div>
+                                    <div class="form__row">
+                                        <label for="" class="form__row-title">축구 포지션</label>
+                                        <div class="box">
+                                            <select name="" id="">
+                                                <option value="">피보(PMO)</option>
+                                                <option value="">아라(ALA)</option>
+                                                <option value="">픽소(FLXO)</option>
+                                                <option value="">골레이로(GOAEIRO)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form__row">
+                                        <label for="" class="form__row-title">풋살 포지션</label>
+                                        <div class="box">
+                                            <select name="" id="">
+                                                <option value="">피보(PMO)</option>
+                                                <option value="">아라(ALA)</option>
+                                                <option value="">픽소(FLXO)</option>
+                                                <option value="">골레이로(GOAEIRO)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form__row">
+                                        <label for="" class="form__row-title">신장</label>
+                                        <div class="box">
+                                            <input type="text" placeholder="신장 입력(cm)" value="183cm"/>
+                                        </div>
+                                    </div>
+                                    <div class="form__row">
+                                        <label for="" class="form__row-title">몸무게</label>
+                                        <div class="box">
+                                            <input type="text" placeholder="몸무게 입력(kg)" value=" 82kg" />
+                                        </div>
+                                    </div>
+                                    <div class="form__row">
+                                        <label for="" class="form__row-title">선출</label>
+                                        <div class="box">
+                                            <select name="" id="">
+                                                <option value="" >선출</option>
+                                                <option value="" >비선출</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="playerInfo__section playerInfo__awards">
+                                <h3 class="playerInfo__section-title">선수카드</h3>
+                                <p class="playerInfo__section-desc">선택하신 카드를 -로 사용하시겠습니까?</p>
+
+                                <ul class="awards-list">
+                                    <li class="awards-item">
+                                        <label for="awd1">
+                                            <input type="radio" id="awd1" name="award" hidden />
+                                            <div class="img">
+                                                <img src="//via.placeholder.com/60x80" alt="" />
+                                            </div>
+                                            <p>
+                                                2018플레이컵
+                                            </p>
+                                        </label>
+                                    </li>
+                                    <li class="awards-item">
+                                        <label for="awd2">
+                                            <input type="radio" id="awd2" name="award" hidden />
+                                            <div class="img">
+                                                <img src="//via.placeholder.com/60x80" alt="" />
+                                            </div>
+                                            <p>
+                                                2018플레이컵
+                                            </p>
+                                        </label>
+                                    </li>
+                                    <li class="awards-item">
+                                        <label for="awd3">
+                                            <input type="radio" id="awd3" name="award" hidden />
+                                            <div class="img">
+                                                <img src="//via.placeholder.com/60x80" alt="" />
+                                            </div>
+                                            <p>
+                                                2018플레이컵
+                                            </p>
+                                        </label>
+                                    </li>
+                                    <li class="awards-item">
+                                        <label for="awd3">
+                                            <input type="radio" id="awd3" name="award" hidden />
+                                            <div class="img">
+                                                <img src="//via.placeholder.com/60x80" alt="" />
+                                            </div>
+                                            <p>
+                                                2018플레이컵
+                                            </p>
+                                        </label>
+                                    </li>
+                                    <li class="awards-item">
+                                        <label for="awd4">
+                                            <input type="radio" id="awd4" name="award" hidden />
+                                            <div class="img">
+                                                <img src="//via.placeholder.com/60x80" alt="" />
+                                            </div>
+                                            <p>
+                                                2018플레이컵
+                                            </p>
+                                        </label>
+                                    </li>
+                                    <li class="awards-item">
+                                        <label for="awd5">
+                                            <input type="radio" id="awd5" name="award" hidden />
+                                            <div class="img">
+                                                <img src="//via.placeholder.com/60x80" alt="" />
+                                            </div>
+                                            <p>
+                                                2018플레이컵
+                                            </p>
+                                        </label>
+                                    </li>
+                                    <li class="awards-item">
+                                        <label for="awd6">
+                                            <input type="radio" id="awd6" name="award" hidden />
+                                            <div class="img">
+                                                <img src="//via.placeholder.com/60x80" alt="" />
+                                            </div>
+                                            <p>
+                                                2018플레이컵
+                                            </p>
+                                        </label>
+                                    </li>
+                                    <li class="awards-item">
+                                        <label for="awd7">
+                                            <input type="radio" id="awd7" name="award" hidden />
+                                            <div class="img">
+                                                <img src="//via.placeholder.com/60x80" alt="" />
+                                            </div>
+                                            <p>
+                                                2018플레이컵
+                                            </p>
+                                        </label>
+                                    </li>
+                                    <li class="awards-item">
+                                        <label for="awd8">
+                                            <input type="radio" id="awd8" name="award" hidden />
+                                            <div class="img">
+                                                <img src="//via.placeholder.com/60x80" alt="" />
+                                            </div>
+                                            <p>
+                                                2018플레이컵
+                                            </p>
+                                        </label>
+                                    </li>
+                                    </li>
+                                </ul>
+
+                                <div class="accounts__btnbox">
+                                    <button class="btn btn-blue waves-effect">완료</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="content__right">
+            @@include('./include/etc_relation.html')
+            @@include('./include/etc_schedule.html')
+            @@include('./include/etc_alarm.html')
+            @@include('./include/etc_empty.html')
+            @@include('./include/etc_news.html')
+            @@include('./include/etc_friends.html')
+            @@include('./include/etc_footer.html')
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

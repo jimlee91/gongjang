@@ -13,6 +13,8 @@
 @import "components/feeds";
 @import "components/comment";
 @import "components/userHeader";
+@import "components/playerInfo";
+@import "components/infoTable";
 
 @import "base/reset";
 @import "base/form";
@@ -22,3 +24,5 @@
 
 @import "pages/accounts";
 @import "pages/detail";
+@import "pages/paymentHistory";
+@import "pages/cancelReservation";

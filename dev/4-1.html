@@ -1,0 +1,110 @@
+@@include('./include/header.html')
+<div class="container">
+    <div class="content">
+        <div class="content__left">
+            @@include('./include/oauth_after_login.html')
+            @@include('./include/gnb.html')
+        </div>
+        <div class="content__main">
+            <div class="breadcrumb">
+                <div class="breadcrumb__list">
+                    <a href="" class="breadcrumb__item waves-effect">Home</a>
+                    <a href="" class="breadcrumb__item waves-effect">마이페이지</a>
+                    <a href="" class="breadcrumb__item waves-effect">회원정보 </a>
+                </div>
+                <a href="" class="more waves-effct"></a>
+            </div>
+            <div class="content__body">
+                <div class="accounts registered">
+                    <section class="accounts__header">
+                        <h2 class="accounts__title">
+                            <span>
+                                회원정보
+                            </span>
+                        </h2>
+                    </section>
+
+                    <div class="registered__form ">
+                        <div class="form">
+                            <div class="form__row">
+                                <label for="id" class="form__row-title">아이디</label>
+                                <div class="box">
+                                    <input type="text" placeholder="최소 6자 이상 ~ 최대 12자 이하" value="hongildong23" readonly/>
+                                </div>
+                            </div>
+
+                            <div class="form__row">
+                                <label for="" class="form__row-title">닉네임</label>
+                                <div class="box">
+                                    <input type="text" placeholder="닉네임 입력" value="kimGongJang" readonly/>
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <label for="" class="form__row-title">이름</label>
+                                <div class="box">
+                                    <input type="text" placeholder="이름 입력" readonly value="김공장"/>
+                                </div>
+                            </div>
+
+                            <div class="form__row">
+                                <label for="" class="form__row-title">성별</label>
+                                <div class="box">
+                                    <label for="m" class="checkbox">
+                                        <input type="radio" id="m" name="gender" hidden checked readonly>
+                                        <span></span> 남성
+                                    </label>
+
+                                    <!--                                    <label for="F" class="checkbox">-->
+                                    <!--                                        <input type="radio" id="F" name="gender" hidden>-->
+                                    <!--                                        <span></span> 여성-->
+                                    <!--                                    </label>-->
+                                </div>
+                            </div>
+
+
+                            <div class="form__row">
+                                <label for="" class="form__row-title">생년월일</label>
+                                <div class="box">
+                                    <input type="text" placeholder="8자리 입력" value="970503" readonly />
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <label for="" class="form__row-title">이메일</label>
+                                <div class="box">
+                                    <input type="email" placeholder="이메일 입력" value="2eonhworking@gmail.com" readonly />
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <label for="" class="form__row-title">휴대폰 번호</label>
+                                <div class="box">
+                                    <input type="email" placeholder="'-' 구분없이 입력" value="01025734692" readonly />
+                                </div>
+                            </div>
+
+                            <div class="form__row">
+                                <label for="" class="form__row-title">지역</label>
+                                <div class="box">
+                                    <input type="email" placeholder="" value="서울특별시 영등포구" readonly />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accounts__btnbox">
+                            <a href="" class="btn btn-blue waves-effect">수정</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__right">
+            @@include('./include/etc_relation.html')
+            @@include('./include/etc_schedule.html')
+            @@include('./include/etc_alarm.html')
+            @@include('./include/etc_empty.html')
+            @@include('./include/etc_news.html')
+            @@include('./include/etc_friends.html')
+            @@include('./include/etc_footer.html')
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

@@ -1,0 +1,164 @@
+@@include('./include/header.html')
+<div class="container cancelReservation">
+    <div class="content">
+        <div class="content__left">
+            @@include('./include/oauth_after_login.html')
+            @@include('./include/gnb.html')
+        </div>
+        <div class="content__main">
+            <div class="breadcrumb">
+                <div class="breadcrumb__list">
+                    <a href="" class="breadcrumb__item waves-effect">Home</a>
+                    <a href="" class="breadcrumb__item waves-effect">마이페이지</a>
+                    <a href="" class="breadcrumb__item waves-effect">결제내역 </a>
+                    <a href="" class="breadcrumb__item waves-effect">환불신청 </a>
+                </div>
+                <a href="" class="more waves-effct"></a>
+            </div>
+            <div class="content__body">
+                <div class="accounts registered">
+                    <section class="accounts__header">
+                        <h2 class="accounts__title">
+                            <span>
+                                환불신청
+                            </span>
+                        </h2>
+                    </section>
+
+                    <div class="paymentHistory__body">
+                        <div class="schedule">
+                            <div class="schedule__item schedule__item--reservation">
+                                <div class="inner">
+                                    <div class="reservation__info">
+                                        <span class="paymentHistory__case">new 예약</span>
+                                        <h3 class="reservation__place">
+                                            2018 제주국제유스축구대회
+                                        </h3>
+                                        <p class="reservation__number">
+                                            예약번호 01011010
+                                        </p>
+                                    </div>
+                                    <div class="table">
+                                        <table>
+                                            <colgroup>
+                                                <col width="80">
+                                                <col width="100">
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th>결제 날짜</th>
+                                                <td>2020. 2. 22</td>
+                                            </tr>
+                                            <tr>
+                                                <th>결제 가격</th>
+                                                <td>50,500원</td>
+                                            </tr>
+                                            <tr>
+                                                <th>결제 상황</th>
+                                                <td>결제대기</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cancelReservation__body">
+                        <div class="infoTable">
+                            <table>
+                                <colgroup>
+                                    <col width="100">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th>
+                                        <strong>환불 금액</strong>
+                                    </th>
+                                    <td>
+                                        50,500원
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <strong>환불 정책</strong>
+                                    </th>
+                                    <td>
+                                        1. 단순 대관 날짜 변경은 불가하며 예약 취소 및 환불 규정에 의거해 환불 후 신규 대관일을 신청하셔야 합니다.<br/>
+                                        2. 대관 당일에는 취소가 불가합니다.<br/>
+                                        3. 환불 및 취소는 일일 단위로 가능합니다.<br/>
+                                        <br/>
+                                        30일 - 21일 전 : 100% 환불 / 20일 - 16일 전 : 80% 환불<br/>
+                                        15일 - 11일 전 : 60% 환불 / 10일 - 7일 전 : 50% 환불<br/>
+                                        6일 - 4일 전 : 30% 환불 / 3일 전 - 당일 : 환불 불가<br/>
+                                        <br/>
+                                        4. 당일 환불은 천재지변으로 인한 경우에만 100% 환불됩니다.<br/>
+                                        (호우경보, 대설경보, 태풍주의보, 태풍경보만 적용)<br/>
+                                        <br/>
+                                        임시 추가 내용입니다
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <form action="">
+                    <div class="cancelReservation__form accounts">
+                        <div class="registered__form ">
+                            <div class="form">
+                                <div class="form__row">
+                                    <label for="" class="form__row-title">환불 사유</label>
+                                    <div class="box">
+                                        <input type="email" placeholder="환불 사유를 입력해주세요." />
+                                    </div>
+                                </div>
+
+                                <div class="form__row disabled column">
+                                    <label for="" class="form__row-title">환불 방식</label>
+                                    <div class="box">
+                                        <select name="" id="" disabled>
+                                            <option value="" >선택하기</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accounts__btnbox mt-50">
+                                <button class="btn btn-blue waves-effect">완료</button>
+                                <button class="btn btn-white2 waves-effect">환불취소</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="content__right">
+            @@include('./include/etc_relation.html')
+            @@include('./include/etc_schedule.html')
+            @@include('./include/etc_alarm.html')
+            @@include('./include/etc_empty.html')
+            @@include('./include/etc_news.html')
+            @@include('./include/etc_friends.html')
+            @@include('./include/etc_footer.html')
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="" style="display: ;">
+    <div class="modal__content">
+        <h2 class="modal__title">
+            환불을 취소하시겠습니까?
+        </h2>
+        <div class="modal__body">
+
+        </div>
+        <div class="modal__btnbox">
+            <a href="" class="modal__btn js-modal-close">네</a>
+            <a href="" class="modal__btn bg-white js-modal-close">아니요</a>
+        </div>
+    </div>
+</div>
+
+@@include('./include/footer.html')
