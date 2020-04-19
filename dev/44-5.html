@@ -1,0 +1,147 @@
+@@include('./include/header.html')
+<div class="container">
+    <div class="content">
+        <div class="content__left">
+            @@include('./include/oauth_after_login.html')
+            @@include('./include/gnb.html')
+        </div>
+        <div class="content__main">
+            <div class="breadcrumb">
+                <div class="breadcrumb__list">
+                    <a href="" class="breadcrumb__item waves-effect">Home</a>
+                    <a href="" class="breadcrumb__item waves-effect">대회 </a>
+                    <a href="" class="breadcrumb__item waves-effect">리그</a>
+                    <a href="" class="breadcrumb__item waves-effect">2018 제주국유축구대회 홈</a>
+                </div>
+                <a href="" class="more waves-effct"></a>
+            </div>
+            <div class="content__body">
+                <div class="cup__item cup__item--main cup__item--title">
+                    <div class="cup__item-info">
+                        <div class="inner border-none">
+                            <div class="box">
+                                <span class="state color-blue">진행중</span>
+                                <h3>2018 제주국제유스축구대회</h3>
+                                <p>2019. 8. 13(mon)- 2019. 8. 19(sun)</p>
+                            </div>
+                            <div class="btnActions">
+                                <a href="" class="btn btn-white2 waves-effect" >
+                                    <span class="gongan">공간</span>
+                                </a>
+                                <a href="" class="btn btn-green waves-effect mt-5" >신청하기</a>
+                            </div>
+                        </div>
+                        <div class="cup__info-tab">
+                            <a href="">컵 소개</a>
+                            <a href="" class="active">팀리스트</a>
+                            <a href="">경기일정</a>
+                            <a href="">순위</a>
+                            <a href="">공지사항</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cup-teamlist subContent">
+                    <div class="subContent__section border pt-12 pb-12">
+                        <div class="form">
+                            <div class="form__row">
+                                <div class="box mt-0">
+                                    <select name="" id="" style="width: 100px; flex: none;">
+                                        <option value="">지점</option>
+                                    </select>
+                                    <p class="form__help confirm pl-10 mt-0" style="line-height: 35px;">* 지점별로 참가팀을 확인하세요.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subContent__section">
+                        <div class="teamlist">
+                            <button class="teamlist__title">
+                                부산 가야점
+                                <span class="">내용접기</span>
+                            </button>
+
+                            <div class="teamlist__teams">
+                                <div class="teamlist__item">
+                                    <a href="">
+                                        <div class="thumb">
+                                            <img src="//via.placeholder.com/50x50" alt="">
+                                        </div>
+                                        <h3>가나다</h3>
+                                    </a>
+                                </div>
+                                <div class="teamlist__item">
+                                    <a href="">
+                                        <div class="thumb">
+                                            <img src="//via.placeholder.com/50x50" alt="">
+                                        </div>
+                                        <h3>가나다</h3>
+                                    </a>
+                                </div>
+                                <div class="teamlist__item">
+                                    <a href="">
+                                        <div class="thumb">
+                                            <img src="//via.placeholder.com/50x50" alt="">
+                                        </div>
+                                        <h3>가나다</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="teamlist">
+                            <button class="teamlist__title">
+                                <strong class="color-blue">A</strong> 그룹
+
+                                <span class="">내용접기</span>
+                            </button>
+
+                            <div class="teamlist__teams">
+                                <div class="teamlist__item">
+                                    <a href="">
+                                        <div class="thumb">
+                                            <img src="//via.placeholder.com/50x50" alt="">
+                                        </div>
+                                        <h3>가나다</h3>
+                                    </a>
+                                </div>
+                                <div class="teamlist__item">
+                                    <a href="">
+                                        <div class="thumb">
+                                            <img src="//via.placeholder.com/50x50" alt="">
+                                        </div>
+                                        <h3>가나다</h3>
+                                    </a>
+                                </div>
+                                <div class="teamlist__item">
+                                    <a href="">
+                                        <div class="thumb">
+                                            <img src="//via.placeholder.com/50x50" alt="">
+                                        </div>
+                                        <h3>가나다</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__right">
+            @@include('./include/etc_relation.html')
+            @@include('./include/etc_schedule.html')
+            @@include('./include/etc_alarm.html')
+            @@include('./include/etc_empty.html')
+            @@include('./include/etc_news.html')
+            @@include('./include/etc_friends.html')
+            @@include('./include/etc_footer.html')
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')
+
+<script>
+    $('.teamlist__title').on('click', function(){
+        $(this).siblings('.teamlist__teams').stop().slideToggle();
+    })
+</script>

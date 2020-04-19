@@ -1,0 +1,74 @@
+.academy {
+
+  .academy__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex: none;
+  }
+
+  .academy__item {
+    width: 150px;
+    margin-right: 55px;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-child(n+4) {
+      margin-top: 50px;
+    }
+
+    .academy__info {
+      padding: 15px 0;
+      h3 {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 5px;
+      }
+      p {
+        margin-top: 5px;
+        padding-top: 5px;
+        border-top: $border;
+        font-size: 10px;
+        line-height: 14px;
+      }
+      .state {
+        background: url('../images/star.png') no-repeat left center;
+        background-size: auto 12px;
+        padding-left: 16px;
+        font-size: 12px;
+        color:$blue;
+        &.end {
+          color:#5A5553;;
+          background: url('../images/star-black.png') no-repeat left center;
+          background-size: auto 15px;
+        }
+
+      }
+    }
+    .btn {
+      display: block;
+      line-height: 32px;
+      border: $border;
+      font-size: 12px;
+      border-radius: 7px;
+      text-align: center;
+      color:#707070;
+      transition: all .3s;
+      &:hover {
+        background:$blue;
+        color:#fff;
+        border-color:$blue;
+      }
+    }
+  }
+
+}
+
+.group {
+  .group__title {
+    line-height: 45px;
+    background:#383433;
+    color:#fff;
+    padding:0 50px;
+    font-size: 14px;
+  }
+}

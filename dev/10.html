@@ -1,0 +1,118 @@
+@@include('./include/header.html')
+<div class="container">
+    <div class="content">
+        <div class="content__left">
+            @@include('./include/oauth_after_login.html')
+            @@include('./include/gnb.html')
+        </div>
+        <div class="content__main">
+            <div class="breadcrumb">
+                <div class="breadcrumb__list">
+                    <a href="" class="breadcrumb__item waves-effect">Home</a>
+                    <a href="" class="breadcrumb__item waves-effect">마이페이지</a>
+                    <a href="" class="breadcrumb__item waves-effect">앱 설정 </a>
+                </div>
+                <a href="" class="more waves-effct"></a>
+            </div>
+            <div class="content__body">
+                <div class="appSetting subContent">
+                    <div class="subContent__section ">
+                        <section class="accounts__header">
+                            <h2 class="accounts__title">
+                                <span>
+                                    앱 설정
+                                </span>
+                            </h2>
+                        </section>
+
+                        <div class="appSetting__body">
+                            <div class="appSetting-item">
+                                <div class="appSetting__info">
+                                    <h3>선수 채팅 알람 설정</h3>
+                                    <p>새로운 매세지가 왔을 때 알람을 받으시겠습니까?</p>
+                                </div>
+                                <label for="s1" class="switch">
+                                    <div class="switch__layout">
+                                        <input type="checkbox" hidden id="s1" checked>
+                                        <span></span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="appSetting-item">
+                                <div class="appSetting__info">
+                                    <h3>선수 정보 설정</h3>
+                                    <p>선수 정보를 전체 공개 하시겠습니까?</p>
+                                </div>
+                                <label for="s2" class="switch">
+                                    <div class="switch__layout">
+                                        <input type="checkbox" hidden id="s2" checked>
+                                        <span></span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="appSetting-item">
+                                <div class="appSetting__info">
+                                    <h3>팀원 추가 설정</h3>
+                                    <p>새로운 팀원을 받으시겠습니까?</p>
+                                </div>
+                                <label for="s3" class="switch">
+                                    <div class="switch__layout">
+                                        <input type="checkbox" hidden id="s3" checked>
+                                        <span></span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="appSetting-item">
+                                <div class="appSetting__info">
+                                    <h3>최신 업데이트 유무</h3>
+                                    <p>자동으로 최신 업데이트 서비스를 받으시겠습니까?</p>
+                                </div>
+                                <label for="s4" class="switch">
+                                    <div class="switch__layout">
+                                        <input type="checkbox" hidden id="s4" checked>
+                                        <span></span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="appSetting-item">
+                                <div class="appSetting__info">
+                                    <h3>마케팅 정보 수신 설정</h3>
+                                    <p>광고 및 관련 내용을 받아보시겠습니까?</p>
+                                </div>
+                                <label for="s5" class="switch">
+                                    <div class="switch__layout">
+                                        <input type="checkbox" hidden id="s5" checked>
+                                        <span></span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="appSetting-item">
+                                <div class="appSetting__info">
+                                    <h3>알림</h3>
+                                    <p>새로운 매세지가 왔을 때 알람을 받으시겠습니까?</p>
+                                </div>
+                                <label for="s6" class="switch">
+                                    <div class="switch__layout">
+                                        <input type="checkbox" hidden id="s6" checked>
+                                        <span></span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__right">
+            @@include('./include/etc_relation.html')
+            @@include('./include/etc_schedule.html')
+            @@include('./include/etc_alarm.html')
+            @@include('./include/etc_empty.html')
+            @@include('./include/etc_news.html')
+            @@include('./include/etc_friends.html')
+            @@include('./include/etc_footer.html')
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

@@ -1,0 +1,68 @@
+@@include('./include/header.html')
+<div class="container">
+    <div class="content">
+        <div class="content__left">
+            @@include('./include/oauth_after_login.html')
+            @@include('./include/gnb.html')
+        </div>
+        <div class="content__main">
+            <div class="breadcrumb">
+                <div class="breadcrumb__list">
+                    <a href="" class="breadcrumb__item waves-effect">Home</a>
+                    <a href="" class="breadcrumb__item waves-effect">마이페이지</a>
+                    <a href="" class="breadcrumb__item waves-effect">고객센터 </a>
+                    <a href="" class="breadcrumb__item waves-effect">공지사항</a>
+                </div>
+                <a href="" class="more waves-effct"></a>
+            </div>
+            <div class="content__body">
+                <div class="notice notice--detail subContent">
+                    <div class="subContent__section pb-0">
+                        <div class="notice__item">
+                            <div class="notice__item-header">
+                                <strong>199.</strong>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo fugiat iure quibusdam quidem rerum, temporibus uno fugiat iure quibusdam quidem rerum, temporibus unde velit! Magni, omnis pariatur..</p>
+                                <span>20.02.30</span>
+                            </div>
+
+                            <div class="notice__content">
+                                <!-- 에디터값은 여기 -->
+
+                                <p>
+                                    2020 리그를 진행합니다.<br/>
+                                    많은 참여 부탁 드립니다.!!!!!!!!!!!!!!!!!!!!!!!<br/>
+                                    상금 10000000000<br/>
+                                    참가비 100000000
+                                </p>
+
+                            </div>
+
+                            <div class="notice__item-info">
+                                <span>관리자</span>
+                                <div class="notice__item-etc">
+                                    <span>
+                                        <strong>조회수</strong> 40회
+                                    </span>
+                                    <span>
+                                        <strong>댓글수</strong> 15개
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @@include('./include/comment.html')
+                </div>
+            </div>
+        </div>
+        <div class="content__right">
+            @@include('./include/etc_relation.html')
+            @@include('./include/etc_schedule.html')
+            @@include('./include/etc_alarm.html')
+            @@include('./include/etc_empty.html')
+            @@include('./include/etc_news.html')
+            @@include('./include/etc_friends.html')
+            @@include('./include/etc_footer.html')
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

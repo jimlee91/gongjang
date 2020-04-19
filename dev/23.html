@@ -1,0 +1,136 @@
+@@include('./include/header.html')
+<div class="container">
+    <div class="content">
+        <div class="content__left">
+            @@include('./include/oauth_after_login.html')
+            @@include('./include/gnb.html')
+        </div>
+        <div class="content__main">
+            <div class="breadcrumb">
+                <div class="breadcrumb__list">
+                    <a href="" class="breadcrumb__item waves-effect">Home</a>
+                    <a href="" class="breadcrumb__item waves-effect">채팅 </a>
+                    <a href="" class="breadcrumb__item waves-effect">대화 </a>
+                </div>
+                <a href="" class="more waves-effct"></a>
+            </div>
+            <div class="content__body">
+                <div class="chat subContent">
+                    <div class="subContent__section ">
+                        <div class="chat__list">
+                            <div class="chat__item">
+                                <a href="" class="chat__link">
+                                    <div class="thumb round">
+                                        <span class="is_new">새글</span>
+                                        <img src="//via.placeholder.com/45x45" alt="">
+                                    </div>
+                                    <div class="chat__info">
+                                        <h3 class="chat__user">eonsang79</h3>
+                                        <p class="chat__content">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, placeat? consectetur adipisicing elit. Illo, placeat? consectetur adipisicing elit. Illo, placeat? consectetur adipisicing elit. Illo, placeat? consectetur adipisicing elit. Illo, placeat?
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="etc">
+                                    <p>오후5:13</p>
+                                    <button class="waves-effect"></button>
+                                    <div class="etc__controllder">
+                                        <a href="#//">채팅방 열기</a>
+                                        <a href="#//">채팅방 나가기</a>
+                                        <a href="#//">모두 읽음 처리</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat__item">
+                                <a href="" class="chat__link">
+                                    <div class="thumb round">
+                                        <span class="is_new">새글</span>
+                                        <img src="//via.placeholder.com/45x45" alt="">
+                                    </div>
+                                    <div class="chat__info">
+                                        <h3 class="chat__user">eonsang79</h3>
+                                        <p class="chat__content">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, placeat? consectetur adipisicing elit. Illo, placeat? consectetur adipisicing elit. Illo, placeat? consectetur adipisicing elit. Illo, placeat? consectetur adipisicing elit. Illo, placeat?
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="etc">
+                                    <p>2일 전</p>
+                                    <button class="waves-effect active">2</button>
+                                    <div class="etc__controllder">
+                                        <a href="#//">채팅방 열기</a>
+                                        <a href="#//">채팅방 나가기</a>
+                                        <a href="#//">모두 읽음 처리</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat__item">
+                                <a href="" class="chat__link">
+                                    <div class="thumb round">
+                                        <span class="is_new">새글</span>
+                                        <img src="//via.placeholder.com/45x45" alt="">
+                                    </div>
+                                    <div class="chat__info">
+                                        <h3 class="chat__user">eonsang79</h3>
+                                        <p class="chat__content">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, placeat? consectetur adipisicing elit. Illo, placeat? consectetur adipisicing elit. Illo, placeat? consectetur adipisicing elit. Illo, placeat? consectetur adipisicing elit. Illo, placeat?
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="etc">
+                                    <p>오후5:13</p>
+                                    <button class="waves-effect"></button>
+                                    <div class="etc__controllder">
+                                        <a href="#//">채팅방 열기</a>
+                                        <a href="#//">채팅방 나가기</a>
+                                        <a href="#//">모두 읽음 처리</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat__item">
+                                <a href="" class="chat__link">
+                                    <div class="thumb round">
+                                        <span class="is_new">새글</span>
+                                        <img src="//via.placeholder.com/45x45" alt="">
+                                    </div>
+                                    <div class="chat__info">
+                                        <h3 class="chat__user">eonsang79</h3>
+                                        <p class="chat__content">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, placeat? consectetur adipisicing elit. Illo, placeat? consectetur adipisicing elit. Illo, placeat? consectetur adipisicing elit. Illo, placeat? consectetur adipisicing elit. Illo, placeat?
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="etc">
+                                    <p>오후5:13</p>
+                                    <button class="waves-effect"></button>
+                                    <div class="etc__controllder">
+                                        <a href="#//">채팅방 열기</a>
+                                        <a href="#//">채팅방 나가기</a>
+                                        <a href="#//">모두 읽음 처리</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__right">
+            @@include('./include/etc_relation.html')
+            @@include('./include/etc_schedule.html')
+            @@include('./include/etc_alarm.html')
+            @@include('./include/etc_empty.html')
+            @@include('./include/etc_news.html')
+            @@include('./include/etc_friends.html')
+            @@include('./include/etc_footer.html')
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')
+
+
+<script>
+    $('.chat__item .etc button.active').on('click', function(){
+        $(this).siblings('.etc__controllder').toggle();
+    })
+</script>

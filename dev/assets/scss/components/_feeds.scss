@@ -1,6 +1,84 @@
 .feeds {
 
 }
+.feeds__subscribe {
+  overflow: auto;
+  padding:10px 20px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  .feeds__subscribe-list {
+    display: flex;
+    align-items: center;
+  }
+  .feeds__subscribe-user {
+    width: 65px;
+    flex: none;
+    padding:20px 10px 10px;
+    border-bottom:$border;
+    position: relative;
+    text-align: center;
+    &.active {
+      &:after {
+        content:'';
+        display: block;
+        width :45px;
+        height: 4px;
+        background: $blue;
+        position: absolute;
+        left: 10px;
+        bottom: -2px;
+        z-index: 1;
+      }
+    }
+
+    .thumb {
+      display: block;
+      img {
+        width: 45px;
+        border-radius: 50%;
+        height: 45px;
+        overflow: hidden;
+      }
+
+    }
+    p {
+      font-size: 12px;
+      color:#5a5553;;
+      margin-top: 5px;
+      @include truncate;
+    }
+  }
+}
+
+.feeds__controller {
+  padding: 20px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .feeds__controllder-box {
+    width: 280px;
+    border-bottom: $border;
+    padding:0 10px;
+    display: flex;
+    a {
+      flex: 1;
+      position: relative;
+      bottom: -3px;
+      font-size: 12px;
+      color:#414141;
+      line-height: 40px;
+      opacity: 0.5;
+      text-align: center;
+      &.active {
+        opacity: 1;
+        border-bottom: 4px solid $green;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
 .feed {
 
   .feedDetail & {

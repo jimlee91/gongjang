@@ -1,5 +1,19 @@
 .form {
 
+  .form__row-box {
+    margin-bottom: 20px;
+    .form__row {
+      .reservation & {
+        margin-bottom: 0 !important;
+      }
+    }
+    .form__row-title {
+      width: 70px !important;
+    }
+    .form__help {
+      padding-left: 70px;
+    }
+  }
   .form__help {
     font-size: 12px;
     margin-top: 5px;
@@ -32,13 +46,14 @@
         line-height: 35px;
       }
       .box {
+
         margin: 0;
         flex: 1;
       }
     }
 
     .form__row-title {
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 600;
     }
     .box.column {
@@ -48,7 +63,7 @@
       }
     }
     .box {
-      margin-top: 5px;
+      margin-top: 10px;
       display: flex;
       flex-wrap: wrap;
       position: relative;
@@ -74,6 +89,9 @@
         border-bottom: 1px solid $border-color;
         &:read-only {
           border: none;
+        }
+        &.input-border {
+          height: 35px !important;
         }
       }
       select {
@@ -112,9 +130,8 @@
 
 
     .input-border {
-      height: 35px;
       border-radius: 7px;
-      border: solid 1px rgba(0,0,0,0.5);
+      border: solid 1px rgba(0,0,0,0.5) !important;
       padding:0 1em;
       font-size: 12px;
     }
@@ -148,7 +165,7 @@
         margin-bottom: 0;
       }
       p {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 300;
       }
       a {
@@ -163,6 +180,30 @@
   }
 }
 
+.checkbox2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  input {
+    display: none;
+    &:checked + span {
+      background: url('../images/i-checkbox-on.png') no-repeat center;
+      border: none;
+      background-size: auto 16px;
+      width: 14px;
+      height: 16px;
+    }
+  }
+  span {
+    margin-right: 7px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #5a5553;
+  }
+}
 .checkbox {
   display: flex;
   flex-wrap: wrap;
@@ -192,11 +233,23 @@
   }
 }
 
-.switch{display:inline-block;cursor:pointer}
+.switch{display:inline-block;cursor:pointer;width: 60px;}
 .switch__layout{width:60px;height:30px;position:relative;border-radius:2em;overflow:hidden;border: 1px solid $border-color;}
 .switch input{position:absolute;left:0;top:0;width:1px;height:1px;overflow:hidden;opacity:0;}
 .switch input + span:before{display:block;width:100%;height:100%;background:#fff;content:'';transition:all .2s ease-out;}
-.switch input + span:after{position:absolute;left:4px;top:4px;width:20px;height:20px;background:$border-color;content:'';display:block;border-radius:50%;transition:all .2s ease-out;}
-.switch input:checked + span:before{background:$blue;}
-.switch input:checked + span:after{left:34px;background: #fff;}
+.switch input + span:after{position:absolute;left:34px;top:4px;width:20px;height:20px;background:$border-color;content:'';display:block;border-radius:50%;transition:all .2s ease-out;}
+.switch input:checked + span:before{background:#fff;}
+.switch input:checked + span:after{left:4px;background: $blue;}
 .switch input:disabled + span:before{opacity: .3;}
+
+
+.form-search {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35px;
+  height: 35px;
+  @include text-indent;
+  background: url('../images/i-search-black.png') no-repeat center;
+  background-size: auto 15px;
+}

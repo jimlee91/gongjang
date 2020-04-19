@@ -1,0 +1,81 @@
+@@include('./include/header.html')
+<div class="container">
+    <div class="content">
+        <div class="content__left">
+            @@include('./include/oauth_after_login.html')
+            @@include('./include/gnb.html')
+        </div>
+        <div class="content__main">
+            <div class="breadcrumb">
+                <div class="breadcrumb__list">
+                    <a href="" class="breadcrumb__item waves-effect">Home</a>
+                    <a href="" class="breadcrumb__item waves-effect">마이페이지</a>
+                    <a href="" class="breadcrumb__item waves-effect">앱 설정 </a>
+                </div>
+                <a href="" class="more waves-effct"></a>
+            </div>
+            <div class="content__body">
+                <div class="spaceSetting subContent">
+                    <div class="subContent__section ">
+                        <section class="accounts__header">
+                            <h2 class="accounts__title">
+                                <span>
+                                    공간 설정
+                                </span>
+                            </h2>
+                        </section>
+
+
+                        <div class="spaceSetting">
+                            <form action="">
+                                <div class="form">
+                                    <div class="form__row column">
+                                        <label for="" class="form__row-title font-12">공간 선택</label>
+                                        <div class="box">
+                                            <select name="" id="">
+                                                <option value="" >공간을 선택하세요.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="appSetting-item">
+                                        <div class="appSetting__info">
+                                            <h3>선수 채팅 알람 설정</h3>
+                                            <p>새로운 매세지가 왔을 때 알람을 받으시겠습니까?</p>
+                                        </div>
+                                        <label for="s1" class="switch">
+                                            <div class="switch__layout">
+                                                <input type="checkbox" hidden id="s1" checked>
+                                                <span></span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    <div class="form__row mt-20">
+                                        <label for="" class="form__row-title">공간 설명</label>
+                                        <div class="box">
+                                            <textarea type="text" placeholder="내용을 입력하세요." ></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btnbox mt-100">
+                                    <button class="btn btn-blue waves-effect">확인</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__right">
+            @@include('./include/etc_relation.html')
+            @@include('./include/etc_schedule.html')
+            @@include('./include/etc_alarm.html')
+            @@include('./include/etc_empty.html')
+            @@include('./include/etc_news.html')
+            @@include('./include/etc_friends.html')
+            @@include('./include/etc_footer.html')
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')

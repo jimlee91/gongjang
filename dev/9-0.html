@@ -1,0 +1,167 @@
+@@include('./include/header.html')
+<div class="container">
+    <div class="content">
+        <div class="content__left">
+            @@include('./include/oauth_after_login.html')
+            @@include('./include/gnb.html')
+        </div>
+        <div class="content__main">
+            <div class="breadcrumb">
+                <div class="breadcrumb__list">
+                    <a href="" class="breadcrumb__item waves-effect">Home</a>
+                    <a href="" class="breadcrumb__item waves-effect">마이페이지</a>
+                    <a href="" class="breadcrumb__item waves-effect">회원정보 </a>
+                </div>
+                <a href="" class="more waves-effct"></a>
+            </div>
+            <div class="content__body">
+                <div class="mileage subContent">
+                    <div class="subContent__section border">
+                        <section class="accounts__header">
+                            <h2 class="accounts__title">
+                                <span>
+                                    마일리지
+                                </span>
+                            </h2>
+                        </section>
+
+                        <div class="mileage__total">
+                            <h3>총 마일리지</h3>
+                            <div class="mileage__info">
+                                <p>250,000점</p>
+                                <div class="mileage__use">
+                                    사용가능 마일리지 <strong>4800점</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subContent__section border">
+                        <div class="mileage__privacy">
+                            <h3>마일리지 정책 및 유의 사항</h3>
+                            <a href="#//" onclick="showModal('#mileagePrivacy')">보기</a>
+                        </div>
+
+                        <div class="modal" id="mileagePrivacy" style="display: none;">
+                            <div class="modal__content">
+                                <h2 class="modal__title">
+                                    마일리지 정책 및 유의사항
+                                </h2>
+                                <div class="modal__body">
+                                    이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요이용약관 동의해주세요
+                                </div>
+                                <div class="modal__btnbox">
+                                    <a href="" class="modal__btn js-modal-close">동의</a>
+                                    <a href="" class="modal__btn bg-white js-modal-close">비동의</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subContent__section">
+                        <div class="mileage__history">
+                            <div class="mileage__header">
+                                <div class="mileage__tab">
+                                    <button data-tab="1" class="active">사용내역</button>
+                                    <button data-tab="2">적립내역</button>
+                                </div>
+
+                                <div class="mileage__sort">
+                                    <select name="" id="">
+                                        <option value="">기간</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mileage__views">
+                                <div class="mileage__view mileage__view1">
+                                    <ul>
+                                        <li class="mileage__item">
+                                            <h4>예약</h4>
+                                            <div class="mileage__item-info">
+                                                <p><strong>적립</strong> 50,500원</p>
+                                                <p><strong>날짜</strong> 20.11.20</p>
+                                            </div>
+                                        </li>
+                                        <li class="mileage__item">
+                                            <h4>예약</h4>
+                                            <div class="mileage__item-info">
+                                                <p><strong>적립</strong> 50,500원</p>
+                                                <p><strong>날짜</strong> 20.11.20</p>
+                                            </div>
+                                        </li>
+                                        <li class="mileage__item">
+                                            <h4>예약</h4>
+                                            <div class="mileage__item-info">
+                                                <p><strong>적립</strong> 50,500원</p>
+                                                <p><strong>날짜</strong> 20.11.20</p>
+                                            </div>
+                                        </li>
+                                        <li class="mileage__item">
+                                            <h4>예약</h4>
+                                            <div class="mileage__item-info">
+                                                <p><strong>적립</strong> 50,500원</p>
+                                                <p><strong>날짜</strong> 20.11.20</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mileage__view mileage__view2" style="display: none;">
+                                    <ul>
+                                        <li class="mileage__item">
+                                            <h4>예약2</h4>
+                                            <div class="mileage__item-info">
+                                                <p><strong>적립</strong> 50,500원</p>
+                                                <p><strong>날짜</strong> 20.11.20</p>
+                                            </div>
+                                        </li>
+                                        <li class="mileage__item">
+                                            <h4>예약3</h4>
+                                            <div class="mileage__item-info">
+                                                <p><strong>적립</strong> 50,500원</p>
+                                                <p><strong>날짜</strong> 20.11.20</p>
+                                            </div>
+                                        </li>
+                                        <li class="mileage__item">
+                                            <h4>예약4</h4>
+                                            <div class="mileage__item-info">
+                                                <p><strong>적립</strong> 50,500원</p>
+                                                <p><strong>날짜</strong> 20.11.20</p>
+                                            </div>
+                                        </li>
+                                        <li class="mileage__item">
+                                            <h4>예약5</h4>
+                                            <div class="mileage__item-info">
+                                                <p><strong>적립</strong> 50,500원</p>
+                                                <p><strong>날짜</strong> 20.11.20</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__right">
+            @@include('./include/etc_relation.html')
+            @@include('./include/etc_schedule.html')
+            @@include('./include/etc_alarm.html')
+            @@include('./include/etc_empty.html')
+            @@include('./include/etc_news.html')
+            @@include('./include/etc_friends.html')
+            @@include('./include/etc_footer.html')
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')
+
+
+<script>
+    $('.mileage__tab button').on('click', function(e) {
+        e.preventDefault();
+        $('.mileage__tab button').removeClass('active');
+        $(this).addClass('active');
+        var tabNumber = $(this).data('tab');
+        $('.mileage__view').hide();
+        $('.mileage__view' + tabNumber).stop().fadeIn();
+    })
+</script>

@@ -1,0 +1,137 @@
+@@include('./include/header.html')
+<div class="container">
+    <div class="content">
+        <div class="content__left">
+            @@include('./include/oauth_after_login.html')
+            @@include('./include/gnb.html')
+        </div>
+        <div class="content__main">
+            <div class="breadcrumb">
+                <div class="breadcrumb__list">
+                    <a href="" class="breadcrumb__item waves-effect">Home</a>
+                    <a href="" class="breadcrumb__item waves-effect">채팅 </a>
+                    <a href="" class="breadcrumb__item waves-effect">친구</a>
+                </div>
+                <a href="" class="more waves-effct"></a>
+            </div>
+            <div class="content__body">
+
+                <div class="qnalist subContent">
+                    <div class="subContent__section ">
+                        <div class="form">
+                            <div class="form__row column">
+                                <div class="box ">
+                                    <select name="" id="" class="input-border mr-10" style="width:100px;flex: none;">
+                                        <option value="">이름</option>
+                                        <option value="">아이디</option>
+                                    </select>
+                                    <input type="text" placeholder="친구를 검색하세요." class="input-border">
+                                    <button class="form-search"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qnalist__header pt-10">
+                            <strong>친구 57명</strong>
+                            <span></span>
+                            <a href="" class="qnalink active waves-effect">친구 추가</a>
+                            <a href="" class="qnalink waves-effect ml-5">친구 삭제</a>
+                        </div>
+
+                        <div class="friends__list">
+                            <div class="friends__item">
+                                <div class="userCard">
+                                    <a class="userCard__thumb" href="">
+                                        <span class="is_new">새글</span>
+                                        <img src="//via.placeholder.com/65x65" alt="">
+                                    </a>
+                                    <div class="userCard__user">
+                                        <a class="userCard__name" href="">
+                                            김공장 <span>(만 17세)</span>
+                                        </a>
+                                        <a class="userCard__team" href="">
+                                            <!-- 팀 심볼 이미지 -->
+                                            <img src="//via.placeholder.com/15x15" alt="">
+                                            <p>티키타카 스포츠111111</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <button class="friends__add">친구추가</button>
+                            </div>
+                            <div class="friends__item">
+                                <div class="userCard">
+                                    <a class="userCard__thumb" href="">
+                                        <span class="is_new">새글</span>
+                                        <img src="//via.placeholder.com/65x65" alt="">
+                                    </a>
+                                    <div class="userCard__user">
+                                        <a class="userCard__name" href="">
+                                            김공장 <span>(만 17세)</span>
+                                        </a>
+                                        <a class="userCard__team" href="">
+                                            <!-- 팀 심볼 이미지 -->
+                                            <img src="//via.placeholder.com/15x15" alt="">
+                                            <p>티키타카 스포츠111111</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <button class="friends__add">친구추가</button>
+                            </div>
+                            <div class="friends__item">
+                                <div class="userCard">
+                                    <a class="userCard__thumb" href="">
+                                        <span class="is_new">새글</span>
+                                        <img src="//via.placeholder.com/65x65" alt="">
+                                    </a>
+                                    <div class="userCard__user">
+                                        <a class="userCard__name" href="">
+                                            김공장 <span>(만 17세)</span>
+                                        </a>
+                                        <a class="userCard__team" href="">
+                                            <!-- 팀 심볼 이미지 -->
+                                            <img src="//via.placeholder.com/15x15" alt="">
+                                            <p>티키타카 스포츠111111</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <button class="friends__add">친구추가</button>
+                            </div>
+                            <div class="friends__item">
+                                <div class="userCard">
+                                    <a class="userCard__thumb" href="">
+                                        <span class="is_new">새글</span>
+                                        <img src="//via.placeholder.com/65x65" alt="">
+                                    </a>
+                                    <div class="userCard__user">
+                                        <a class="userCard__name" href="">
+                                            김공장 <span>(만 17세)</span>
+                                        </a>
+                                        <a class="userCard__team" href="">
+                                            <!-- 팀 심볼 이미지 -->
+                                            <img src="//via.placeholder.com/15x15" alt="">
+                                            <p>티키타카 스포츠111111</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <button class="friends__add">친구추가</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__right">
+            @@include('./include/etc_relation.html')
+            @@include('./include/etc_schedule.html')
+            @@include('./include/etc_alarm.html')
+            @@include('./include/etc_empty.html')
+            @@include('./include/etc_news.html')
+            @@include('./include/etc_friends.html')
+            @@include('./include/etc_footer.html')
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')
