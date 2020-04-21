@@ -44,9 +44,14 @@
       color:#fff;
       border-radius: 5px;
       font-size: 12px;
+      transition: all .3s;
       &.btn-blue {
         border: 1px solid $green;
         color:$green;
+        &:hover {
+          background:$green;
+          color:#fff;
+        }
       }
       &:first-child {
         margin-bottom: 10px;

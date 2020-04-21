@@ -9,14 +9,120 @@
             <div class="breadcrumb">
                 <div class="breadcrumb__list">
                     <a href="" class="breadcrumb__item waves-effect">Home</a>
-                    <a href="" class="breadcrumb__item waves-effect">소식 </a>
+                    <a href="" class="breadcrumb__item waves-effect">대회 </a>
+                    <a href="" class="breadcrumb__item waves-effect">리그</a>
+                    <a href="" class="breadcrumb__item waves-effect">2018 제주국유축구대회 홈</a>
                 </div>
                 <a href="" class="more waves-effct"></a>
             </div>
             <div class="content__body">
-                <div class="news subContent">
-                    <div class="subContent__section ">
-
+                <div class="cup__item cup__item--main cup__item--title">
+                    <div class="cup__item-info">
+                        <div class="inner border-none">
+                            <div class="box">
+                                <span class="font-12 color-blue">시흥점</span>
+                                <h3>시흥주니어 P4U축구교실</h3>
+                                <p>절친 소개로 수업료 할인받고, 친구는 유니폼이 꽁짜!</p>
+                            </div>
+                            <div class="btnActions">
+                                <a href="" class="btn btn-white2 waves-effect" >
+                                    <span class="gongan">공간</span>
+                                </a>
+                                <a class="btn btn-disabled mt-5" >신청하기</a>
+                            </div>
+                        </div>
+                        <div class="cup__info-tab">
+                            <a href="" class="">홈</a>
+                            <a href="" class="active">출석</a>
+                            <a href="">공지사항</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="academy subContent">
+                    <div class="subContent__section border">
+                        <div class="">
+                            <div class="userCard align-start">
+                                <a class="userCard__thumb mt-10" style="width: 65px;" href="">
+                                    <span class="is_new">새글</span>
+                                    <img src="//via.placeholder.com/65x65" alt="">
+                                </a>
+                                <div class="userCard__user">
+                                    <div class="infoTable infoTable--small pl-10">
+                                        <table>
+                                            <colgroup>
+                                                <col width="70">
+                                                <col>
+                                                <col width="70">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th><strong>등록학생</strong></th>
+                                                <td colspan="3">
+                                                    <div class="form">
+                                                        <div class="form__row">
+                                                            <div class="box mt-0">
+                                                                <select name="" id="" style="width: 150px;flex: none;">
+                                                                    <option value="">김공장님</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><strong>등록수업</strong></th>
+                                                <td colspan="3">
+                                                    <div class="form">
+                                                        <div class="form__row">
+                                                            <div class="box mt-0">
+                                                                <select name="" id="" style="width: 150px;flex: none;">
+                                                                    <option value="">시흥 주니어 축구교실</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><strong>등록일</strong></th>
+                                                <td colspan="3">
+                                                    20. 3. 1
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><strong>수업일</strong></th>
+                                                <td>
+                                                    월, 화, 수
+                                                </td>
+                                                <th><strong>출석율</strong></th>
+                                                <td>
+                                                    85%
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subContent__section">
+                        <div class="calendar-box">
+                            <div class="inner reservation">
+                                <div class="calendar"></div>
+                            </div>
+                            <div class="calendar-date-info">
+                                <ul class="infos">
+                                    <li class="infos-item">
+                                        <strong>5월 1일(수)</strong> 병결
+                                    </li>
+                                    <li class="infos-item">
+                                        <strong>5월 21일(수)</strong> 가족동반 <br/>친할머니댁
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -33,3 +139,33 @@
     </div>
 </div>
 @@include('./include/footer.html')
+
+<script>
+    var attend = ["2020-4-13", "2020-4-14", "2020-4-15"];
+    var absent = ["2020-4-20",];
+
+    $('.calendar').datepicker({
+        beforeShowDay: function(date) {
+            var m = date.getMonth(), d = date.getDate(), y = date.getFullYear();
+            for (i = 0; i < attend.length; i++) {
+                if($.inArray(y + '-' + (m+1) + '-' + d,attend) != -1) {
+                    //return [false];
+                    return [true, 'attend', ''];
+                }
+            }
+            for (i = 0; i < absent.length; i++) {
+                if($.inArray(y + '-' + (m+1) + '-' + d,absent) != -1) {
+                    //return [false];
+                    return [true, 'absent', ''];
+                }
+            }
+            return [true];
+        },
+        dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'],
+        monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+        onSelect: function(date){
+            $('.month').text(date.substring(0, 2));
+            $('.day').text(date.substring(3, 5));
+        },
+    });
+</script>

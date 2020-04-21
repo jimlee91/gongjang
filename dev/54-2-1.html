@@ -9,14 +9,146 @@
             <div class="breadcrumb">
                 <div class="breadcrumb__list">
                     <a href="" class="breadcrumb__item waves-effect">Home</a>
-                    <a href="" class="breadcrumb__item waves-effect">소식 </a>
+                    <a href="" class="breadcrumb__item waves-effect">대회 </a>
+                    <a href="" class="breadcrumb__item waves-effect">리그</a>
+                    <a href="" class="breadcrumb__item waves-effect">2018 제주국유축구대회 홈</a>
                 </div>
                 <a href="" class="more waves-effct"></a>
             </div>
             <div class="content__body">
-                <div class="news subContent">
-                    <div class="subContent__section ">
+                <div class="cup__item cup__item--main cup__item--title">
+                    <div class="cup__item-info">
+                        <div class="cup__info-tab cup__info-tab--type2">
+                            <a href="" class="">선수정보</a>
+                            <a href="" class=" active">선수일정</a>
+                            <a href="" class="">순위</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-detail subContent">
+                    <div class="subContent__section border pb-0 player-detail-top">
+                        <div class="form">
+                            <div class="form__row column">
+                                <div class="box">
+                                    <select name="" id="" class="input-border" style="width: 100px;flex: none;">
+                                        <option value="">지점</option>
+                                    </select>
+                                    <p class="form__help confirm pl-10 mt-0" style="line-height: 35px;">* 지점별로 참가팀을 확인하세요.</p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="player-schedule-info">
+                            <span class="c1">예약 일정</span>
+                            <span class="c2">대회 일정</span>
+                        </div>
+                    </div>
+
+                    <div class="cup__datebox">
+                        <div class="inner">
+                            <button class="cup__dateitem active">
+                                <div class="schedule-check">
+                                    <span class="i-reservation"></span>
+                                </div>
+                                <h3>전체</h3>
+                                <p>ALL</p>
+                            </button>
+                            <button class="cup__dateitem ">
+                                <div class="schedule-check">
+                                    <span class="i-reservation"></span>
+                                    <span class="i-cup"></span>
+                                </div>
+                                <h3>5.12</h3>
+                                <p>MON</p>
+                            </button>
+                            <button class="cup__dateitem ">
+                                <div class="schedule-check">
+                                    <span class="i-reservation"></span>
+                                </div>
+                                <h3>5.12</h3>
+                                <p>MON</p>
+                            </button>
+                            <button class="cup__dateitem ">
+                                <h3>5.12</h3>
+                                <p>MON</p>
+                            </button>
+                            <button class="cup__dateitem ">
+                                <h3>5.12</h3>
+                                <p>MON</p>
+                            </button>
+                            <button class="cup__dateitem ">
+                                <h3>5.12</h3>
+                                <p>MON</p>
+                            </button>
+                            <button class="cup__dateitem ">
+                                <h3>5.12</h3>
+                                <p>MON</p>
+                            </button>
+                            <button class="cup__dateitem ">
+                                <h3>5.12</h3>
+                                <p>MON</p>
+                            </button>
+                            <button class="cup__dateitem ">
+                                <h3>5.12</h3>
+                                <p>MON</p>
+                            </button>
+                            <button class="cup__dateitem ">
+                                <h3>5.12</h3>
+                                <p>MON</p>
+                            </button>
+                            <button class="cup__dateitem ">
+                                <h3>5.12</h3>
+                                <p>MON</p>
+                            </button>
+                            <button class="cup__dateitem ">
+                                <h3>5.12</h3>
+                                <p>MON</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="subContent__section  pt-15 pb-15">
+                        <div class="cup__schedule">
+                            <div class="cup__schedule-info pr-10">
+                                <span class="state">진행중</span>
+                                <h3 class="mt-10">
+                                    AIA 생명 2019 H풋살리그<br/>
+                                    전국챔피언십 - 남자부
+                                </h3>
+                                <p>2019. 8. 13(mon)- 2019. 8. 19(sun)</p>
+                            </div>
+                            <div class="cup__schedule-team">
+                                <div class="cup__schedule-item is_res">
+                                    <div class="cup__schedule-item-content">
+                                        <div class="teams">
+                                            <div>
+                                                <img src="//via.placeholder.com/50x50" alt="">
+                                            </div>
+                                            <p>가나다 스포츠</p>
+                                        </div>
+
+                                        <div class="teams-vs">
+                                            <strong>VS</strong>
+                                            <p>5.12 pm 4:00</p>
+                                        </div>
+
+                                        <div class="teams">
+                                            <div>
+                                                <img src="//via.placeholder.com/50x50" alt="">
+                                            </div>
+                                            <p>가나다 스포츠</p>
+                                        </div>
+                                    </div>
+                                    <div class="cup__schedule-item-time">
+                                        <p>
+                                            동대문점<br/>
+                                            (B구장)
+                                        </p>
+                                        <h3>4강</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -29,6 +161,18 @@
             @@include('./include/etc_news.html')
             @@include('./include/etc_friends.html')
             @@include('./include/etc_footer.html')
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" id="showPoster" style="display: none;">
+    <div class="modal__content pl-0 pr-0 pt-0">
+        <div class="poster">
+            <img src="./assets/images/dummy/poster.png" alt="" style="width: 100%;">
+        </div>
+        <div class="modal__btnbox mt-0 pt-30">
+            <a href="" class="modal__btn js-modal-close">확인</a>
         </div>
     </div>
 </div>

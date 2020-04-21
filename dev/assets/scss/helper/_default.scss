@@ -3,6 +3,9 @@
   flex-wrap: wrap;
 }
 
+.align-start {
+  align-items: flex-start !important;
+}
 .hide-text {
   text-indent: -9999px;
   overflow: hidden;

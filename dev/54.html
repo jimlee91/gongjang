@@ -9,14 +9,143 @@
             <div class="breadcrumb">
                 <div class="breadcrumb__list">
                     <a href="" class="breadcrumb__item waves-effect">Home</a>
-                    <a href="" class="breadcrumb__item waves-effect">소식 </a>
+                    <a href="" class="breadcrumb__item waves-effect">대회 </a>
+                    <a href="" class="breadcrumb__item waves-effect">리그</a>
+                    <a href="" class="breadcrumb__item waves-effect">2018 제주국유축구대회 홈</a>
                 </div>
                 <a href="" class="more waves-effct"></a>
             </div>
             <div class="content__body">
-                <div class="news subContent">
-                    <div class="subContent__section ">
+                <div class="cup__item cup__item--main cup__item--title">
+                    <div class="cup__item-info">
+                        <div class="cup__info-tab cup__info-tab--type2">
+                            <a href="" class="active">선수정보</a>
+                            <a href="" class=" ">선수일정</a>
+                            <a href="" class="">순위</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-info subContent">
+                    <div class="subContent__section pl-0 pt-0 pr-0 pb-0 border">
+                        <div class="player-info__top" style="background: url('./assets/images/dummy/amb.png') no-repeat center;background-size: auto 180px;">
+                            <div class="top">
+                                <div class="player-info-box">
+                                    <div class="player__name">
+                                    <span class="name">
+                                        <span>김공장</span>
+                                    </span>
+                                        <a href="">
+                                            <span>공간</span>
+                                        </a>
+                                    </div>
+                                    <ul class="teams">
+                                        <li>
+                                            <a href="">
+                                                <img src="//via.placeholder.com/15x15" alt=""> 가나다라 스포츠
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <img src="//via.placeholder.com/15x15" alt=""> 가나다라 스포츠
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <img src="//via.placeholder.com/15x15" alt=""> 가나다라 스포츠
+                                            </a>
+                                        </li>
+                                    </ul>
 
+                                    <div class="stats pb-30 mt-25">
+                                        <div class="stats__item stats__item--attack">
+                                            <div class="point">
+                                                <strong>32</strong> + 2
+                                            </div>
+                                            <div class="starts__item-box">
+                                                공격
+                                            </div>
+                                        </div>
+                                        <div class="stats__item stats__item--pass">
+                                            <div class="point">
+                                                <strong>32</strong>
+                                            </div>
+                                            <div class="starts__item-box">
+                                                패스
+                                            </div>
+                                        </div>
+                                        <div class="stats__item stats__item--defense">
+                                            <div class="point">
+                                                <strong>32</strong>
+                                            </div>
+                                            <div class="starts__item-box">
+                                                수비
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="player-info-thumb">
+                                    <img src="./assets/images/dummy/player.png" alt="">
+                                    <ul class="box">
+                                        <li>
+                                            <strong>생년월일</strong>
+                                            970503
+                                        </li>
+                                        <li>
+                                            <strong>축구 포지션</strong>
+                                            미드필더
+                                        </li>
+                                        <li>
+                                            <strong>풋살 포지션</strong>
+                                            미드필더
+                                        </li>
+                                        <li>
+                                            <strong>신장</strong>
+                                            182cm
+                                        </li>
+                                        <li>
+                                            <strong>몸무게</strong>
+                                            80kg
+                                        </li>
+                                        <li>
+                                            <strong>선출</strong>
+                                            선출
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <a href="#//" class="share">공유</a>
+                                <div class="open">
+                                    <label for="s1" class="switch">
+                                        <div class="switch__layout">
+                                            <input type="checkbox" hidden id="s1" checked>
+                                            <span>
+                                            <i class="on">공개</i>
+                                            <i class="off">비공개</i>
+                                        </span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subContent__section pl-0 pt-0 pr-0 pb-0 border">
+                        <div class="player-info__starcard">
+                            <div class="player-info-section-title">
+                                <strong>스탯카드</strong>
+                                <span>* 스탯카드는 컵 대회를 통해 획득 가능합니다.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subContent__section pl-0 pt-0 pr-0 pb-0">
+                        <div class="player-info__mom">
+                            <div class="player-info-section-title">
+                                <strong>MOM</strong>
+                                <span>* MOM은 리그 대회를 통해 획득 가능합니다.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -29,6 +158,18 @@
             @@include('./include/etc_news.html')
             @@include('./include/etc_friends.html')
             @@include('./include/etc_footer.html')
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" id="showPoster" style="display: none;">
+    <div class="modal__content pl-0 pr-0 pt-0">
+        <div class="poster">
+            <img src="./assets/images/dummy/poster.png" alt="" style="width: 100%;">
+        </div>
+        <div class="modal__btnbox mt-0 pt-30">
+            <a href="" class="modal__btn js-modal-close">확인</a>
         </div>
     </div>
 </div>

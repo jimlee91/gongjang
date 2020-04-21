@@ -1,4 +1,15 @@
 .infoTable {
+  &.infoTable--small {
+    th, td {
+      padding: 10px 0;
+    }
+    td {
+      padding: 10px 15px;
+    }
+    .form {
+      margin-top: -7px;
+    }
+  }
   th, td {
     padding: 15px 0;
   }

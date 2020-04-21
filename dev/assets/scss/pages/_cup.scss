@@ -123,6 +123,34 @@
   align-items: center;
   justify-content: center;
 
+  &.cup__info-tab--type2 {
+    padding-top: 20px;
+    a {
+      width: 95px;
+      line-height: 50px;
+      height: 50px;
+      color:#fff;
+      opacity: .5;
+      &.active {
+        opacity: 1;
+        color:#fff;
+        &:before {
+          content:'';
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: -2px;
+          width: 100%;
+          background: $green;
+          height: 4px;
+          border-radius: 2px;
+        }
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
   a {
     height: 40px;
     width: 70px;
@@ -202,10 +230,31 @@
     border-bottom: $border;
   }
   .cup__dateitem {
+    .schedule-check {
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      display: flex;
+      z-index: 5;
+      span {
+        margin-right: 3px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        opacity: .5;
+        &.i-reservation {
+          background: $blue;
+        }
+        &.i-cup {
+          background: $green;
+        }
+      }
+    }
+    position: relative;
     flex: none;
     margin-right: 8px;
-    width: 56px;
-    height: 56px;
+    width: 60px;
+    height: 65px;
     border-radius: 7px;
     background: rgba(255,255,255,.5);
     display: flex;
@@ -217,6 +266,9 @@
       border: 1px solid $green;
       background:#383433;
       position: relative;
+      .schedule-check span{
+        opacity: 1;
+      }
       &:after {
         content:'';display: block;
         position: absolute;
@@ -278,8 +330,21 @@
     background:$green;
     border-radius: 7px;
     border-top-left-radius: 0;
+    &.is_res {
+      background:$blue;
+
+      .cup__schedule-item-time {
+        color:#fff;
+      }
+    }
     &:nth-child(n+2) {
       margin-top: 15px;
+    }
+
+    &.no-team {
+      width: 80px;
+      height: 90px;
+      margin-left: auto
     }
   }
   .cup__schedule-item-content {
