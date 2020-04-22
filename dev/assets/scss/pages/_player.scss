@@ -210,64 +210,56 @@ $playerInfoBg:#383433;
       background: url('../images/dubble-arrow.png') no-repeat right center;
       background-size: auto 10px;
     }
-    .open {
+    .friends {
+      color:#fff;
+      padding-right: 15px;
+      font-size: 12px;
+      background: url('../images/i-plus.png') no-repeat right center;
+      background-size: auto 12px;
       margin-left: 12px;
-      .switch {
-        .switch__layout {
-          border-color:#fff;
-        }
 
-        span {
-          i {
-            position: absolute;
-            top: 0;
-            line-height: 26px;
-            font-size: 10px;
-            color:#fff;
-            z-index: 0;
-            font-style: normal;
-            width: 29px;
-            text-align: center;
-            display: none;
-            &.on {
-              right: 3px;
-            }
-            &.off {
-              left: 2px;
-              display: block;
-            }
-          }
-        }
-        input:checked + span {
-          i.off {
-            display: none;
-          }
-          i.on {
-            display: block;
-          }
-        }
+      &:disabled {
+        opacity: 0.5;
+      }
+    }
 
-        input + span:after {
-          background: #eee;
-        }
-        input:checked + span:after {
-          background: $blue;
-        }
-        input:checked + span:before {
-          background: none;
-        }
-        input + span:before {
-          background: none;
-        }
+  }
+}
+.player-info__starcard {
+  padding:20px 50px;
+  background:$playerInfoBg;
+
+  .startcards-box {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .statcards {
+    display: flex;
+
+    .statcard__item {
+      text-align: center;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+      .thumb {
+        width: 65px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      p {
+        font-size: 10px;
+        margin-top: 5px;
+        color:#fff;
       }
     }
   }
 }
-.player-info__starcard {
-
-}
 .player-info__mom {
-
+  padding:20px 50px;
+  background:$playerInfoBg;
 }
 
 .stats {
@@ -307,5 +299,141 @@ $playerInfoBg:#383433;
   &.stats__item--defense .starts__item-box {
     background: url('../images/stat-blue-3.png') no-repeat center;
     background-size: 100% 100%;
+  }
+}
+
+.player-info-section-title {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  strong {
+    font-size: 10px;
+    color:#fff;
+  }
+  span {
+    color:$green;
+    margin-left: 5px;
+  }
+
+  a {
+    margin-left: auto;
+    line-height: 24px;
+    width: 60px;
+    border:1px solid #fff;
+    color:#fff;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 2em;
+    transition: all .3s;
+    &:hover {
+      background:#fff;
+      color:#5A5553;
+    }
+  }
+}
+
+.player-info .subContent__section.border{
+  border-color:#6E6B6B;
+}
+
+.mom-list {
+  margin-top: 20px;
+  .mom-list__item {
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+    color:#fff;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+  }
+  .mom__thumb {
+    width: 40px;
+    height: 40px;
+    flex: none;
+    margin-right: 24px;
+  }
+  span {
+    margin-left: auto;
+    font-size: 10px;
+  }
+}
+
+.open {
+  margin-left: 12px;
+  &.black .switch {
+    width: 100%;
+    .switch__layout {
+      width: 100%;
+      border-color:#5A5553;
+    }
+    input + span:after {
+      left: 44px;
+    }
+    input:checked + span:after {
+      left: 4px;
+    }
+    i {
+      color:#5A5553;
+      width: 48px;
+      text-align: center;
+      &.on {
+        right: 0px;
+      }
+      &.off {
+        left: 0px;
+      }
+    }
+  }
+
+
+  .switch {
+    .switch__layout {
+      border-color:#fff;
+    }
+
+    span {
+      i {
+        position: absolute;
+        top: 0;
+        line-height: 26px;
+        font-size: 10px;
+        color:#fff;
+        z-index: 0;
+        font-style: normal;
+        width: 29px;
+        text-align: center;
+        display: none;
+        &.on {
+          right: 3px;
+        }
+        &.off {
+          left: 2px;
+          display: block;
+        }
+      }
+    }
+    input:checked + span {
+      i.off {
+        display: none;
+      }
+      i.on {
+        display: block;
+      }
+    }
+
+    input + span:after {
+      background: #eee;
+    }
+    input:checked + span:after {
+      background: $blue;
+    }
+    input:checked + span:before {
+      background: none;
+    }
+    input + span:before {
+      background: none;
+    }
   }
 }

@@ -125,6 +125,7 @@
 
   &.cup__info-tab--type2 {
     padding-top: 20px;
+
     a {
       width: 95px;
       line-height: 50px;
@@ -139,7 +140,7 @@
           display: block;
           position: absolute;
           left: 0;
-          bottom: -2px;
+          bottom: -3px;
           width: 100%;
           background: $green;
           height: 4px;
@@ -148,6 +149,12 @@
         &:after {
           display: none;
         }
+      }
+    }
+    &.black {
+      a {
+        color:#5A5553;
+        border-bottom: $border;
       }
     }
   }
@@ -310,6 +317,16 @@
   padding:20px 0;
   display: flex;
   border-bottom: $border;
+
+  &.bg-black {
+    .cup__schedule-info {
+      p,
+      h2 {
+        color:#fff;
+      }
+    }
+
+  }
   &.none-flex {
     display: block;
     padding: 0;
@@ -589,4 +606,8 @@
   .infoTable {
     padding: 20px 50px;
   }
+}
+.state.none-star {
+  background: none !important;
+  padding-left: 0 !important;
 }

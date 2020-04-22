@@ -16,7 +16,64 @@
             <div class="content__body">
                 <div class="news subContent">
                     <div class="subContent__section ">
+                        <section class="accounts__header mb-10">
+                            <h2 class="accounts__title">
+                            <span>
+                                평가하기
+                            </span>
+                            </h2>
+                        </section>
+                        <p class="color-blue font-10">
+                            * 상대팀에 대한 매너를 평가해주세요.
+                        </p>
 
+
+                        <div class="teamEvaluation">
+
+                            <div class="teamEvaluation__box">
+                                <div class="teamEvaluation__info" style="background:url('./assets/images/dummy/amb.png') no-repeat center;background-size: auto 130px;">
+                                    <div class="thumb">
+                                        <img src="./assets/images/dummy/amb2.png" alt="" style="width: 80px;">
+                                    </div>
+                                    <div class="info">
+                                        <h2>
+                                            <span>
+                                                <strong>가나다</strong> 스포츠
+                                            </span>
+                                        </h2>
+                                        <p>2014. 05.23 - </p>
+                                    </div>
+                                </div>
+
+                                <div class="teamEvaluation__form">
+                                    <h3>평가해주세요!</h3>
+                                    <div class="grade">
+                                        <button class="grade__star" onclick="setReviewStar(1, '1.0')" ondblclick="setReviewStar(1, '0.5', true)"></button>
+                                        <button class="grade__star" onclick="setReviewStar(2, '2.0')" ondblclick="setReviewStar(2, '1.5', true)"></button>
+                                        <button class="grade__star" onclick="setReviewStar(3, '3.0')" ondblclick="setReviewStar(3, '2.5', true)"></button>
+                                        <button class="grade__star" onclick="setReviewStar(4, '4.0')" ondblclick="setReviewStar(4, '3.5', true)"></button>
+                                        <button class="grade__star" onclick="setReviewStar(5, '5.0')" ondblclick="setReviewStar(5, '4.5', true)"></button>
+                                    </div>
+                                    <p>* 두번 클릭 시 0.5점 선택 가능합니다.</p>
+
+                                    <input type="text" readonly class="grade__count" id="count" value="0.0">
+                                </div>
+                            </div>
+
+
+                            <form action="">
+                                <div class="comment__form">
+                                    <div class="comment__textbox">
+                                        <textarea name="" id="" required placeholder="댓글을 입력해주세요."></textarea>
+                                    </div>
+                                    <button class="submit waves-effect" type="submit">전송</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="btnbox mt-60">
+                            <a href="" class="btn btn-blue">완료</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -32,4 +89,30 @@
         </div>
     </div>
 </div>
+
 @@include('./include/footer.html')
+
+<script>
+    function setReviewStar(index, number, isHalf = false) {
+        $('#count').val(number);
+
+        $('.grade__star').removeClass('active');
+        $('.grade__star').removeClass('active-half');
+        if(!isHalf) {
+            $('.grade__star').map(function( idx, item ) {
+                if( idx < index ) {
+                    item.classList.add('active');
+                }
+            })
+        } else {
+            $('.grade__star').map(function( idx, item ) {
+                if( idx < (index - 1) ) {
+                    item.classList.add('active');
+                }
+                else if ( idx === (index - 1) ) {
+                    item.classList.add('active-half');
+                }
+            })
+        }
+    }
+</script>

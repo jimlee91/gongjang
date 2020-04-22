@@ -16,29 +16,6 @@
       }
     }
 
-    .notice__item-info {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;;
-      margin-top: 5px;
-      padding-top: 10px;
-      font-size: 10px;
-      border-top: 1px solid rgba(90, 85, 83, .5);
-      span {
-        color:#5a5553;
-      }
-      strong {
-        color:#000;
-      }
-      .notice__item-etc {
-        display: flex;
-        align-items: center;
-
-        span {
-          margin-left: 10px;
-        }
-      }
-    }
     .notice__item-header {
       display: flex;
       align-items: flex-end;
@@ -60,6 +37,31 @@
         font-size: 10px;
         color:#5a5553;
       }
+    }
+  }
+}
+
+
+.notice__item-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;;
+  margin-top: 5px;
+  padding-top: 10px;
+  font-size: 10px;
+  border-top: 1px solid rgba(90, 85, 83, .5);
+  span {
+    color:#5a5553;
+  }
+  strong {
+    color:#000;
+  }
+  .notice__item-etc {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 10px;
     }
   }
 }
