@@ -45,6 +45,10 @@
       border-radius: 5px;
       font-size: 12px;
       transition: all .3s;
+      &:hover {
+        background:$blue;
+        border-color:$blue;
+      }
       &.btn-blue {
         border: 1px solid $green;
         color:$green;

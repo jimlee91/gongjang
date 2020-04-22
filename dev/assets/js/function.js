@@ -2,6 +2,34 @@
 
     $(function(){
 
+        if( $('.feed__images').length > 0 ) {
+            $('.feed__images').niceScroll({
+                cursorwidth:4,
+                cursoropacitymin:1,
+                cursorcolor:'#337ef7',
+                cursorborder:'none',
+                cursorborderradius:4,
+                autohidemode:'leave'
+            });
+        }
+        $('.gnb__mypage-bottom-depth1 > a').on('click', function(e){
+            e.preventDefault();
+            $(this).toggleClass('active');
+            $(this).siblings('.gnb__mypage-bottom-depth2').stop().slideToggle('300')
+        });
+
+
+        $('.gnb__depth1').on('click', function(e){
+            e.preventDefault();
+            $(this).parents('.gnb__item').toggleClass('active');
+            $(this).siblings('.gnb__depth2-list').stop().slideToggle('300');
+
+        })
+
+        $('.js-gnb__title-title').on('click', function(e){
+            e.preventDefault();
+            $('.gnb__mypage').stop().slideToggle('300')
+        })
         $('.dropdown__title').on('click', function(){
             $(this).siblings('.dropdown__content').stop().slideToggle();
         })

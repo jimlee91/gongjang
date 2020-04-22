@@ -16,6 +16,114 @@
       margin-bottom: 0;
     }
   }
+
+  .gnb__mypage {
+    background:#eaeaea;
+    display: none;
+
+    .gnb__mypage-top {
+      background:#fff;
+      display: flex;
+      flex-wrap: wrap;
+      a {
+        width: 50%;
+        flex: none;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          font-size: 12px;
+          padding-top: 25px;
+        }
+        &:hover {
+          color:$green;
+        }
+        &:nth-child(1) {
+          span {
+            background: url('../images/gnb-mypage1.png') no-repeat center top;
+            background-size: auto 20px;
+          }
+          &:hover {
+            span {
+              background: url('../images/gnb-mypage1-active.png') no-repeat center top;
+              background-size: auto 20px;
+            }
+          }
+        }
+        &:nth-child(2) {
+          span {
+            background: url('../images/gnb-mypage2.png') no-repeat center top;
+            background-size: auto 20px;
+          }
+          &:hover {
+            span {
+              background: url('../images/gnb-mypage2-active.png') no-repeat center top;
+              background-size: auto 20px;
+            }
+          }
+        }
+        &:nth-child(3) {
+          span {
+            background: url('../images/gnb-mypage3.png') no-repeat center top;
+            background-size: auto 20px;
+          }
+          &:hover {
+            span {
+              background: url('../images/gnb-mypage3-active.png') no-repeat center top;
+              background-size: auto 20px;
+            }
+          }
+        }
+        &:nth-child(4) {
+          span {
+            background: url('../images/gnb-mypage4.png') no-repeat center top;
+            background-size: auto 20px;
+          }
+          &:hover {
+            span {
+              background: url('../images/gnb-mypage4-active.png') no-repeat center top;
+              background-size: auto 20px;
+            }
+          }
+        }
+      }
+    }
+    .gnb__mypage-bottom {
+      margin-top: 10px;
+      background:#fff;
+
+      .gnb__mypage-bottom-depth1 {
+        & > a {
+          display: block;
+          line-height: 45px;
+          font-size: 12px;
+          text-align: center;
+          &.active {
+            color:$green;
+          }
+        }
+      }
+      .gnb__mypage-bottom-depth2 {
+        display: none;
+        padding-left: 50px;
+        a {
+          display: block;
+          font-size: 12px;
+          line-height: 35px;
+          padding:0 20px;
+          background:rgb(217, 217, 217);
+          color:#5A5553;
+          transition: all .3s;
+          &.active,
+          &:hover {
+            color:#fff;
+            background:rgba(90, 85, 83, .5);;
+          }
+        }
+      }
+    }
+  }
   .gnb__section {
 
   }
@@ -31,16 +139,16 @@
     background:#fff;
   }
   .gnb__item {
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    overflow: hidden;
+    //border-bottom: 1px solid rgba(0,0,0,0.1);
+    &.active .gnb__depth1,
     &:hover .gnb__depth1{
       color:$green;
-    }
-    &:hover .gnb__depth2-list {
-      display: block;
     }
     // 백그라운드 아이콘
     $j: 1;
     @while $j <= 30 {
+      &.active .gnb__depth1.i#{$j},
       &:hover .gnb__depth1.i#{$j} {
         .icon {
           @include bgImg('../images/gnb-i#{$j}-active.png');
@@ -56,6 +164,9 @@
     line-height: 45px;
     padding-left: 25px;
     color: #333;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    position: relative;
+    z-index: 5;
 
 
     .icon {
@@ -83,19 +194,32 @@
   }
 
   .gnb__depth2-list {
-    background:#d9d9d9;
     display: none;
-    padding-bottom: 15px;
+    padding-left: 50px;
   }
   .gnb__depth2 {
+    //display: block;
+    //line-height: 35px;
+    //padding-left: 60px;
+    //font-size: 12px;
+    //color:#333;
+    //&:hover {
+    //  background:#5a5553;
+    //  color:#fff;
+    //}
+
     display: block;
-    line-height: 35px;
-    padding-left: 60px;
     font-size: 12px;
-    color:#333;
+    line-height: 35px;
+    padding:0 20px;
+    background:rgb(217, 217, 217);
+    color:#5A5553;
+    transition: all .3s;
+    white-space: nowrap;
+    &.active,
     &:hover {
-      background:#5a5553;
       color:#fff;
+      background:rgba(90, 85, 83, .5);;
     }
   }
 }
