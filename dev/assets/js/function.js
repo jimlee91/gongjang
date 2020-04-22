@@ -12,6 +12,16 @@
                 autohidemode:'leave'
             });
         }
+        if( $('.feeds__subscribe').length > 0 ) {
+            $('.feeds__subscribe-list').niceScroll({
+                cursorwidth:4,
+                cursoropacitymin:1,
+                cursorcolor:'#337ef7',
+                cursorborder:'none',
+                cursorborderradius:4,
+                autohidemode:'leave'
+            });
+        }
         $('.gnb__mypage-bottom-depth1 > a').on('click', function(e){
             e.preventDefault();
             $(this).toggleClass('active');

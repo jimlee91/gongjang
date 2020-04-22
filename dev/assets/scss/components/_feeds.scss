@@ -8,6 +8,7 @@
   .feeds__subscribe-list {
     display: flex;
     align-items: center;
+    height: 100px;
   }
   .feeds__subscribe-user {
     width: 65px;
@@ -17,17 +18,17 @@
     position: relative;
     text-align: center;
     &.active {
-      &:after {
-        content:'';
-        display: block;
-        width :45px;
-        height: 4px;
-        background: $blue;
-        position: absolute;
-        left: 10px;
-        bottom: -2px;
-        z-index: 1;
-      }
+      //&:after {
+      //  content:'';
+      //  display: block;
+      //  width :45px;
+      //  height: 4px;
+      //  background: $blue;
+      //  position: absolute;
+      //  left: 10px;
+      //  bottom: -2px;
+      //  z-index: 1;
+      //}
     }
 
     .thumb {

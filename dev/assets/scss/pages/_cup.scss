@@ -98,9 +98,22 @@
       background:none;
       border-color:$green;
       color:$green;
+
+      span.gongan {
+        padding-right: 20px;
+        background: url('../images/i-gongan-white.png') no-repeat right center;
+        background-size: auto 14px;
+      }
+
       &:hover {
         background: $green;
         color:#fff;
+
+        span.gongan {
+          padding-right: 20px;
+          background: url('../images/i-gongan-black.png') no-repeat right center;
+          background-size: auto 14px;
+        }
       }
     }
   }

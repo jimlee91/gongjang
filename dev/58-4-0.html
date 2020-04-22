@@ -1,0 +1,61 @@
+@@include('./include/header.html')
+<div class="container">
+    <div class="content">
+        <div class="content__left">
+            @@include('./include/oauth_after_login.html')
+            @@include('./include/gnb.html')
+        </div>
+        <div class="content__main">
+            <div class="breadcrumb">
+                <div class="breadcrumb__list">
+                    <a href="" class="breadcrumb__item waves-effect">Home</a>
+                    <a href="" class="breadcrumb__item waves-effect">팀 </a>
+                    <a href="" class="breadcrumb__item waves-effect">가나팀의 홈 </a>
+                </div>
+                <a href="" class="more waves-effct"></a>
+            </div>
+            <div class="content__body">
+                <div class="news subContent">
+                    <div class="cup__info-tab cup__info-tab--type2 black">
+                        <a href="" class="">팀정보</a>
+                        <a href="" class="">팀원목록</a>
+                        <a href="" class="active ">팀 일정</a>
+                        <a href="" class="">팀 순위</a>
+                    </div>
+
+
+                    <div class="cup__datebox">
+                        <div class="inner">
+                            <button class="cup__dateitem active">
+                                <div class="schedule-check">
+                                    <span class="i-reservation"></span>
+                                </div>
+                                <h3>전체</h3>
+                                <p>ALL</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="subContent__section  pt-15 pb-15">
+                        <p class="empty pt-100 pb-100">
+                            대회 일정이 없습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__right">
+            @@include('./include/etc_relation.html')
+            @@include('./include/etc_schedule.html')
+            @@include('./include/etc_alarm.html')
+            @@include('./include/etc_empty.html')
+            @@include('./include/etc_news.html')
+            @@include('./include/etc_friends.html')
+            @@include('./include/etc_footer.html')
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')
+
+
+

@@ -28,18 +28,21 @@
   }
 
   p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     color:#646464;
   }
 
   .modal__btnbox {
     margin-top: 30px;
-    //border-top: 1px solid rgba(0,0,0,0.2);
+
     padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    &.border {
+      border-top: 1px solid rgba(0,0,0,0.2);
+    }
   }
   .modal__btn {
     width: 95px;
@@ -103,23 +106,27 @@
       }
       &.addFile__images {
         .icon {
-          background: url('//via.placeholder.com/50x40') no-repeat center;
+          background: url('../images/add-file-img.png') no-repeat center;
+          background-size: auto 100%;
         }
         &.has-files {
           .icon {
             // 액티브된 이미지
-            background: url('//via.placeholder.com/50x40') no-repeat center;
+            background: url('../images/add-file-img-active.png') no-repeat center;
+            background-size: auto 100%;
           }
         }
       }
       &.addFile__videos {
         .icon {
-          background: url('//via.placeholder.com/50x40') no-repeat center;
+          background: url('../images/add-file-video.png') no-repeat center;
+          background-size: auto 100%;
         }
         &.has-files {
           .icon {
             // 액티브된 이미지
-            background: url('//via.placeholder.com/50x40') no-repeat center;
+            background: url('../images/add-file-video-active.png') no-repeat center;
+            background-size: auto 100%;
           }
         }
       }
