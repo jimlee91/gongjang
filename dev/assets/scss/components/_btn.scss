@@ -4,12 +4,12 @@
   justify-content: center;
 
   .btn {
-    font-size: 12px;
+    font-size: 10px;
     border-radius: 3em;
-    height: 35px;
-    line-height: 35px;
+    height: 30px;
+    line-height: 28px;
     display: block;
-    width: 190px;
+    width: 145px;
     transition: all .3s;
     text-align: center;
     margin-right: 10px;
@@ -40,6 +40,10 @@
     &.btn-white2 {
       color:#333;
       border: 1px solid $border-color;
+      &:hover {
+        color:$blue !important;
+        border-color: $blue !important;
+      }
     }
   }
 }
@@ -58,4 +62,8 @@
     background:#5a5553;
     color:#fff;
   }
+}
+
+.btn-rounded-sm {
+  border-radius: 7px !important;
 }

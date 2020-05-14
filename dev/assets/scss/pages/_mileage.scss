@@ -5,7 +5,7 @@
   h3 {
     flex: none;
     width:  100px;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 15px;
   }
   .mileage__info {
@@ -13,14 +13,14 @@
     p {
       line-height: 15px;
       color:$blue;
-      font-size: 14px;
+      font-size: 10px;
       margin-bottom: 1em;
       padding-left: 10px;
     }
     .mileage__use {
       border-left: 1px solid $green;
       padding-left: 10px;
-      font-size: 12px;
+      font-size: 10px;
       line-height: 12px;
     }
   }
@@ -32,7 +32,7 @@
   align-content: center;
 
   h3 {
-    font-size: 14px;
+    font-size: 10px;
     line-height: 15px;
   }
   a {
@@ -53,7 +53,7 @@
     display: flex;
     button {
       padding:0 10px;
-      font-size: 14px;
+      font-size: 10px;
       line-height: 15px;
       height: 15px;
       font-weight: 600;
@@ -70,11 +70,11 @@
   .mileage__sort {
     select{
       border: 1px solid #5a5553;
-      border-radius: 5px;
+      border-radius: 7px;
       height: 25px;
       width: 60px;
       padding:0 10px;
-      font-size: 12px;
+      font-size: 10px;
       background: url('../images/arrow-down.png') no-repeat calc(100% - 10px) center;
       background-size: auto 5px;
     }
@@ -93,7 +93,7 @@
 
     h4 {
       color:$green;
-      font-size:12px;
+      font-size:10px;
       line-height: 15px;
     }
     .mileage__item-info {

@@ -7,10 +7,19 @@
     display: block;
     line-height: 32px;
     border-radius: 7px;
-    font-size: 12px;
+    font-size: 10px;
     color:#fff;
     border: 1px solid #fff;
     text-align: center;
+
+    &.btn-blue {
+      border-color: $blue !important;
+      color:$blue !important;
+      &:hover {
+        background: $blue !important;
+        color:#fff !important;
+      }
+    }
     img {
       height: 15px;
       vertical-align: sub;

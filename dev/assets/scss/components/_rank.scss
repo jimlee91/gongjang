@@ -4,6 +4,10 @@
   .rank__title {
     border-bottom: $border;
     padding: 10px 0;
+    font-size: 10px;
+    strong {
+      font-size: 12px;
+    }
   }
   .rank__table {
     margin-top: 10px;
@@ -47,6 +51,7 @@
             border-top-left-radius: 7px;
             border-top-right-radius: 7px;
             position: relative;
+            font-size: 16px;
             &:after {
               content:'';
               display: block;

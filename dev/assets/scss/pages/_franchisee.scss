@@ -8,9 +8,9 @@
   .filter-select {
     select {
       border: 1px solid #5a5553;
-      height: 35px;
+      height: 24px;
       padding:0 30px 0 10px;
-      font-size: 12px;
+      font-size: 10px;
       background: url('../images/i-filter.png') no-repeat calc(100% - 10px) center;
     }
   }
@@ -32,7 +32,7 @@
         border: 1px solid $blue;
         border-radius: 7px;
         text-align: center;
-        font-size: 12px;
+        font-size: 10px;
         color: $blue;
         transition: all .3s;
         &:hover {
@@ -57,7 +57,7 @@
     .spot {
       background: url('../images/i-spot.png') no-repeat left center;
       background-size: auto 10px;
-      font-size: 12px;
+      font-size: 10px;
       color:#5a5553;
       font-weight: 300;
       padding-left: 12px;
@@ -66,7 +66,7 @@
       margin-top: 5px;
       padding-top: 15px;
       border-top: $border;
-      font-size: 12px;
+      font-size: 10px;
       color:#5a5553;
       font-weight: 300;
     }
@@ -168,7 +168,7 @@
       padding:0 10px;
       height: 30px;
       border: 1px solid #5a5553;;
-      border-radius: 5px;
+      border-radius: 7px;
       font-size: 10px;
       margin:0 4px;
       transition: all .3s;
@@ -197,7 +197,7 @@
     justify-content: space-between;
 
     h3 {
-      font-size: 12px;
+      font-size: 10px;
       color:$blue;
       padding-left: 15px;
       background: url('../images/i-spot.png') no-repeat left center;
@@ -212,7 +212,7 @@
     th,
     td {
       height: 30px;
-      font-size: 12px;
+      font-size: 10px;
       padding:5px 10px !important;
       border-bottom: 1px solid $green;
       border-right: 1px solid $green;
@@ -225,7 +225,7 @@
 
 
   .edit {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 18px;
   }
   .map {
@@ -253,7 +253,7 @@
   a {
     color:$blue;
     padding-left: 18px;
-    font-size: 12px;
+    font-size: 10px;
     display:inline-block;
     background: url('../images/star.png') no-repeat left center;
     background-size: auto 12px;

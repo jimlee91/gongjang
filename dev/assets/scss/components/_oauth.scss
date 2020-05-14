@@ -1,10 +1,10 @@
 .oauth {
 
   .oauth__info {
-    margin-top: 10px;
+    margin-top: 8px;
     .oauth__content {
       background:#fff;
-      border-radius: 5px;
+      border-radius: 7px;
       width: 100%;
       height: 100px;
       padding: 0 15px;
@@ -36,7 +36,7 @@
 
 
   .oauth__state {
-    height: 30px;
+    height: 24px;
     position: relative;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 5px;
@@ -53,6 +53,7 @@
       background: $green;
       opacity: 0.45;
       z-index: 10;
+      border-top-right-radius: 7px;
     }
     a {
       display: block;
@@ -70,10 +71,11 @@
         height: 100%;
         width: 100%;
         z-index: 50;
-        font-size: 12px;
-        line-height: 30px;
+        font-size: 10px;
+        line-height: 24px;
         color:#fff;
         padding:0 10px;
+        border-top-right-radius: 7px;
       }
       &:after {
         content:'';
@@ -82,10 +84,11 @@
         left: 0;
         top: 0;
         height: 100%;
-        width: calc(100% - 30px);
+        width: calc(100% - 20px);
         background: $green;
         opacity: 0.45;
         z-index: 10;
+        border-top-right-radius: 7px;
       }
       &:before {
         content:'';
@@ -94,10 +97,11 @@
         left: 0;
         top: 0;
         height: 100%;
-        width: calc(100% - 60px);
+        width: calc(100% - 40px);
         background: $green;
         opacity: 0.45;
         z-index: 10;
+        border-top-right-radius: 7px;
       }
     }
   }

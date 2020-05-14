@@ -28,7 +28,7 @@
   }
 
   p {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 20px;
     color:#646464;
   }
@@ -64,25 +64,39 @@
       background:#fff;
       color:#333;
       border: 1px solid $border-color;
+      &:hover {
+        background:#707070;
+        border-color:#707070;
+        color:#fff;
+      }
+    }
+    &.modal__btn--bigger {
+      width: 185px;
+      border-radius: 2em;
     }
   }
 }
 
 // 파일등록 2-1
 #addFile {
+  .modal__content {
+    padding: 28px 23px;
+    width: calc(265px + 56px);
+  }
   .modal__body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    max-width: 275px;
 
     label {
 
-      width: 170px;
+      width: 125px;
       flex: none;
       height: 140px;
       border: 1px solid rgb(215, 212, 210);
-      border-radius: 5px;
+      border-radius: 7px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -96,7 +110,7 @@
         }
       }
       p {
-        font-size: 14px;
+        font-size: 10px;
         margin-top: 15px;
       }
       .icon {

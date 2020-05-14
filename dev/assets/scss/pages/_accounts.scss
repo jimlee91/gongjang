@@ -24,7 +24,7 @@
     }
   }
   .accounts__state {
-    font-size: 14px;
+    font-size: 10px;
     color:$green;
     &.step1-2{
       background: url('../images/step1-2.png') no-repeat left center;
@@ -61,12 +61,12 @@
   .accounts__info {
     margin-top: 25px;
     h3 {
-      font-size: 14px;
+      font-size: 12px;
     }
     p {
-      font-size: 12px;
+      font-size: 10px;
       color:#646464;
-      margin-top: 10px;
+      margin-top: 5px;
     }
   }
 
@@ -98,7 +98,7 @@
       height: 35px;
       line-height: 35px;
       display: block;
-      width: 190px;
+      width: 145px;
       transition: all .3s;
       text-align: center;
       margin-right: 10px;
@@ -120,7 +120,15 @@
       &.btn-white2 {
         color:#333;
         border: 1px solid $border-color;
+        &:hover {
+          color:$blue !important;
+          border-color: $blue !important;
+        }
       }
+    }
+
+    .border-radius-7 {
+      border-radius: 7px !important;
     }
   }
 
@@ -141,6 +149,7 @@
     text-align: center;
   }
   .login__text {
+    color:#000;
     text-align: center;
     margin: 40px 0 30px;
     h2 {
@@ -186,10 +195,11 @@
       font-size: 22px;
       font-weight: 300;
       line-height:1.5em;
+      color: #000;
     }
     p {
-      font-size: 14px;
-      color: #999;
+      font-size: 12px;
+      color: #000;
       font-weight: 300;
       line-height:1.5em;
     }
@@ -201,7 +211,7 @@
     }
 
     .form__row {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   }
   .registered__agreements {
@@ -218,7 +228,7 @@
         width: auto;
       }
       a {
-        font-size: 12px;
+        font-size: 10px;
         color:#646464;
       }
     }
@@ -238,7 +248,7 @@
         text-align: center;
         font-size: 12px;
         border: solid 1px rgba(0,0,0,0.5);
-        border-radius: 5px;
+        border-radius: 7px;
         cursor: pointer;
         transition: all .3s;
       }

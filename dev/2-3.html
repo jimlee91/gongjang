@@ -17,7 +17,26 @@
             <div class="content__body">
                 <div class="detail">
                     <div class="feedDetail">
-                        <article class="feed">
+                        <article class="feed" style="border-bottom: 10px solid #eaeaea;">
+                            <header class="feed__header">
+                                <div class="feed__header-top">
+                                    <a href="" class="feed__author">
+                                    <span class="thumb">
+                                        <span class="is_new">새글</span>
+                                        <img src="//via.placeholder.com/30x30" alt="">
+                                    </span>
+                                        <p>hongildong23</p>
+                                    </a>
+                                    <div class="feed__etc">
+                                        <button class="waves-effect">유딜보기</button>
+                                    </div>
+                                </div>
+                                <h1 class="feed__title">
+                                    <a href="">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem culpa cupiditate illum quaerat quidem. Aut dolores  facere officiis? <span class="feed__label">인기영상</span>
+                                    </a>
+                                </h1>
+                            </header>
                             <div class="feed__content">
                                 <div class="feed__slider">
                                     <div class="feed__slide-img"><img src="./assets/images/dummy/slide-img1.png" alt=""></div>
@@ -26,20 +45,14 @@
                                     <div class="feed__slide-img"><img src="./assets/images/dummy/slide-img1.png" alt=""></div>
                                 </div>
                             </div>
-                            <div class="feed__util">
-                                <div class="feed__actions">
-                                    <button class="feed__action-btn feed__action-like active">좋아요</button>
-                                    <button class="feed__action-btn feed__action-unlike">싫어요</button>
-                                    <button class="feed__action-btn feed__action-share" onclick="showModal('#shareModal');">공유</button>
-                                    <a href="" class="feed__action-btn feed__action-report">신고</a>
+                            <div class="feed__info">
+                                <div class="feed__createdAt">
+                                    2020.01.20
                                 </div>
-                                <div class="detail__info">
-                                    <div class="feed__state">
-                                        <span class="feed__views">15</span>
-                                        <span class="feed__likes">13</span>
-                                        <span class="feed__talks">2</span>
-                                    </div>
-                                    <p>2020.04.03</p>
+                                <div class="feed__state">
+                                    <span class="feed__views">15</span>
+                                    <span class="feed__likes">13</span>
+                                    <span class="feed__talks">2</span>
                                 </div>
                             </div>
                         </article>
@@ -55,9 +68,8 @@
                             </section>
                             <div class="registered__form ">
                                 <div class="form">
-
                                     <div class="form__row column">
-                                        <label for="" class="form__row-title" style="width: 80px !important;">신고이유</label>
+                                        <label for="" class="form__row-title" style="width: 60px !important;">신고이유</label>
                                         <div class="box">
                                             <textarea name="" id="" placeholder="내용을 입력하세요."></textarea>
                                         </div>
@@ -65,7 +77,7 @@
                                 </div>
 
                                 <div class="accounts__btnbox">
-                                    <button class="btn btn-blue waves-effect" onclick="">신고하기</button>
+                                    <button class="btn btn-blue waves-effect" onclick="">신고</button>
                                 </div>
                             </div>
                         </div>

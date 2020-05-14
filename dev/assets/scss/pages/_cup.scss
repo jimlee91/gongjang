@@ -1,5 +1,8 @@
 .cup {
 
+  .form .form__row .box select {
+    height: 24px;
+  }
 }
 
 .cup__list {
@@ -13,6 +16,10 @@
     background:#eaeaea;
   }
 
+  .acdm {
+
+  }
+
 
   .inner {
     border-bottom: $border;
@@ -24,6 +31,7 @@
     margin-left: auto;
 
     .btn {
+      //width: 65px;
       background:#fff;
       line-height: 40px;
       height: 40px;
@@ -41,7 +49,7 @@
       background: url('../images/star.png') no-repeat left center;
       background-size: auto 12px;
       padding-left: 16px;
-      font-size: 12px;
+      font-size: 10px;
       color:$blue;
       &.end {
         color:#5A5553;;
@@ -51,11 +59,11 @@
 
     }
     h3 {
-      font-size: 14px;
+      font-size: 10px;
       margin:10px 0 10px;
     }
     p {
-      font-size: 12px;
+      font-size: 10px;
     }
 
     .select {
@@ -68,7 +76,7 @@
         border:1px solid #fff;
         background: url('../images/arrow-down-white.png') no-repeat calc(100% - 8px) center;
         background-size: auto 5px;
-        font-size: 12px;
+        font-size: 10px;
         color:$green;
       }
     }
@@ -175,7 +183,7 @@
     height: 40px;
     width: 70px;
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     color:#fff;
     position: relative;
     &.active {
@@ -213,7 +221,7 @@
     width: 100%;
     span {
       margin-left: auto;
-      font-size: 12px;
+      font-size: 10px;
       background: url('../images/arrow-down.png') no-repeat right center;
       background-size: auto 5px;
       padding-right: 15px;
@@ -330,7 +338,13 @@
   padding:20px 0;
   display: flex;
   border-bottom: $border;
-
+  .cup__schedule-info {
+    h2,
+    h3 {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
   &.bg-black {
     .cup__schedule-info {
       p,
@@ -338,6 +352,8 @@
         color:#fff;
       }
     }
+
+
 
   }
   &.none-flex {
@@ -427,7 +443,7 @@
     text-align: center;
 
     p {
-      font-size: 12px;
+      font-size: 10px;
 
     }
     h3 {
@@ -448,13 +464,13 @@
   .cup__schedule-info {
     .state {
       color:$blue;
-      font-size: 12px;
+      font-size: 10px;
       padding-left: 15px;
       background: url('../images/star.png') no-repeat left center;
       background-size: auto 12px;
     }
     p {
-      font-size: 12px;
+      font-size: 10px;
       margin-top: 1em;
       font-weight: 300;
     }
@@ -501,7 +517,7 @@
       position: relative;
       padding-bottom: 5px;
       h3 {
-        font-size: 12px;
+        font-size: 10px;
       }
       p {
         margin-top: 3px;
@@ -535,7 +551,7 @@
       margin-top: 50px;
     }
     h2 {
-      font-size: 12px;
+      font-size: 10px;
       position: absolute;
       line-height: 15px;
       top: -20px;
@@ -590,7 +606,7 @@
   }
   .user {
     line-height: 30px;
-    font-size: 12px;
+    font-size: 10px;
     color:#5A5553;;
     width: 120px;
   }

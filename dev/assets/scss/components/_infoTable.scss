@@ -12,7 +12,7 @@
   }
   th, td {
     padding: 15px 0;
-    font-size: 12px;
+    font-size: 10px;
   }
   th {
     text-align: left;
@@ -23,12 +23,12 @@
       justify-content: space-between;
       line-height: 20px;
       position: relative;
-      font-size: 12px;
+      font-size: 10px;
       font-weight: 500;
       &:after {
         content:'';
         width: 2px;
-        height: 14px;
+        height: 12px;
         background:#24e5ff;
         display: block;
       }
@@ -45,7 +45,7 @@
 
   table {
     th, td{
-      font-size: 12px;
+      font-size: 10px;
       height: 25px;
       text-align: left;
     }
