@@ -29,28 +29,28 @@
     color:$green;
     &.step1-2{
       background: url('../images/step1-2.png') no-repeat left center;
-      background-size: auto 12px;
-      padding-left: 35px;
+      background-size: auto 8px;
+      padding-left: 30px;
     }
     &.step2-2 {
       background: url('../images/step2-2.png') no-repeat left center;
-      background-size: auto 12px;
-      padding-left: 35px;
+      background-size: auto 8px;
+      padding-left: 30px;
     }
     &.step3-1 {
       background: url('../images/step3-1.png') no-repeat left center;
-      background-size: auto 12px;
-      padding-left: 55px;
+      background-size: auto 8px;
+      padding-left: 50px;
     }
     &.step3-2 {
       background: url('../images/step3-2.png') no-repeat left center;
-      background-size: auto 12px;
-      padding-left: 55px;
+      background-size: auto 8px;
+      padding-left: 50px;
     }
     &.step3-3 {
       background: url('../images/step3-3.png') no-repeat left center;
-      background-size: auto 12px;
-      padding-left: 55px;
+      background-size: auto 8px;
+      padding-left: 50px;
     }
   }
 }
@@ -79,7 +79,7 @@
     justify-content: center;
     a {
       padding:0 .5em;
-      font-size: 12px;
+      font-size: 10px;
       color:#333;
       border-right: 1px solid #bcbcbc;
       &:last-child {
@@ -99,12 +99,18 @@
       height: 35px;
       line-height: 35px;
       display: block;
-      width: 145px;
+      width: 185px;
       transition: all .3s;
       text-align: center;
       margin-right: 10px;
       &:last-child {
         margin-right: 0;
+      }
+      &.w185 {
+        width: 185px !important;
+      }
+      &.w145 {
+        width: 145px !important;
       }
 
       &.btn-blue {
@@ -135,7 +141,7 @@
 
   .sns-oauth {
     padding-top: 20px;
-    border-top: 1px solid #707070;
+    border-top: 1px solid rgba(100,100,100,.2);
   }
 }
 
@@ -192,7 +198,7 @@
       border-radius: 50%;
     }
     h3 {
-      margin: 30px 0 10px;
+      margin: 10px 0 10px;
       font-size: 22px;
       font-weight: 300;
       line-height:1.5em;

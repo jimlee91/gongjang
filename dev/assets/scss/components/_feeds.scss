@@ -128,7 +128,7 @@
       .feed__action-btn {
         // 좌측 버튼 고통
         text-align: center;
-        font-size: 12px;
+        font-size: 10px;
         color:#fff;
         padding-top: 25px;
         margin-right: 20px;
@@ -136,7 +136,7 @@
           margin-right: 0;
         }
         &.active {
-          color:$green;
+          //color:$green;
         }
         &.feed__action-like {
           background: url('../images/detail-like.png') no-repeat center top;
@@ -160,7 +160,7 @@
           &:hover {
             background: url('../images/detail-share-active.png') no-repeat center top;
             background-size: auto 18px;
-            color:$green;
+            //color:$green;
           }
         }
         &.feed__action-report {
@@ -169,7 +169,7 @@
           &:hover {
             background: url('../images/detail-report-active.png') no-repeat center top;
             background-size: auto 18px;
-            color:$green;
+            //color:$green;
           }
         }
       }
@@ -281,29 +281,7 @@
   .feed__createdAt {
     font-size: 10px;
   }
-  .feed__state {
-    display: flex;
-    flex-wrap: wrap;
-    span {
-      margin-left: 10px;
-      font-size: 10px;
-    }
-    .feed__views{
-      background: url('../images/i-views.png') no-repeat left center;
-      background-size: auto 11px;
-      padding-left: 20px;
-    }
-    .feed__likes{
-      background: url('../images/i-likes.png') no-repeat left center;
-      background-size: auto 11px;
-      padding-left: 17px;
-    }
-    .feed__talks{
-      background: url('../images/i-talks.png') no-repeat left center;
-      background-size: auto 11px;
-      padding-left: 17px;
-    }
-  }
+
   .feed__title {
     font-size: 14px;
     margin-top: 5px;
@@ -329,36 +307,7 @@
     align-items: center;
     justify-content: space-between;
   }
-  .feed__author {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
 
-    .thumb {
-      width: 25px;
-      height: 25px;
-      position: relative;
-      img {
-        border-radius: 50%;
-      }
-    }
-    p {
-      padding-left: 10px;
-      font-size: 10px;
-      color:#333;
-    }
-    .is_new {
-      @include text-indent;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: $green;
-      display: block;
-    }
-  }
   .feed__etc {
     button {
       width: 30px;
@@ -370,4 +319,59 @@
     }
   }
 
+}
+.feed__author {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .thumb {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    img {
+      border-radius: 50%;
+    }
+  }
+  p {
+    padding-left: 10px;
+    font-size: 10px;
+    color:#333;
+  }
+  .is_new {
+    @include text-indent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $green;
+    display: block;
+  }
+}
+
+.feed__state {
+  display: flex;
+  flex-wrap: wrap;
+  span {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  .feed__views{
+    background: url('../images/i-views.png') no-repeat left center;
+    background-size: auto 11px;
+    padding-left: 20px;
+    margin-left: 0;
+  }
+  .feed__likes{
+    background: url('../images/i-likes.png') no-repeat left center;
+    background-size: auto 11px;
+    padding-left: 17px;
+  }
+  .feed__talks{
+    background: url('../images/i-talks.png') no-repeat left center;
+    background-size: auto 11px;
+    padding-left: 17px;
+  }
 }

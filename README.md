@@ -291,15 +291,15 @@ gulp
 
 
 ---------------------
-- [2-0. 메인화면(로그인 후) – 3]()
-- [2-0. 메인화면(로그인 후) – 4]()
-- [2-0. 메인화면(로그인 후) – 5]()
-- [7. 환불신청 – 1](https://confident-kepler-4a5a7c.netlify.app/7-1)
-- [24. 관리자 공지 목록]()
-- [24. 관리자 공지 목록-1]()
-- [25. 대화방 / 관리자 – 1]()
-- [44-5.팀리스트 - 출전선수 – 1]()
-- [50-6. 아카데미 결제내역]()
-- [50-6. 아카데미 결제내역 – 1(상세)]()
-- [50-6. 아카데미 결제내역 – 1(상세) – 1]()
-- [50-7. 아카데미 상점]()
+- [2-0. 메인화면(로그인 후) – 3](https://confident-kepler-4a5a7c.netlify.app/2-0-3.html)
+- [2-0. 메인화면(로그인 후) – 4](https://confident-kepler-4a5a7c.netlify.app/2-0-3.html)
+- [2-0. 메인화면(로그인 후) – 5](https://confident-kepler-4a5a7c.netlify.app/2-0-3.html)
+- [24. 관리자 공지 목록](https://confident-kepler-4a5a7c.netlify.app/24-new-1.html)
+- [24. 관리자 공지 목록-1](https://confident-kepler-4a5a7c.netlify.app/24-new-2.html)
+- [25. 대화방 / 관리자 – 1](https://confident-kepler-4a5a7c.netlify.app/24-new-3.html)
+- [44-5.팀리스트 - 출전선수 – 1](https://confident-kepler-4a5a7c.netlify.app/44-5-1.html)
+- [50-6. 아카데미 결제내역](https://confident-kepler-4a5a7c.netlify.app/50-6.html)
+- [50-6. 아카데미 결제내역 – 1(상세)](https://confident-kepler-4a5a7c.netlify.app/50-6-1.html)
+- [50-6. 아카데미 결제내역 – 1(상세) – 1](https://confident-kepler-4a5a7c.netlify.app/50-6-1-1.html)
+- [50-7. 아카데미 상점](https://confident-kepler-4a5a7c.netlify.app/50-7.html)
+

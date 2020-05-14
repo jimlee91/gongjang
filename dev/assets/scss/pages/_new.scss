@@ -1,0 +1,113 @@
+.newMain {
+  .subContent__section {
+    padding:0 16px 0;
+  }
+
+  .newMain__section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    border-bottom:1px solid #5a5553;
+    h3 {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    a {
+      font-size: 10px;
+    }
+  }
+  .newMain__section-body {
+    padding:30px 0;
+  }
+
+  .academy {
+    .academy__list {
+      display: flex;
+      flex-wrap: inherit;
+      justify-content: space-between;
+    }
+    .academy__item {
+      margin-top: 0;
+      margin-right: 0;
+      width: 133px;
+      flex: none;
+    }
+  }
+
+  .franchisee {
+    &.franchisee--cup {
+      .franchisee__item {
+        a {
+          height: 45px;
+          line-height: 43px;
+          border-color:$green;
+          color:$green;
+          &:hover {
+            background: $green;
+            color:#fff;
+          }
+        }
+      }
+    }
+    .franchisee__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .franchisee__item {
+      max-width: calc(50% - 20px);
+      width: 100%;
+      flex: none;
+      margin-right: 40px;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+      &:nth-child(n + 3) {
+        margin-top: 25px;
+      }
+    }
+  }
+
+  .gonganSmall {
+    display: flex;
+    flex-wrap: wrap;
+
+    .gonganSmall__item {
+      max-width: calc(50% - 20px);
+      width: 100%;
+      flex: none;
+      margin-right: 40px;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+      &:nth-child(n + 3) {
+        margin-top: 25px;
+      }
+
+      .info {
+        h3 {
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 5px;
+          padding-bottom: 5px;
+          border-bottom: 1px solid rgba(100,100,100,.3);
+        }
+        .feed__author {
+          margin-bottom: 8px;
+        }
+      }
+      a {
+        display: flex;
+
+        & > .thumb {
+          width: 130px;
+          margin-right: 10px;
+          flex: none;
+        }
+        & > .info {
+          flex: 1;
+        }
+      }
+    }
+  }
+}

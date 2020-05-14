@@ -4,9 +4,9 @@
     margin-bottom: 0;
   }
   .etc__empty {
-    line-height: 60px;
+    line-height: 50px;
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
   }
   .etc__content {
     background:#fff;
@@ -40,7 +40,7 @@
         .alarm__description {
           @include truncate;
           color:#333;
-          font-size: 12px;
+          font-size: 10px;
         }
         .alarm__create {
           text-align: right;
@@ -72,14 +72,14 @@
       }
       .news__category {
         font-size: 10px;
-        color:$green;
+        color:$blue;
         font-weight: 300;
       }
       .news__title {
         @include truncate;
-        font-size: 12px;
-        font-weight: 500;
-        margin:5px 0;
+        font-size: 10px;
+        font-weight: 600;
+        margin:2px 0;
       }
       .news__description {
         @include truncate;
@@ -100,7 +100,7 @@
           height: 65px;
         }
         .userCard__name {
-          font-size: 14px;
+          font-size: 10px;
         }
         .userCard__team p {
           font-size: 10px;
@@ -137,7 +137,7 @@
           display: flex;
           flex-direction: column;
           .relation__title {
-            font-size: 12px;
+            font-size: 10px;
             padding-bottom: 5px;
             margin-bottom: 5px;
             border-bottom: 1px solid $border-color;
@@ -247,17 +247,17 @@
       background: url('../images/i-d-day.png') no-repeat left center;
       background-size: auto 1em;
       padding-left: 1.5em;
-      font-size: 12px;
+      font-size: 10px;
     }
     .schedule__title {
       color:#333;
-      font-size: 14px;
+      font-size: 10px;
       word-break: keep-all;
       line-height:1.5em;
       margin-top: 3px;
     }
     .schedule__date {
-      font-size: 12px;
+      font-size: 10px;
       color:#333;
       font-weight: 300;
       word-break: keep-all;
@@ -290,7 +290,7 @@
         }
       }
       .team-name {
-        font-size: 14px;
+        font-size: 10px;
         text-align: center;
         color:#333;
         font-weight: 400;
@@ -304,7 +304,7 @@
         font-size: 20px;
       }
       .time {
-        font-size: 12px;
+        font-size: 10px;
         color:#333;
       }
     }

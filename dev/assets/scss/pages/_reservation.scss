@@ -170,6 +170,7 @@
         color:#5A5553;
         &.active {
           color:$green;
+          font-weight: 600;
         }
       }
     }
@@ -345,6 +346,11 @@
   display: flex;
   .reservation__result-info {
     flex: 1;
+
+    & + .infoTable2 {
+      padding-left: 8px;
+      border-left: 1px solid $green;
+    }
     span {
       font-size: 10px;
       display: block;

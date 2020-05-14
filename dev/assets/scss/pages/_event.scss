@@ -9,6 +9,12 @@
   justify-content: space-between;
   padding: 35px 50px 0;
 
+  select {
+    height: 24px !important;
+    //width: 65px !important;
+    //min-width: 65px !important;
+  }
+
   h3 {
     font-size: 12px;
   }

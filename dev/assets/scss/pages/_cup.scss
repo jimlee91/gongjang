@@ -341,7 +341,7 @@
   .cup__schedule-info {
     h2,
     h3 {
-      font-size: 12px;
+      font-size: 10px;
       line-height: 18px;
     }
   }
@@ -639,4 +639,18 @@
 .state.none-star {
   background: none !important;
   padding-left: 0 !important;
+}
+
+
+.cup-teamlist {
+  .subContent__section {
+    &:first-child {
+      select {
+        height: 24px;
+      }
+      .form .form__help.confirm {
+        line-height: 24px !important;
+      }
+    }
+  }
 }

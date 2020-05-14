@@ -106,12 +106,12 @@
       padding:15px;
 
       .thumb--big {
-        padding-bottom: 15px;
-        border-bottom: $border;
         margin-bottom: 15px;
+        border-radius: 7px;
+        overflow: hidden;
       }
       .talk {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 15px;
         margin-bottom: 20px;
       }
@@ -119,13 +119,13 @@
       .btnbox {
         text-align: center;
         a {
-          width: 100px;
+          width: 95px;
           line-height: 32px;
           display: inline-block;
           border-radius: 7px;
           background:$blue;
           color:#fff;
-          font-size: 12px;
+          font-size: 10px;
         }
       }
     }
@@ -205,5 +205,21 @@
         color:#5a5553;;
       }
     }
+  }
+}
+
+.break-date {
+  text-align: center;
+  margin:30px 0;
+  span {
+    display: inline-block;
+    white-space: nowrap;
+    color:#fff;
+    font-size: 10px;
+    background:#707070;
+    height: 24px;
+    line-height: 24px;
+    padding:0 10px;
+    border-radius: 2em;
   }
 }

@@ -20,15 +20,13 @@
                         <section class="accounts__header">
                             <h2 class="accounts__title">
                             <span>
-                                신청하기
+                                연장하기
                             </span>
                             </h2>
                             <div class="accounts__state step3-2">
                                 신청 2단계
                             </div>
                         </section>
-
-
                         <div class="spaceSetting">
                             <form action="">
                                 <div class="form">
@@ -54,11 +52,68 @@
                                         </div>
                                     </div>
                                     <div class="form__row column">
+                                        <label for="" class="form__row-title font-12">희망요일</label>
+                                        <div class="box">
+                                            <label for="m" class="checkbox">
+                                                <input type="radio" id="m" name="gender" hidden checked readonly>
+                                                <span></span> <strong>월</strong> (AM10 - PM1)
+                                            </label>
+
+                                            <label for="F" class="checkbox">
+                                                <input type="radio" id="F" name="gender" hidden>
+                                                <span></span> <strong>화</strong> (AM10 - PM1)
+                                            </label>
+                                            <label for="m" class="checkbox">
+                                                <input type="radio" id="m" name="gender" hidden checked readonly>
+                                                <span></span> <strong>월</strong> (AM10 - PM1)
+                                            </label>
+
+                                            <label for="F" class="checkbox">
+                                                <input type="radio" id="F" name="gender" hidden>
+                                                <span></span> <strong>화</strong> (AM10 - PM1)
+                                            </label>
+                                            <label for="m" class="checkbox">
+                                                <input type="radio" id="m" name="gender" hidden checked readonly>
+                                                <span></span> <strong>월</strong> (AM10 - PM1)
+                                            </label>
+
+                                            <label for="F" class="checkbox">
+                                                <input type="radio" id="F" name="gender" hidden>
+                                                <span></span> <strong>화</strong> (AM10 - PM1)
+                                            </label>
+                                            <label for="m" class="checkbox">
+                                                <input type="radio" id="m" name="gender" hidden checked readonly>
+                                                <span></span> <strong>월</strong> (AM10 - PM1)
+                                            </label>
+
+                                            <label for="F" class="checkbox">
+                                                <input type="radio" id="F" name="gender" hidden>
+                                                <span></span> <strong>화</strong> (AM10 - PM1)
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form__row column">
                                         <label for="" class="form__row-title font-12">희망시간</label>
                                         <div class="box">
                                             <select name="" id="" class="input-border">
                                                 <option value="" >시간 선택</option>
                                             </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form__row column">
+                                        <label for="" class="form__row-title font-12">옵션</label>
+                                        <div class="box">
+                                            <p class="font-10 mt-10 mr-20" style="line-height: 20px;">패키지(유니폼+풋살화+양말)</p>
+                                            <label for="m1" class="checkbox">
+                                                <input type="radio" id="m1" name="gender" hidden checked readonly>
+                                                <span></span> 필요합니다.
+                                            </label>
+
+                                            <label for="F2" class="checkbox">
+                                                <input type="radio" id="F2" name="gender" hidden>
+                                                <span></span> 필요 없습니다.
+                                            </label>
                                         </div>
                                     </div>
 
@@ -69,7 +124,81 @@
                                         </div>
                                     </div>
 
+                                    <div class="form__row column">
+                                        <label for="" class="form__row-title font-12">가격</label>
+                                        <div class="box">
+
+                                        </div>
+                                    </div>
+                                    <div class="form__row column">
+                                        <label for="" class="form__row-title font-12">쿠폰</label>
+                                        <div class="box">
+                                            <input type="text" class="input-border">
+                                            <button class="btn waves-effect ml-10" style="margin-top: 4px;">쿠폰확인</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="form__row column">
+                                        <label for="" class="form__row-title font-12">총 결제금액</label>
+                                        <div class="box column pt-10">
+                                            <strong class="font-10 color-blue">280,000원</strong>
+                                            <p class="font-10 mt-5">
+                                                수업(100,000) + 패키지(유니폼+풋살화+ 양말)(200,000) - 쿠폰(20,000)
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form__row column">
+                                        <label for="" class="form__row-title font-12">결제방식</label>
+                                        <div class="box">
+                                            <select name="" id="" class="input-border">
+                                                <option value="" >선택하기</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="registered">
+                                        <section class="registered__agreements">
+                                        <h3 class="section-title font-12">아래 내용 동의</h3>
+                                        <div class="list">
+                                            <div class="item">
+                                                <label for="allAgree" class="checkbox">
+                                                    <input type="checkbox" id="allAgree" hidden>
+                                                    <span></span>
+                                                    <strong>모두 동의합니다.</strong>
+                                                </label>
+                                            </div>
+                                            <div class="item">
+                                                <label for="agree1" class="checkbox">
+                                                    <input type="checkbox" id="agree1" hidden>
+                                                    <span></span>
+                                                    이용약관 동의
+                                                </label>
+                                                <a href="#//" onclick="showModal('#pravicy');">보기</a>
+                                            </div>
+                                            <div class="item">
+                                                <label for="agree2" class="checkbox">
+                                                    <input type="checkbox" id="agree2" hidden>
+                                                    <span></span>
+                                                    개인정보 수집 및 이용 동의
+                                                </label>
+                                                <a href="#//" onclick="showModal('#pravicy');">보기</a>
+                                            </div>
+                                            <div class="item">
+                                                <label for="agree3" class="checkbox">
+                                                    <input type="checkbox" id="agree3" hidden>
+                                                    <span></span>
+                                                    위치 정보 이용약관 동의 <i>*선택</i>
+                                                </label>
+                                                <a href="#//" onclick="showModal('#pravicy');">보기</a>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    </div>
                                 </div>
+
+
                                 <div class="btnbox mt-100">
                                     <button class="btn btn-blue waves-effect">다음</button>
                                 </div>

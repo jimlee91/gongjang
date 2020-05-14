@@ -5,7 +5,8 @@
 
   .btn {
     display: block;
-    line-height: 32px;
+    height: 32px !important;
+    line-height: 30px !important;
     border-radius: 7px;
     font-size: 10px;
     color:#fff;
@@ -28,7 +29,8 @@
 
     span.league {
       background: url('../images/i-league.png') no-repeat right center;
-      background-size: auto 15px;
+      background-size: auto 12px;
+      line-height: 30px !important;
       display: inline-block;
       padding-right: 23px;
     }
@@ -55,7 +57,7 @@
 
         span.league {
           background: url('../images/gnb-i5.png') no-repeat right center;
-          background-size: auto 15px;
+          background-size: auto 12px;
         }
       }
     }
