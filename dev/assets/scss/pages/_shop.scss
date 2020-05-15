@@ -1,0 +1,67 @@
+.prd-selector {
+  width: 170px;
+  flex: none;
+  height: 32px;
+  display: flex;
+
+  .counters {
+    margin-left: 10px;
+    display: flex;
+    flex: 1;
+    button {
+      width: 30px;
+      flex: none;
+
+      &.minus {
+        background: url('../images/i-minus-black.png') no-repeat center;
+        background-size: auto 12px;
+      }
+      &.plus {
+        background: url('../images/i-plus-black.png') no-repeat center;
+        background-size: auto 12px;
+      }
+    }
+  }
+  .btn {
+    height: 24px;
+    margin-top: 4px !important;
+    border-color:$blue !important;
+    color: $blue !important;
+    width: 40px !important;
+    text-align: center;
+    line-height: 22px;
+    &:hover {
+      background: $blue !important;
+      color: #fff !important;
+    }
+  }
+}
+
+.prdlists {
+  background:#eaeaea;
+  padding: 10px;
+  .minus {
+    @include text-indent;
+    background: url('../images/i-minus-black.png') no-repeat center;
+    background-size: auto 12px;
+    width: 20px;
+    height: 20px;
+  }
+  table {
+    th, td {
+      font-size: 10px;
+    }
+
+    th {
+      padding-bottom: 5px;
+    }
+    td {
+      height: 20px;
+      text-align: center;
+
+      a {
+        color:$blue;
+      }
+    }
+  }
+}
