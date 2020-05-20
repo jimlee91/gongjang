@@ -16,14 +16,14 @@
   }
 
   .manner-total {
-    font-size: 12px;
+    font-size: 10px;
     color:#fff;
-    margin-top: 12px;
+    margin-top: 10px;
     opacity: .5;
   }
 
   .manner-list {
-    margin-top: 12px;
+    margin-top: 10px;
   }
   .manner-item {
     border: 1px solid rgba(255,255,255,.5);
@@ -54,7 +54,7 @@
           padding-left: 10px;
           strong {
             display: block;
-            font-size: 12px;
+            font-size: 10px;
             color:#fff;
             font-weight: 300;
             margin-top: 3px;
@@ -74,7 +74,7 @@
         display: block;
         white-space: nowrap;
         color:$green;
-        font-size: 12px;
+        font-size: 10px;
       }
     }
   }
@@ -83,7 +83,7 @@
     border-top:1px solid rgba(255,255,255,.5);
     p {
       color:#fff;
-      font-size: 12px;
+      font-size: 10px;
       line-height: 15px;
     }
   }
@@ -103,7 +103,7 @@
   &.sm {
     img {
       margin-right: 2px;
-      width: 12px;
+      width: 10px;
     }
   }
 }

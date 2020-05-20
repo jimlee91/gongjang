@@ -99,7 +99,9 @@
 .color-green {
   color:$green;
 }
-
+.color-white {
+  color: #fff !important;
+}
 .color-blue {
   color:$blue;
 }
@@ -110,4 +112,23 @@
 }
 .ml-auto {
   margin-left: auto !important;
+}
+
+.downloadlink {
+  padding-right: 18px;
+  background: url('../images/i-download.png') no-repeat right center;
+  background-size: auto 10px;
+}
+
+.infoTable2--type2 {
+  width: 160px;
+  flex: none;
+  padding-left: 10px;
+  margin-left: auto;
+  border-right: $border;
+  border-left: 1px solid $green;
+  th, td {
+    height: 17px !important;
+    padding: 0;
+  }
 }

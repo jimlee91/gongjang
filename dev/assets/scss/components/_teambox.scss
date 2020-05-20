@@ -42,6 +42,7 @@
         p {
           font-size: 10px;
           @include truncate;
+          color:$green;
         }
       }
     }

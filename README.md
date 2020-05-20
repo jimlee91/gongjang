@@ -189,7 +189,7 @@ gulp
 - [44-7. 경기일정 상세 – 1](https://confident-kepler-4a5a7c.netlify.app/44-7-2)
 - [44-8. 경기순위](https://confident-kepler-4a5a7c.netlify.app/44-8)
 - [44-9. 팀순위 – 3](https://confident-kepler-4a5a7c.netlify.app/44-9)
-- [44-9. 팀순위 – 4](https://confident-kepler-4a5a7c.netlify.app/44-9)
+- [44-9. 팀순위 – 4](https://confident-kepler-4a5a7c.netlify.app/44-9-2)
 - [44-9. 팀순위 – 5](https://confident-kepler-4a5a7c.netlify.app/44-9)
     - 대진표 수정 필요
 - [44-11. 공지사항](https://confident-kepler-4a5a7c.netlify.app/44-11)
@@ -302,4 +302,34 @@ gulp
 - [50-6. 아카데미 결제내역 – 1(상세)](https://confident-kepler-4a5a7c.netlify.app/50-6-1.html)
 - [50-6. 아카데미 결제내역 – 1(상세) – 1](https://confident-kepler-4a5a7c.netlify.app/50-6-1-1.html)
 - [50-7. 아카데미 상점](https://confident-kepler-4a5a7c.netlify.app/50-7.html)
+
+
+
+------------------------
+- [61. 전체팀-팀홈 – 1](https://confident-kepler-4a5a7c.netlify.app/61-1.html)
+- [47. 대회 홈(리그) ](https://confident-kepler-4a5a7c.netlify.app/47.html)
+- [39. 예약내역 상세 – 1](https://confident-kepler-4a5a7c.netlify.app/39.html)
+- [39. 예약내역 상세](https://confident-kepler-4a5a7c.netlify.app/39.html)
+- [38. 예약내역 – 1](https://confident-kepler-4a5a7c.netlify.app/38.html)
+- [38. 예약내역](https://confident-kepler-4a5a7c.netlify.app/38.html)
+- [37. 결제완료/ 공유하기 – 신청완료](https://confident-kepler-4a5a7c.netlify.app/37.html)
+- [37. 결제완료/ 공유하기_결제완료](https://confident-kepler-4a5a7c.netlify.app/37-1.html)
+- [8. 환불내역 – 1](https://confident-kepler-4a5a7c.netlify.app/8-1.html)
+- [7. 환불신청 – 1](https://confident-kepler-4a5a7c.netlify.app/7-1.html)
+- [1-0. 로그인 – 1](https://confident-kepler-4a5a7c.netlify.app/1-0.html)
+- [58. 나의 팀 – 팀홈 – 1](https://confident-kepler-4a5a7c.netlify.app/58-1.html)
+- [58. 나의 팀 – 팀홈 – 2](https://confident-kepler-4a5a7c.netlify.app/58-1.html)
+- [52. 선수(전체)](https://confident-kepler-4a5a7c.netlify.app/52.html)
+- [50.나의 아카데미-아카데미 홈 -1(신청완료일때)](https://confident-kepler-4a5a7c.netlify.app/51.html)
+- [51. 아카데미 홈](https://confident-kepler-4a5a7c.netlify.app/51.html)
+- [50.나의 아카데미-아카데미 홈](https://confident-kepler-4a5a7c.netlify.app/51.html)
+- [50.나의 아카데미-아카데미 홈(모든버튼선택시)](https://confident-kepler-4a5a7c.netlify.app/51.html)
+- [35. 예약하기 – 8(전체목록 선택완료) – 1](https://confident-kepler-4a5a7c.netlify.app/35-1.html)
+- [35. 예약하기](https://confident-kepler-4a5a7c.netlify.app/35-1.html)
+- [33. 지점 상세정보 – 1(버튼선택시)](https://confident-kepler-4a5a7c.netlify.app/33.html)
+- [33. 지점 상세정보](https://confident-kepler-4a5a7c.netlify.app/33.html)
+    - 옵션안내 아이콘 필요
+- [4-1. 회원정보 수정](https://confident-kepler-4a5a7c.netlify.app/4-0.html)
+- [4-1. 회원정보 수정 – 1(버튼선택시)](https://confident-kepler-4a5a7c.netlify.app/4-0.html)
+- [36. 결제하기](https://confident-kepler-4a5a7c.netlify.app/36.html)
 

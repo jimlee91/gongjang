@@ -7,6 +7,12 @@
     border-radius: 5px 5px 20px 5px;
     display: flex;
     margin:0 auto;
+    &.full {
+      width: 100%;
+      .teamCard__info {
+        justify-content: center;
+      }
+    }
     .teamCard__info {
       display: flex;
       flex: 1;
@@ -96,6 +102,9 @@
           text-align: center;
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
           border-radius: 7px;
+          &:hover {
+            background: $green;
+          }
           span {
             color:#fff;
             font-size: 10px;
