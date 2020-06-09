@@ -8,19 +8,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
 
   .modal__content {
     width: 450px;
-    background:#fff;
+    background: #fff;
     padding: 30px 40px;
     border-radius: 10px;
     max-height: 90%;
     overflow: auto;
+    margin-left: -100px;
   }
   .modal__title {
     font-size: 20px;
     margin-bottom: 8px;
+    line-height: 30px;
+    color: #000;
 
     span {
       font-weight: 400;
@@ -30,7 +33,7 @@
   p {
     font-size: 10px;
     line-height: 20px;
-    color:#646464;
+    color: #646464;
   }
 
   .modal__btnbox {
@@ -41,34 +44,38 @@
     align-items: center;
     justify-content: center;
     &.border {
-      border-top: 1px solid rgba(0,0,0,0.2);
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
     }
   }
   .modal__btn {
     width: 95px;
-    height: 32px;
-    line-height: 32px;
+    height: 36px;
+    line-height: 36px;
     text-align: center;
     font-size: 10px;
     border-radius: 7px;
-    background:$blue;
-    color:#fff;
-    transition: all .3s;
+    background: $blue;
+    color: #fff;
+    transition: all 0.3s;
     &:not(.bg-white):hover {
-      background:$green;
+      background: $green;
     }
     &:nth-child(n + 2) {
       margin-left: 10px;
     }
     &.bg-white {
-      background:#fff;
-      color:#333;
+      background: #fff;
+      color: #333;
       border: 1px solid $border-color;
       &:hover {
-        background:#707070;
-        border-color:#707070;
-        color:#fff;
+        background: #707070;
+        border-color: #707070;
+        color: #fff;
       }
+    }
+    &.bg-m-gray {
+      background: #707070;
+      color: #fff;
     }
     &.modal__btn--bigger {
       width: 185px;
@@ -91,7 +98,6 @@
     max-width: 275px;
 
     label {
-
       width: 125px;
       flex: none;
       height: 140px;
@@ -156,7 +162,7 @@
     border: 1px solid #d7d4d2 !important;
     border-right: 0;
     textarea {
-      color:#333 !important;
+      color: #333 !important;
     }
   }
 }
@@ -205,7 +211,7 @@
     }
     .info {
       padding-left: 10px;
-      max-width:calc(100% - 100px);
+      max-width: calc(100% - 100px);
       h2 {
         @include truncate;
         font-size: 22px;
@@ -214,11 +220,11 @@
           position: absolute;
           left: -2px;
           bottom: -2px;
-          opacity: .5;
+          opacity: 0.8;
           width: calc(100% + 4px);
-          height:12px;
-          background:$green;
-          content:'';
+          height: 12px;
+          background: $green;
+          content: '';
           z-index: 1;
         }
         span {
@@ -246,7 +252,7 @@
   justify-content: center;
   margin-top: 10px;
   .grade__star {
-    margin:0 2px;
+    margin: 0 2px;
     width: 30px;
     height: 30px;
     background: url('../images/star-zero.png') no-repeat center;
@@ -262,6 +268,71 @@
   }
 }
 
-#preview .modal__content{
-  width: 660px;
+#preview .modal__content {
+  // width: 660px;
+  .feed .feed__content .feed__video iframe {
+    height: 220px;
+  }
+  .feedDetail .feed .feed__util {
+    padding: 15px 20px;
+  }
+  .detail .detail__header {
+    padding: 20px;
+  }
+  .detail .detail__body {
+    padding: 0 20px;
+  }
+  .modal__btnbox {
+    margin-top: 0;
+  }
+}
+
+#pravicy .modal__body p {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.sharewrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+
+  button {
+    width: 60px;
+    flex: none;
+    margin-right: 30px;
+    text-align: center;
+
+    span {
+      font-size: 12px;
+      color: #5a5553;
+      margin-top: 12px;
+      display: block;
+    }
+  }
+}
+.share-url {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  input {
+    flex: 1;
+    height: 32px;
+    border: solid 1px #d9d9d9;
+    background-color: rgba(234, 234, 234, 0.7);
+    font-size: 12px;
+    color: #337ef7;
+    padding: 0 10px;
+  }
+  button {
+    width: 85px;
+    flex: none;
+    border: 1px solid #d9d9d9;
+    border-left: 0;
+    background: #fff;
+    font-size: 12px;
+    height: 32px;
+  }
 }

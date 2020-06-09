@@ -72,8 +72,9 @@ gulp
 - [2-4. 해당공간 – 2(구독취소)](https://confident-kepler-4a5a7c.netlify.app/2-4)
 - [2-4. 해당공간 – 3(구독신청)](https://confident-kepler-4a5a7c.netlify.app/2-4)
 - [2-4. 해당공간 – 4(구독신청 버튼선택시) ](https://confident-kepler-4a5a7c.netlify.app/2-4)
-- [2-4. 해당공간 – 5(구독취소 버튼선택시)](https://confident-kepler-4a5a7c.netlify.app/2-4)
-- [2-4. 해당공간 – 5(구독취소) ](https://confident-kepler-4a5a7c.netlify.app/2-4)
+2-4 구독취소 확인 페이지 추가
+- [2-4. 해당공간 – 5(구독취소 버튼선택시)](https://confident-kepler-4a5a7c.netlify.app/2-4-1)
+- [2-4. 해당공간 – 5(구독취소) ](https://confident-kepler-4a5a7c.netlify.app/2-4-1)
 - [2-5. 수정 및 삭제하기](https://confident-kepler-4a5a7c.netlify.app/2-5)
 - 3. 마이페이지
     - 공통
@@ -333,3 +334,7 @@ gulp
 - [4-1. 회원정보 수정 – 1(버튼선택시)](https://confident-kepler-4a5a7c.netlify.app/4-0.html)
 - [36. 결제하기](https://confident-kepler-4a5a7c.netlify.app/36.html)
 
+
+
+- [50-2. 아카데미신청하기 -1](https://confident-kepler-4a5a7c.netlify.app/50-2-1.html)
+- [61. 전체팀-팀홈 – 1](https://confident-kepler-4a5a7c.netlify.app/61-1.html)

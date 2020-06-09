@@ -20,6 +20,7 @@
     align-items: flex-end;
     font-size: 16px;
     font-weight: 600;
+    margin-top: 5px;
 
     .date {
       font-size: 10px;
@@ -33,11 +34,11 @@
   align-items: center;
 
   .match__link {
-    width: 75px;
+    width: 65px;
     flex: none;
-    font-size: 12px;
-    height: 45px;
-    line-height: 43px;
+    font-size: 10px;
+    height: 40px;
+    line-height: 38px;
     text-align: center;
     color: rgb(90, 85, 83);
     border-radius: 7px;

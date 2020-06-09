@@ -31,8 +31,8 @@
     .is_new {
       @include text-indent;
       position: absolute;
-      left: 0;
-      top: 0;
+      left: 3px;
+      top: 3px;
       width: 10px;
       height: 10px;
       border-radius: 50%;

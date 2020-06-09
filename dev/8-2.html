@@ -1,4 +1,12 @@
 @@include('./include/header.html')
+<style>
+    .form .form__row .form__row-title{font-size: 10px;}
+    .paymentHistory__body .schedule{border-width: 2px;}
+    .paymentHistory__body .schedule__item{border-bottom: 2px solid rgba(112, 112, 112, 0.3) !important;}
+    .paymentHistory__body .schedule__item .inner{justify-content: center !important;;}
+    .schedule .schedule__item--reservation .inner .reservation__info, 
+    .schedule .schedule__item--reservation a .reservation__info{flex: none; white-space: nowrap;margin-right: 50px;}
+</style>
 <div class="container cancelReservation">
     <div class="content">
         <div class="content__left">
@@ -105,6 +113,7 @@
                     </div>
                 </div>
                 <form action="">
+
                     <div class="cancelReservation__form accounts">
                         <div class="registered__form ">
                             <div class="form">
@@ -114,17 +123,27 @@
                                         <input type="email" placeholder="환불 사유를 입력해주세요." />
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="form__row disabled column">
+                        </div>
+                    </div>
+                    <div class="cancelReservation__form accounts">
+                        <div class="registered__form ">
+                            <div class="form">
+                                <div class="form__row column" style="margin-bottom: 0 !important;">
                                     <label for="" class="form__row-title">환불 방식</label>
-                                    <div class="box">
-                                        <select name="" id="" disabled>
+                                    <div class="box column">
+                                        <select name="" id="" disabled style="flex: none;">
                                             <option value="" >선택하기</option>
                                         </select>
+
                                     </div>
                                 </div>
                             </div>
-
+                        </div>
+                    </div>
+                    <div class="cancelReservation__form accounts">
+                        <div class="registered__form ">
                             <div class="accounts__btnbox mt-50">
                                 <button class="btn btn-blue waves-effect border-radius-7 w145">완료</button>
                                 <button class="btn btn-white2 waves-effect border-radius-7 w145">환불취소</button>

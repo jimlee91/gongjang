@@ -4,14 +4,14 @@
   justify-content: center;
 
   .number {
-    margin:0 10px;
+    margin: 0 10px;
     font-size: 12px;
-    color:#5a5553;
+    color: #5a5553;
 
     &.active {
-      color:$blue;
+      color: $blue;
       font-weight: 600;
-      border-bottom:2px solid $blue;
+      border-bottom: 2px solid $blue;
     }
   }
   .arrow {
@@ -19,7 +19,7 @@
     overflow: hidden;
     width: 6px;
     height: 12px;
-    margin:0 10px;
+    margin: 0 10px;
     &.page-prev {
       background: url('../images/page-left.png') no-repeat center;
       background-size: 100% 100%;

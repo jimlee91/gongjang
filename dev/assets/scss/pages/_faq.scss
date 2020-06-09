@@ -17,6 +17,10 @@
           border-top: none !important;
         }
       }
+
+      button {
+        padding: 17px 0 10px;
+      }
     }
     &:last-child.active {
       .subContent__section {

@@ -1,4 +1,9 @@
 @@include('./include/header.html')
+<style>
+    .franchiseeDetail__header .actions .btn.btn-white:hover{background:#fff;color:#000;}
+    .franchiseeDetail__header .actions .btn.btn-white:hover .wlogo{display: none;}
+    .franchiseeDetail__header .actions .btn.btn-white:hover .blogo{display: inline-block !important;;}
+</style>
 <div class="container">
     <div class="content">
         <div class="content__left">
@@ -27,7 +32,11 @@
                         </div>
                     </div>
                     <div class="actions">
-                        <a href="" class="btn">팀 홈 <img src="./assets/images/i-team-logo.png" alt=""></a>
+                        <a href="" class="btn btn-white">
+                            팀 홈
+                            <img src="./assets/images/i-team-logo.png" alt="" class="wlogo">
+                            <img src="./assets/images/i-team-logo-block.png" alt="" class="blogo" style="display: none;">
+                        </a>
                         <a href="" class="mt-10 btn btn--rs">함께하기</a>
                     </div>
                 </div>

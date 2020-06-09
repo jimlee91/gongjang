@@ -1,109 +1,132 @@
 @@include('./include/header.html')
 <div class="container">
-    <div class="content">
-        <div class="content__left">
-            @@include('./include/oauth_after_login.html')
-            @@include('./include/gnb.html')
-        </div>
-        <div class="content__main">
-            <div class="breadcrumb">
-                <div class="breadcrumb__list">
-                    <a href="" class="breadcrumb__item waves-effect">Home</a>
-                    <a href="" class="breadcrumb__item waves-effect">김공장님의 공간</a>
-                </div>
-
-                <a href="" class="more waves-effect"></a>
-            </div>
-            <div class="content__body">
-                <div class="detail">
-                    <div class="feedDetail">
-                        <article class="feed">
-                            <div class="feed__content">
-                                <div class="feed__slider">
-                                    <div class="feed__slide-img"><img src="./assets/images/dummy/slide-img1.png" alt=""></div>
-                                    <div class="feed__slide-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQc7Jb6NGtTcS2iYDBYaw7E5m6F5SJPE8xehMPrvkm544lRUIlZ&usqp=CAU" alt=""></div>
-                                    <div class="feed__slide-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR_BmhdU3GBo7sKhMt5VJTeGGaPTR_9XpmDG6ItOYUqHXhS6Kac&usqp=CAU" alt=""></div>
-                                    <div class="feed__slide-img"><img src="./assets/images/dummy/slide-img1.png" alt=""></div>
-                                </div>
-                            </div>
-                            <div class="feed__util">
-                                <div class="feed__actions">
-                                    <button class="feed__action-btn feed__action-like ">좋아요</button>
-                                    <button class="feed__action-btn feed__action-unlike">싫어요</button>
-                                    <button class="feed__action-btn feed__action-share" onclick="showModal('#shareModal');">공유</button>
-                                    <a href="" class="feed__action-btn feed__action-report">신고</a>
-                                </div>
-                                <div class="detail__info">
-                                    <div class="feed__state">
-                                        <span class="feed__views">15</span>
-                                        <span class="feed__likes">13</span>
-                                        <span class="feed__talks">2</span>
-                                    </div>
-                                    <p>2020.04.03</p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="detail__content">
-                        <header class="detail__header">
-                            <div class="detail__info">
-                                <h2 class="detail__title">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A blanditiis dignissimos distinctio dolor doloribus fuga, nam nesciunt numquam quod vero?
-                                </h2>
-                                <div class="detail__author">
-                                    <a class="userCard" href="">
-                                        <div class="userCard__thumb">
-                                            <span class="is_new"></span>
-                                            <img src="//via.placeholder.com/55x55" alt="">
-                                        </div>
-                                        hongildong23
-                                    </a>
-                                </div>
-                            </div>
-                            <a href="" class="detail__link waves-effect">
-                                <span>공간가기</span>
-                            </a>
-                        </header>
-                        <div class="detail__body">
-                            <div class="inner">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, asperiores assumenda at atque commodi, deserunt distinctio doloribus eveniet facere fugit iure laboriosam, molestiae nostrum quas saepe sed ullam. Atque aut corporis dignissimos doloremque ducimus eum ipsa laboriosam laudantium nemo, nostrum quo repellat tempore vel velit, veritatis vitae voluptas? Deserunt dicta eaque hic ipsa nihil non provident quidem sequi sint voluptates! Assumenda, culpa dolore excepturi hic in ipsa magnam minima minus nostrum, nulla quasi sequi unde veritatis. Ad aliquam beatae, natus nesciunt non possimus quasi quibusdam quis, quisquam, sapiente totam unde velit voluptas. Corporis cupiditate, debitis ipsum praesentium quo reiciendis sit?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    @@include('./include/comment.html')
-                </div>
-            </div>
-        </div>
-        <div class="content__right">
-            @@include('./include/etc_relation.html')
-            @@include('./include/etc_schedule.html')
-            @@include('./include/etc_alarm.html')
-            @@include('./include/etc_empty.html')
-            @@include('./include/etc_news.html')
-            @@include('./include/etc_friends.html')
-            @@include('./include/etc_footer.html')
-        </div>
+  <div class="content">
+    <div class="content__left">
+      @@include('./include/oauth_after_login.html') @@include('./include/gnb.html')
     </div>
-</div>
+    <div class="content__main">
+      <div class="breadcrumb">
+        <div class="breadcrumb__list">
+          <a href="" class="breadcrumb__item waves-effect">Home</a>
+          <a href="" class="breadcrumb__item waves-effect">김공장님의 공간</a>
+        </div>
 
+        <a href="" class="more waves-effect"></a>
+      </div>
+      <div class="content__body">
+        <div class="detail">
+          <div class="feedDetail">
+            <article class="feed">
+              <div class="feed__content">
+                <div class="feed__slider">
+                  <div class="feed__slide-img"><img src="./assets/images/dummy/slide-img1.png" alt="" /></div>
+                  <div class="feed__slide-img">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQc7Jb6NGtTcS2iYDBYaw7E5m6F5SJPE8xehMPrvkm544lRUIlZ&usqp=CAU"
+                      alt=""
+                    />
+                  </div>
+                  <div class="feed__slide-img">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR_BmhdU3GBo7sKhMt5VJTeGGaPTR_9XpmDG6ItOYUqHXhS6Kac&usqp=CAU"
+                      alt=""
+                    />
+                  </div>
+                  <div class="feed__slide-img"><img src="./assets/images/dummy/slide-img1.png" alt="" /></div>
+                </div>
+              </div>
+              <div class="feed__util">
+                <div class="feed__actions">
+                  <button class="feed__action-btn feed__action-like">좋아요</button>
+                  <button class="feed__action-btn feed__action-unlike">싫어요</button>
+                  <button class="feed__action-btn feed__action-share" onclick="showModal('#shareModal');">공유</button>
+                  <a href="" class="feed__action-btn feed__action-report">신고</a>
+                </div>
+                <div class="detail__info">
+                  <div class="feed__state">
+                    <span class="feed__views">15</span>
+                    <span class="feed__likes">13</span>
+                    <span class="feed__talks">2</span>
+                  </div>
+                  <p>2020.04.03</p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="detail__content">
+            <header class="detail__header">
+              <div class="detail__info">
+                <h2 class="detail__title">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A blanditiis dignissimos distinctio dolor
+                  doloribus fuga, nam nesciunt numquam quod vero?
+                </h2>
+                <div class="detail__author">
+                  <a class="userCard" href="">
+                    <div class="userCard__thumb">
+                      <span class="is_new"></span>
+                      <img src="//via.placeholder.com/55x55" alt="" />
+                    </div>
+                    hongildong23
+                  </a>
+                </div>
+              </div>
+              <a href="" class="detail__link waves-effect">
+                <span>공간가기</span>
+              </a>
+            </header>
+            <div class="detail__body">
+              <div class="inner">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, asperiores assumenda at atque
+                  commodi, deserunt distinctio doloribus eveniet facere fugit iure laboriosam, molestiae nostrum quas
+                  saepe sed ullam. Atque aut corporis dignissimos doloremque ducimus eum ipsa laboriosam laudantium
+                  nemo, nostrum quo repellat tempore vel velit, veritatis vitae voluptas? Deserunt dicta eaque hic ipsa
+                  nihil non provident quidem sequi sint voluptates! Assumenda, culpa dolore excepturi hic in ipsa magnam
+                  minima minus nostrum, nulla quasi sequi unde veritatis. Ad aliquam beatae, natus nesciunt non possimus
+                  quasi quibusdam quis, quisquam, sapiente totam unde velit voluptas. Corporis cupiditate, debitis ipsum
+                  praesentium quo reiciendis sit?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          @@include('./include/comment.html')
+        </div>
+      </div>
+    </div>
+    <div class="content__right">
+      @@include('./include/etc_relation.html') @@include('./include/etc_schedule.html')
+      @@include('./include/etc_alarm.html') @@include('./include/etc_empty.html') @@include('./include/etc_news.html')
+      @@include('./include/etc_friends.html') @@include('./include/etc_footer.html')
+    </div>
+  </div>
+</div>
 
 <div class="modal" id="shareModal" style="display: none;">
-    <div class="modal__content">
-        <h2 class="modal__title">
-            어디로 공유할까요?
-        </h2>
-        <div class="modal__body">
-            <div style="height: 300px;"></div>
-        </div>
-        <div class="modal__btnbox">
-            <a href="" class="modal__btn modal__btn--bigger js-modal-close">공유</a>
-        </div>
+  <div class="modal__content">
+    <h2 class="modal__title">
+      어디로 공유할까요?
+    </h2>
+    <div class="modal__body">
+      <div class="sharewrap">
+        <button>
+          <img src="./assets/images/share-kakao.png" alt="" />
+          <span>카카오톡</span>
+        </button>
+        <button>
+          <img src="./assets/images/share-insta.png" alt="" />
+          <span>인스타그램</span>
+        </button>
+      </div>
+      <div class="share-url">
+        <input type="text" readonly value="https://confident-kepler-4a5a7c.netlify.app/34" />
+        <button>URL 복사</button>
+      </div>
     </div>
+    <div class="modal__btnbox">
+      <a href="" class="modal__btn modal__btn--bigger js-modal-close">공유</a>
+    </div>
+  </div>
 </div>
-
 
 @@include('./include/footer.html')

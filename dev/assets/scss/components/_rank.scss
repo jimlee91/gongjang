@@ -4,7 +4,7 @@
   .rank__title {
     border-bottom: $border;
     padding: 10px 0;
-    font-size: 10px;
+    font-size: 14px;
     strong {
       font-size: 12px;
     }
@@ -28,6 +28,9 @@
         .no span{
           background:$green;
         }
+      }
+      tr:nth-child(n + 5) td.no span:after{
+        display: none;
       }
       td {
         padding-top: 8px;
@@ -56,9 +59,9 @@
               content:'';
               display: block;
               width: 20px;
-              height: 2px;
+              height: 1px;
               background:#fff;
-              opacity: .5;
+              opacity: 1;
               position: absolute;
               bottom: 12px;
               left: 50%;

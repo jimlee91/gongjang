@@ -209,7 +209,7 @@ $playerInfoBg:#383433;
       color:#fff;
       padding-right: 15px;
       font-size: 10px;
-      background: url('../images/dubble-arrow.png') no-repeat right center;
+      background: url('../images/dubble-arrow.png') no-repeat right 1px;
       background-size: auto 10px;
     }
     .friends {
@@ -237,6 +237,7 @@ $playerInfoBg:#383433;
   }
   .statcards {
     display: flex;
+    overflow-y: hidden;padding-bottom: 20px;border-bottom: 1px solid rgba(112, 112, 112, 0.3);
 
     .statcard__item {
       text-align: center;
