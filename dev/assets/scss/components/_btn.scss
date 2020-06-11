@@ -10,7 +10,7 @@
     line-height: 28px;
     display: block;
     width: 145px;
-    transition: all .3s;
+    transition: all 0.3s;
     text-align: center;
     margin-right: 10px;
     &:last-child {
@@ -29,30 +29,30 @@
     }
 
     &.btn-blue {
-      background:$blue;
-      color:#fff;
+      background: $blue;
+      color: #fff;
       &:hover {
-        background:$green;
+        background: $green;
       }
     }
     &.btn-green {
-      background:#fff;
-      color:#5A5553;
+      background: #fff;
+      color: #5a5553;
       border: 1px solid $green;
       &:hover {
-        background:$green;
-        color:#fff;
+        background: $green;
+        color: #fff;
       }
     }
     &.btn-white {
-      color:#333;
+      color: #333;
       border: 1px solid $green;
     }
     &.btn-white2 {
-      color:#333;
+      color: #333;
       border: 1px solid $border-color;
       &:hover {
-        color:$blue !important;
+        color: $blue !important;
         border-color: $blue !important;
       }
     }
@@ -67,11 +67,11 @@
   border: 1px solid #707070;
   border-radius: 2em;
   text-align: center;
-  color:#707070;
-  transition: all .3s;
+  color: #707070;
+  transition: all 0.3s;
   &:hover {
-    background:#5a5553;
-    color:#fff;
+    background: #5a5553;
+    color: #fff;
   }
 }
 

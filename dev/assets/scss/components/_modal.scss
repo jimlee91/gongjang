@@ -98,11 +98,11 @@
     max-width: 275px;
 
     label {
-      width: 125px;
+      width: 123px;
       flex: none;
-      height: 140px;
-      border: 1px solid rgb(215, 212, 210);
-      border-radius: 7px;
+      height: 142px;
+      // border: 1px solid rgb(215, 212, 210);
+      // border-radius: 7px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -125,28 +125,28 @@
         height: 40px;
       }
       &.addFile__images {
+        background: url('../images/add-file-img.png') no-repeat center;
+        background-size: auto 100%;
         .icon {
-          background: url('../images/add-file-img.png') no-repeat center;
-          background-size: auto 100%;
         }
         &.has-files {
+          background: url('../images/add-file-img-active.png') no-repeat center;
+          background-size: auto 100%;
           .icon {
             // 액티브된 이미지
-            background: url('../images/add-file-img-active.png') no-repeat center;
-            background-size: auto 100%;
           }
         }
       }
       &.addFile__videos {
+        background: url('../images/add-file-video.png') no-repeat center;
+        background-size: auto 100%;
         .icon {
-          background: url('../images/add-file-video.png') no-repeat center;
-          background-size: auto 100%;
         }
         &.has-files {
+          background: url('../images/add-file-video-active.png') no-repeat center;
+          background-size: auto 100%;
           .icon {
             // 액티브된 이미지
-            background: url('../images/add-file-video-active.png') no-repeat center;
-            background-size: auto 100%;
           }
         }
       }

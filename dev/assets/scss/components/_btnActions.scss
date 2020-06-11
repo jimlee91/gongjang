@@ -9,16 +9,16 @@
     line-height: 30px !important;
     border-radius: 7px;
     font-size: 10px;
-    color:#fff;
+    color: #fff;
     border: 1px solid #fff;
     text-align: center;
 
     &.btn-blue {
       border-color: $blue !important;
-      color:$blue !important;
+      color: $blue !important;
       &:hover {
         background: $blue !important;
-        color:#fff !important;
+        color: #fff !important;
       }
     }
     img {
@@ -36,24 +36,24 @@
     }
 
     &.btn-disabled {
-      border-color:rgba(255,255,255,.5) !important;
-      color:rgba(255,255,255,.5) !important;
+      border-color: rgba(255, 255, 255, 0.5) !important;
+      color: rgba(255, 255, 255, 0.5) !important;
       &:hover {
-        border-color:rgba(255,255,255,.5) !important;
-        color:rgba(255,255,255,.5) !important;
+        border-color: rgba(255, 255, 255, 0.5) !important;
+        color: rgba(255, 255, 255, 0.5) !important;
         background: none !important;
       }
     }
     &.btn-white {
       border: $border;
-      color:#5A5553;;
+      color: #5a5553;
     }
     &.btn-white2 {
       border: 1px solid #fff !important;
-      color:#fff !important;
+      color: #fff !important;
       &:hover {
-        background:#fff !important;
-        color:#5A5553 !important;
+        background: #fff !important;
+        color: #5a5553 !important;
 
         span.league {
           background: url('../images/gnb-i5.png') no-repeat right center;
@@ -67,9 +67,7 @@
     }
   }
   .btn--rs {
-    border-color:$green;
+    border-color: $green;
     color: $green;
   }
-
-
 }

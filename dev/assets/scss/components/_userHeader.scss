@@ -1,21 +1,19 @@
-.userHeader{
-  background:#383433;
+.userHeader {
+  background: #383433;
   padding: 25px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   &:after {
-    content:'';
+    content: '';
     display: block;
-    width: 0px;
-    height: 0px;
-    border-bottom: 10px solid #fff;
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;
-    border-top: 10px solid transparent;
+    width: 20px;
+    height: 18px;
+    background: url('../images/userHeader-icon.png') no-repeat center;
+    background-size: 20px 18px;
     position: absolute;
-    bottom: 0;
+    bottom: -11px;
     left: 63px;
     z-index: 1;
   }
@@ -24,7 +22,7 @@
     width: 65px;
   }
   .userCard__name {
-    color:#fff;
+    color: #fff;
     font-size: 22px;
     span {
       font-size: 14px;
@@ -41,20 +39,20 @@
       line-height: 35px;
       text-align: center;
       border: 1px solid #fff;
-      color:#fff;
+      color: #fff;
       border-radius: 7px;
       font-size: 12px;
-      transition: all .3s;
+      transition: all 0.3s;
       &:hover {
-        background:$blue;
-        border-color:$blue;
+        background: $blue;
+        border-color: $blue;
       }
       &.btn-blue {
         border: 1px solid $green;
-        color:$green;
+        color: $green;
         &:hover {
-          background:$green;
-          color:#fff;
+          background: $green;
+          color: #fff;
         }
       }
       &:first-child {

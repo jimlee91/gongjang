@@ -1,129 +1,134 @@
 @@include('./include/header.html')
 <style>
-    .form .form__row.column .form__row-title{font-size: 10px;}
+  .form .form__row.column .form__row-title {
+    font-size: 10px;
+  }
 </style>
 <div class="container">
-    <div class="content">
-        <div class="content__left">
-            @@include('./include/oauth_after_login.html')
-            @@include('./include/gnb.html')
+  <div class="content">
+    <div class="content__left">
+      @@include('./include/oauth_after_login.html') @@include('./include/gnb.html')
+    </div>
+    <div class="content__main">
+      <div class="breadcrumb">
+        <div class="breadcrumb__list">
+          <a href="" class="breadcrumb__item waves-effect">Home</a>
+          <a href="" class="breadcrumb__item waves-effect">예약 </a>
+          <a href="" class="breadcrumb__item waves-effect">예약하기 </a>
         </div>
-        <div class="content__main">
-            <div class="breadcrumb">
-                <div class="breadcrumb__list">
-                    <a href="" class="breadcrumb__item waves-effect">Home</a>
-                    <a href="" class="breadcrumb__item waves-effect">예약 </a>
-                    <a href="" class="breadcrumb__item waves-effect">예약하기 </a>
-                </div>
-                <a href="" class="more waves-effct"></a>
+        <a href="" class="more waves-effct"></a>
+      </div>
+      <div class="content__body">
+        <div class="reservation subContent">
+          <div class="subContent__section border">
+            <section class="accounts__header">
+              <h2 class="accounts__title">
+                <span>
+                  예약하기
+                </span>
+              </h2>
+              <div class="accounts__state step3-2">
+                예약 2단계
+              </div>
+            </section>
+
+            <div class="calendar">
+              <!-- 달력 -->
             </div>
-            <div class="content__body">
-                <div class="reservation subContent">
-                    <div class="subContent__section border">
-                        <section class="accounts__header">
-                            <h2 class="accounts__title">
-                            <span>
-                                예약하기
-                            </span>
-                            </h2>
-                            <div class="accounts__state step3-2">
-                                예약 2단계
-                            </div>
-                        </section>
 
-                        <div class="calendar">
-                            <!-- 달력 -->
-                        </div>
+            <div class="infoTable">
+              <table>
+                <colgroup>
+                  <col width="60" />
+                  <col />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th><strong>날짜</strong></th>
+                    <td><span class="month">04</span>월 <span class="day">20</span>일</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="subContent__section border">
+            <div class="form">
+              <div class="form__row-box">
+                <div class="form__row column">
+                  <label for="" class="form__row-title">지점</label>
+                  <div class="box">
+                    <input
+                      type="text"
+                      placeholder="지점을 선택하세요."
+                      class="input-border"
+                      readonly
+                      onclick="showModal('#selectSpot')"
+                    />
+                    <button class="form-search"></button>
+                  </div>
+                </div>
+              </div>
 
-                        <div class="infoTable">
-                            <table>
-                                <colgroup>
-                                    <col width="60">
-                                    <col>
-                                </colgroup>
-                                <tbody>
-                                <tr>
-                                    <th><strong>날짜</strong></th>
-                                    <td>
-                                        <span class="month">04</span>월 <span class="day">20</span>일
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
+              <div class="form__row-box">
+                <div class="form__row column">
+                  <label for="" class="form__row-title">구장</label>
+                  <div class="box">
+                    <select name="" id="" class="input-border">
+                      <option value="">구장을 선택하세요.</option>
+                    </select>
+                  </div>
+                </div>
+                <p class="form__help confirm">* 대관할 구장을 선택해 주십시오.</p>
+              </div>
+
+              <div class="form__row-box">
+                <div class="form__row column">
+                  <label for="" class="form__row-title">시간</label>
+                  <div class="box">
+                    <div class="reservation__timebox">
+                      <label for="ck1" class="time">
+                        <input type="checkbox" id="ck1" hidden />
+                        <span class="waves-effect">
+                          am 06 : 00 ~ am 08 : 00
+                        </span>
+                      </label>
+                      <label for="ck2" class="time">
+                        <input type="checkbox" id="ck2" hidden />
+                        <span class="waves-effect">
+                          am 06 : 00 ~ am 08 : 00
+                        </span>
+                      </label>
+                      <label for="ck3" class="time">
+                        <input type="checkbox" id="ck3" hidden />
+                        <span class="waves-effect">
+                          am 06 : 00 ~ am 08 : 00
+                        </span>
+                      </label>
+                      <label for="ck4" class="time">
+                        <input type="checkbox" id="ck4" hidden />
+                        <span class="waves-effect">
+                          am 06 : 00 ~ am 08 : 00
+                        </span>
+                      </label>
+                      <label for="ck5" class="time">
+                        <input type="checkbox" id="ck5" hidden />
+                        <span class="waves-effect">
+                          am 06 : 00 ~ am 08 : 00
+                        </span>
+                      </label>
+                      <label for="ck6" class="time">
+                        <input type="checkbox" id="ck6" hidden />
+                        <span class="waves-effect">
+                          am 06 : 00 ~ am 08 : 00
+                        </span>
+                      </label>
                     </div>
-                    <div class="subContent__section border">
-                        <div class="form">
-                            <div class="form__row-box">
-                                <div class="form__row column">
-                                    <label for="" class="form__row-title color-green">지점</label>
-                                    <div class="box">
-                                        <input type="text" placeholder="지점을 선택하세요." class="input-border" readonly onclick="showModal('#selectSpot')"/>
-                                        <button class="form-search"></button>
-                                    </div>
-                                </div>
-                            </div>
+                  </div>
+                </div>
+                <p class="form__help confirm">* 구장을 선택해야 시간이 표출됩니다.</p>
+              </div>
 
-                            <div class="form__row-box">
-                                <div class="form__row column">
-                                    <label for="" class="form__row-title color-green">구장</label>
-                                    <div class="box">
-                                        <select name="" id="" class="input-border">
-                                            <option value="" >구장을 선택하세요.</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <p class="form__help confirm">* 대관할 구장을 선택해 주십시오.</p>
-                            </div>
-
-                            <div class="form__row-box">
-                                <div class="form__row column">
-                                    <label for="" class="form__row-title color-green">시간</label>
-                                    <div class="box">
-                                        <div class="reservation__timebox">
-                                            <label for="ck1" class="time">
-                                                <input type="checkbox" id="ck1" hidden>
-                                                <span class="waves-effect">
-                                                    am 06 : 00 ~ am 08 : 00
-                                                </span>
-                                            </label>
-                                            <label for="ck2" class="time">
-                                                <input type="checkbox" id="ck2" hidden>
-                                                <span class="waves-effect">
-                                                    am 06 : 00 ~ am 08 : 00
-                                                </span>
-                                            </label>
-                                            <label for="ck3" class="time">
-                                                <input type="checkbox" id="ck3" hidden>
-                                                <span class="waves-effect">
-                                                    am 06 : 00 ~ am 08 : 00
-                                                </span>
-                                            </label>
-                                            <label for="ck4" class="time">
-                                                <input type="checkbox" id="ck4" hidden>
-                                                <span class="waves-effect">
-                                                    am 06 : 00 ~ am 08 : 00
-                                                </span>
-                                            </label>
-                                            <label for="ck5" class="time">
-                                                <input type="checkbox" id="ck5" hidden>
-                                                <span class="waves-effect">
-                                                    am 06 : 00 ~ am 08 : 00
-                                                </span>
-                                            </label>
-                                            <label for="ck6" class="time">
-                                                <input type="checkbox" id="ck6" hidden>
-                                                <span class="waves-effect">
-                                                    am 06 : 00 ~ am 08 : 00
-                                                </span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="form__help confirm">* 구장을 선택해야 시간이 표출됩니다.</p>
-                            </div>
-
-                            <!--
+              <!--
                             <div class="form__row-box">
 
                                 <div class="form__row column">
@@ -166,323 +171,333 @@
                             </div>
                             -->
 
-                            <div class="form__row-box">
-                                <div class="form__row column">
-                                    <label for="" class="form__row-title color-green">선수</label>
-                                    <div class="box">
-                                        <input type="text" placeholder="선수 명단 검색" onclick="showModal('#addMember')" class="input-border" readonly />
-                                        <button class="form-search"></button>
-                                    </div>
-                                </div>
-                                <p class="form__help confirm">* 함께 경기할 선수의 이름을 입력하세요.</p>
-
-                                <div class="pl-70 mt-10">
-                                    <ul class="addMember__list addMember__list--checked">
-                                        <li class="addMember__item">
-                                            <div class="thumb">
-                                                <img src="//via.placeholder.com/35x35" alt="">
-                                            </div>
-                                            <p>
-                                                김공장
-                                            </p>
-                                            <button class="remove">지우기</button>
-                                        </li>
-                                        <li class="addMember__item">
-                                            <div class="thumb">
-                                                <img src="//via.placeholder.com/35x35" alt="">
-                                            </div>
-                                            <p>
-                                                김공장
-                                            </p>
-                                            <button class="remove">지우기</button>
-                                        </li>
-                                        <li class="addMember__item">
-                                            <div class="thumb">
-                                                <img src="//via.placeholder.com/35x35" alt="">
-                                            </div>
-                                            <p>
-                                                김공장
-                                            </p>
-                                            <button class="remove">지우기</button>
-                                        </li>
-                                        <li class="addMember__item">
-                                            <div class="thumb">
-                                                <img src="//via.placeholder.com/35x35" alt="">
-                                            </div>
-                                            <p>
-                                                김공장
-                                            </p>
-                                            <button class="remove">지우기</button>
-                                        </li>
-                                        <li class="addMember__item">
-                                            <div class="thumb">
-                                                <img src="//via.placeholder.com/35x35" alt="">
-                                            </div>
-                                            <p>
-                                                김공장
-                                            </p>
-                                            <button class="remove">지우기</button>
-                                        </li>
-                                        <li class="addMember__item">
-                                            <div class="thumb">
-                                                <img src="//via.placeholder.com/35x35" alt="">
-                                            </div>
-                                            <p>
-                                                김공장
-                                            </p>
-                                            <button class="remove">지우기</button>
-                                        </li>
-                                        <li class="addMember__item">
-                                            <div class="thumb">
-                                                <img src="//via.placeholder.com/35x35" alt="">
-                                            </div>
-                                            <p>
-                                                김공장
-                                            </p>
-                                            <button class="remove">지우기</button>
-                                        </li>
-                                        <li class="addMember__item">
-                                            <div class="thumb">
-                                                <img src="//via.placeholder.com/35x35" alt="">
-                                            </div>
-                                            <p>
-                                                김공장
-                                            </p>
-                                            <button class="remove">지우기</button>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="subContent__section">
-                        <div class="infoTable">
-                            <table>
-                                <colgroup>
-                                    <col width="80">
-                                    <col>
-                                </colgroup>
-                                <tbody>
-                                <tr>
-                                    <th><strong class="color-green">합계</strong></th>
-                                    <td>
-                                        0원<br/>
-                                        (구장대여 0시간 0원 + 옵션선택 0원)
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-
-                        <div class="form mt-30">
-                            <div class="form__row-box">
-                                <div class="form__row column">
-                                    <label for="" class="form__row-title"></label>
-                                    <div class="box">
-                                        <label for="m1" class="checkbox2">
-                                            <input type="checkbox" hidden id="m1">
-                                            <span></span> 자동 매치 등록하기
-                                        </label>
-                                    </div>
-                                </div>
-                                <p class="form__help confirm">* 매치를 등록하면 경기를 희망하는 팀의 연락을 받을 수 있습니다.</p>
-                            </div>
-
-                            <div class="form__row-box">
-                                <div class="form__row column">
-                                    <label for="" class="form__row-title"></label>
-                                    <div class="box">
-                                        <label for="m2" class="checkbox2">
-                                            <input type="checkbox" hidden id="m2">
-                                            <span></span> 자동 용병모집 등록하기
-                                        </label>
-                                    </div>
-                                </div>
-                                <p class="form__help confirm">* 용병모집을 등록하면 커뮤니티의 용병모집란에 자동 등록 됩니다.</p>
-                            </div>
-
-                            <div class="form__row-box">
-                                <div class="form__row column">
-                                    <label for="" class="form__row-title"></label>
-                                    <div class="box">
-                                        <label for="m3" class="checkbox2">
-                                            <input type="checkbox" hidden id="m3">
-                                            <span></span> 같이 평가하기
-                                        </label>
-                                    </div>
-                                </div>
-                                <p class="form__help confirm">* 서로의 평가가 가능한 기능입니다.</p>
-                            </div>
-                        </div>
-                        <div class="btnbox mt-50">
-                            <button class="btn btn-blue waves-effect w185" onclick="">결제하기</button>
-                        </div>
-                    </div>
+              <div class="form__row-box">
+                <div class="form__row column">
+                  <label for="" class="form__row-title">선수</label>
+                  <div class="box">
+                    <input
+                      type="text"
+                      placeholder="선수 명단 검색"
+                      onclick="showModal('#addMember')"
+                      class="input-border"
+                      readonly
+                    />
+                    <button class="form-search"></button>
+                  </div>
                 </div>
+                <p class="form__help confirm">* 함께 경기할 선수의 이름을 입력하세요.</p>
+
+                <div class="pl-70 mt-10">
+                  <ul class="addMember__list addMember__list--checked">
+                    <li class="addMember__item">
+                      <div class="thumb">
+                        <img src="//via.placeholder.com/35x35" alt="" />
+                      </div>
+                      <p>
+                        김공장
+                      </p>
+                      <button class="remove">지우기</button>
+                    </li>
+                    <li class="addMember__item">
+                      <div class="thumb">
+                        <img src="//via.placeholder.com/35x35" alt="" />
+                      </div>
+                      <p>
+                        김공장
+                      </p>
+                      <button class="remove">지우기</button>
+                    </li>
+                    <li class="addMember__item">
+                      <div class="thumb">
+                        <img src="//via.placeholder.com/35x35" alt="" />
+                      </div>
+                      <p>
+                        김공장
+                      </p>
+                      <button class="remove">지우기</button>
+                    </li>
+                    <li class="addMember__item">
+                      <div class="thumb">
+                        <img src="//via.placeholder.com/35x35" alt="" />
+                      </div>
+                      <p>
+                        김공장
+                      </p>
+                      <button class="remove">지우기</button>
+                    </li>
+                    <li class="addMember__item">
+                      <div class="thumb">
+                        <img src="//via.placeholder.com/35x35" alt="" />
+                      </div>
+                      <p>
+                        김공장
+                      </p>
+                      <button class="remove">지우기</button>
+                    </li>
+                    <li class="addMember__item">
+                      <div class="thumb">
+                        <img src="//via.placeholder.com/35x35" alt="" />
+                      </div>
+                      <p>
+                        김공장
+                      </p>
+                      <button class="remove">지우기</button>
+                    </li>
+                    <li class="addMember__item">
+                      <div class="thumb">
+                        <img src="//via.placeholder.com/35x35" alt="" />
+                      </div>
+                      <p>
+                        김공장
+                      </p>
+                      <button class="remove">지우기</button>
+                    </li>
+                    <li class="addMember__item">
+                      <div class="thumb">
+                        <img src="//via.placeholder.com/35x35" alt="" />
+                      </div>
+                      <p>
+                        김공장
+                      </p>
+                      <button class="remove">지우기</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="subContent__section">
+            <div class="infoTable">
+              <table>
+                <colgroup>
+                  <col width="80" />
+                  <col />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th><strong class="">합계</strong></th>
+                    <td>
+                      0원<br />
+                      (구장대여 0시간 0원 + 옵션선택 0원)
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="form mt-30">
+              <div class="form__row-box">
+                <div class="form__row column">
+                  <label for="" class="form__row-title"></label>
+                  <div class="box">
+                    <label for="m1" class="checkbox2">
+                      <input type="checkbox" hidden id="m1" />
+                      <span></span> 자동 매치 등록하기
+                    </label>
+                  </div>
+                </div>
+                <p class="form__help confirm">* 매치를 등록하면 경기를 희망하는 팀의 연락을 받을 수 있습니다.</p>
+              </div>
+
+              <div class="form__row-box">
+                <div class="form__row column">
+                  <label for="" class="form__row-title"></label>
+                  <div class="box">
+                    <label for="m2" class="checkbox2">
+                      <input type="checkbox" hidden id="m2" />
+                      <span></span> 자동 용병모집 등록하기
+                    </label>
+                  </div>
+                </div>
+                <p class="form__help confirm">* 용병모집을 등록하면 커뮤니티의 용병모집란에 자동 등록 됩니다.</p>
+              </div>
+
+              <div class="form__row-box">
+                <div class="form__row column">
+                  <label for="" class="form__row-title"></label>
+                  <div class="box">
+                    <label for="m3" class="checkbox2">
+                      <input type="checkbox" hidden id="m3" />
+                      <span></span> 같이 평가하기
+                    </label>
+                  </div>
+                </div>
+                <p class="form__help confirm">* 서로의 평가가 가능한 기능입니다.</p>
+              </div>
+            </div>
+            <div class="btnbox mt-50">
+              <button class="btn btn-blue waves-effect w185" onclick="">결제하기</button>
+            </div>
+          </div>
         </div>
-        <div class="content__right">
-            @@include('./include/etc_relation.html')
-            @@include('./include/etc_schedule.html')
-            @@include('./include/etc_alarm.html')
-            @@include('./include/etc_empty.html')
-            @@include('./include/etc_news.html')
-            @@include('./include/etc_friends.html')
-            @@include('./include/etc_footer.html')
-        </div>
+      </div>
     </div>
+    <div class="content__right">
+      @@include('./include/etc_relation.html') @@include('./include/etc_schedule.html')
+      @@include('./include/etc_alarm.html') @@include('./include/etc_empty.html') @@include('./include/etc_news.html')
+      @@include('./include/etc_friends.html') @@include('./include/etc_footer.html')
+    </div>
+  </div>
 </div>
 
 <div class="modal" id="selectSpot" style="display: none;">
-    <div class="modal__content modal__content--selectSpot">
-        <h2 class="modal__title">지점 선택</h2>
-        <div class="selectSpot__content">
-            <div class="selectSpot__tab">
-                <button data-tab="1" class="active">서울, 경기 지역</button>
-                <button data-tab="2">광주, 전라 지역</button>
-                <button data-tab="3">대전, 충청 지역</button>
-                <button data-tab="4">부산, 경상 지역</button>
-                <button data-tab="5">제주 지역</button>
-            </div>
-            <div class="selectSpot__views">
-                <div class="view view1">
-                    <div class="spotlist">
-                        <button class="active">동대문점</button>
-                        <button>서수원점</button>
-                        <button>안산 고잔점</button>
-                        <button>일산점</button>
-                    </div>
-                </div>
-                <div class="view view2" style="display: none;"></div>
-                <div class="view view3" style="display: none;"></div>
-                <div class="view view4" style="display: none;"></div>
-                <div class="view view5" style="display: none;"></div>
-            </div>
+  <div class="modal__content modal__content--selectSpot">
+    <h2 class="modal__title">지점 선택</h2>
+    <div class="selectSpot__content">
+      <div class="selectSpot__tab">
+        <button data-tab="1" class="active">서울, 경기 지역</button>
+        <button data-tab="2">광주, 전라 지역</button>
+        <button data-tab="3">대전, 충청 지역</button>
+        <button data-tab="4">부산, 경상 지역</button>
+        <button data-tab="5">제주 지역</button>
+      </div>
+      <div class="selectSpot__views">
+        <div class="view view1">
+          <div class="spotlist">
+            <button class="active">동대문점</button>
+            <button>서수원점</button>
+            <button>안산 고잔점</button>
+            <button>일산점</button>
+          </div>
         </div>
-
-        <div class="btnbox pt-30 pb-30">
-            <a href="#//" class="btn btn-blue js-modal-close">선택하기</a>
-        </div>
+        <div class="view view2" style="display: none;"></div>
+        <div class="view view3" style="display: none;"></div>
+        <div class="view view4" style="display: none;"></div>
+        <div class="view view5" style="display: none;"></div>
+      </div>
     </div>
+
+    <div class="btnbox pt-30 pb-30">
+      <a href="#//" class="btn btn-blue js-modal-close">선택하기</a>
+    </div>
+  </div>
 </div>
 
 <div class="modal" id="addMember" style="display: none;">
-    <div class="modal__content pl-20 pr-20">
-        <h2 class="modal__title">선수 명단 선택</h2>
-        <div class="modal__body">
-            <div class="form">
-                <div class="form__row ">
-                    <div class="box">
-                        <input type="text" placeholder="선수 명단 검색" class="input-border" />
-                        <button class="form-search"></button>
-                    </div>
-                    <p class="form__help confirm pl-0">* 함께 경기할 선수의 이름을 입력하세요.</p>
-                </div>
+  <div class="modal__content pl-20 pr-20">
+    <h2 class="modal__title">선수 명단 선택</h2>
+    <div class="modal__body">
+      <div class="form">
+        <div class="form__row">
+          <div class="box">
+            <div class="select" style="width: 100%;">
+              <select name="" id="">
+                <option value="">팀 선택</option>
+              </select>
             </div>
-
-            <ul class="addMember__list">
-                <li class="addMember__item">
-                    <div class="thumb">
-                        <img src="//via.placeholder.com/35x35" alt="">
-                    </div>
-                    <p>
-                        김공장
-                    </p>
-
-                    <button class="add">추가</button>
-                </li>
-                <li class="addMember__item">
-                    <div class="thumb">
-                        <img src="//via.placeholder.com/35x35" alt="">
-                    </div>
-                    <p>
-                        김공장
-                    </p>
-                    <button class="remove">지우기</button>
-                </li>
-                <li class="addMember__item">
-                    <div class="thumb">
-                        <img src="//via.placeholder.com/35x35" alt="">
-                    </div>
-                    <p>
-                        김공장
-                    </p>
-                    <button class="remove">지우기</button>
-                </li>
-                <li class="addMember__item">
-                    <div class="thumb">
-                        <img src="//via.placeholder.com/35x35" alt="">
-                    </div>
-                    <p>
-                        김공장
-                    </p>
-                    <button class="remove">지우기</button>
-                </li>
-                <li class="addMember__item">
-                    <div class="thumb">
-                        <img src="//via.placeholder.com/35x35" alt="">
-                    </div>
-                    <p>
-                        김공장
-                    </p>
-                    <button class="remove">지우기</button>
-                </li>
-                <li class="addMember__item">
-                    <div class="thumb">
-                        <img src="//via.placeholder.com/35x35" alt="">
-                    </div>
-                    <p>
-                        김공장
-                    </p>
-                    <button class="remove">지우기</button>
-                </li>
-                <li class="addMember__item">
-                    <div class="thumb">
-                        <img src="//via.placeholder.com/35x35" alt="">
-                    </div>
-                    <p>
-                        김공장
-                    </p>
-                    <button class="remove">지우기</button>
-                </li>
-                <li class="addMember__item">
-                    <div class="thumb">
-                        <img src="//via.placeholder.com/35x35" alt="">
-                    </div>
-                    <p>
-                        김공장
-                    </p>
-                    <button class="remove">지우기</button>
-                </li>
-                <li class="addMember__item">
-                    <div class="thumb">
-                        <img src="//via.placeholder.com/35x35" alt="">
-                    </div>
-                    <p>
-                        김공장
-                    </p>
-                    <button class="remove">지우기</button>
-                </li>
-            </ul>
+          </div>
+          <p class="form__help confirm pl-0">* 팀 선택 후 선수를 선택할 수 있습니다.</p>
         </div>
-        <div class="modal__btnbox">
-            <a href="#//" class="modal__btn js-modal-close">완료</a>
+        <div class="form__row">
+          <div class="box">
+            <input type="text" placeholder="선수 명단 검색" class="input-border" />
+            <button class="form-search"></button>
+          </div>
+          <p class="form__help confirm pl-0">* 함께 경기할 선수의 이름을 입력하세요.</p>
         </div>
+      </div>
+
+      <ul class="addMember__list">
+        <li class="addMember__item">
+          <div class="thumb">
+            <img src="//via.placeholder.com/35x35" alt="" />
+          </div>
+          <p>
+            김공장
+          </p>
+
+          <button class="add">추가</button>
+        </li>
+        <li class="addMember__item">
+          <div class="thumb">
+            <img src="//via.placeholder.com/35x35" alt="" />
+          </div>
+          <p>
+            김공장
+          </p>
+          <button class="remove">지우기</button>
+        </li>
+        <li class="addMember__item">
+          <div class="thumb">
+            <img src="//via.placeholder.com/35x35" alt="" />
+          </div>
+          <p>
+            김공장
+          </p>
+          <button class="remove">지우기</button>
+        </li>
+        <li class="addMember__item">
+          <div class="thumb">
+            <img src="//via.placeholder.com/35x35" alt="" />
+          </div>
+          <p>
+            김공장
+          </p>
+          <button class="remove">지우기</button>
+        </li>
+        <li class="addMember__item">
+          <div class="thumb">
+            <img src="//via.placeholder.com/35x35" alt="" />
+          </div>
+          <p>
+            김공장
+          </p>
+          <button class="remove">지우기</button>
+        </li>
+        <li class="addMember__item">
+          <div class="thumb">
+            <img src="//via.placeholder.com/35x35" alt="" />
+          </div>
+          <p>
+            김공장
+          </p>
+          <button class="remove">지우기</button>
+        </li>
+        <li class="addMember__item">
+          <div class="thumb">
+            <img src="//via.placeholder.com/35x35" alt="" />
+          </div>
+          <p>
+            김공장
+          </p>
+          <button class="remove">지우기</button>
+        </li>
+        <li class="addMember__item">
+          <div class="thumb">
+            <img src="//via.placeholder.com/35x35" alt="" />
+          </div>
+          <p>
+            김공장
+          </p>
+          <button class="remove">지우기</button>
+        </li>
+        <li class="addMember__item">
+          <div class="thumb">
+            <img src="//via.placeholder.com/35x35" alt="" />
+          </div>
+          <p>
+            김공장
+          </p>
+          <button class="remove">지우기</button>
+        </li>
+      </ul>
     </div>
+    <div class="modal__btnbox" style="border-top: 1px solid rgba(90, 85, 83, 0.6);">
+      <a href="#//" class="modal__btn js-modal-close">완료</a>
+    </div>
+  </div>
 </div>
 
 @@include('./include/footer.html')
 
-
 <script>
-    $('.calendar').datepicker({
-        dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'],
-        monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
-        minDate: 0,
-        onSelect: function(date){
-            $('.month').text(date.substring(0, 2))
-            $('.day').text(date.substring(3, 5))
-        }
-    });
+  $('.calendar').datepicker({
+    dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'],
+    monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+    minDate: 0,
+    onSelect: function (date) {
+      $('.month').text(date.substring(0, 2));
+      $('.day').text(date.substring(3, 5));
+    },
+  });
 </script>

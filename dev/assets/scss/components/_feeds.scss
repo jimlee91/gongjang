@@ -181,11 +181,14 @@
     border-left: 0;
     border-right: 0;
     width: 100%;
-    overflow: auto;
+    overflow-x: auto;
     position: relative;
 
-    .detail &:after {
-      display: none !important;
+    .detail & {
+      padding: 0 20px;
+      &:after {
+        display: none !important;
+      }
     }
     &:after {
       content: '';
@@ -195,7 +198,7 @@
       background: #d9d9d9;
       position: absolute;
       left: 0;
-      bottom: 2px;
+      bottom: 0px;
     }
     .feed__slider {
       position: relative;
@@ -255,6 +258,7 @@
       iframe {
         height: 350px;
         width: 100%;
+        vertical-align: top;;
       }
     }
     .feed__images {

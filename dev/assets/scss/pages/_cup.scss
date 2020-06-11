@@ -1,25 +1,21 @@
 .cup {
-
   .form .form__row .box select {
     height: 24px;
   }
 }
 
 .cup__list {
-
 }
 
 .cup__item-info {
   padding: 0 50px;
-  transition: all .3s;
+  transition: all 0.3s;
   &:hover {
-    background:#eaeaea;
+    background: #eaeaea;
   }
 
   .acdm {
-
   }
-
 
   .inner {
     border-bottom: $border;
@@ -32,15 +28,15 @@
 
     .btn {
       //width: 65px;
-      background:#fff;
+      background: #fff;
       line-height: 40px;
       height: 40px;
-      border-color:#707070;
-      color:#707070;
-      transition: all .3s;
+      border-color: #707070;
+      color: #707070;
+      transition: all 0.3s;
       &:hover {
-        background:#707070;
-        color:#fff;
+        background: #707070;
+        color: #fff;
       }
     }
   }
@@ -50,17 +46,16 @@
       background-size: auto 12px;
       padding-left: 16px;
       font-size: 10px;
-      color:$blue;
+      color: $blue;
       &.end {
-        color:#5A5553;;
+        color: #5a5553;
         background: url('../images/star-black.png') no-repeat left center;
         background-size: auto 15px;
       }
-
     }
     h3 {
       font-size: 10px;
-      margin:10px 0 10px;
+      margin: 10px 0 10px;
     }
     p {
       font-size: 10px;
@@ -69,15 +64,15 @@
     .select {
       margin-top: 12px;
       select {
-        padding:0 8px;
+        padding: 0 8px;
         height: 32px;
         width: 170px;
         border-radius: 7px;
-        border:1px solid #fff;
+        border: 1px solid #fff;
         background: url('../images/arrow-down-white.png') no-repeat calc(100% - 8px) center;
         background-size: auto 5px;
         font-size: 10px;
-        color:$green;
+        color: $green;
       }
     }
   }
@@ -89,23 +84,23 @@
   }
 
   .cup__item--main & {
-    background:#383433;
+    background: #383433;
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.16);
 
     .state {
-      color:#fff;
+      color: #fff;
     }
     p,
     h3 {
-      color:#fff;
+      color: #fff;
     }
     h3 {
       font-size: 16px;
     }
     .btn {
-      background:none;
-      border-color:$green;
-      color:$green;
+      background: none;
+      border-color: $green;
+      color: $green;
 
       span.gongan {
         padding-right: 20px;
@@ -115,7 +110,7 @@
 
       &:hover {
         background: $green;
-        color:#fff;
+        color: #fff;
 
         span.gongan {
           padding-right: 20px;
@@ -146,18 +141,19 @@
 
   &.cup__info-tab--type2 {
     padding-top: 20px;
+    margin-bottom: 25px;
 
     a {
       width: 95px;
       line-height: 50px;
       height: 50px;
-      color:#fff;
-      opacity: .5;
+      color: #fff;
+      opacity: 0.5;
       &.active {
         opacity: 1;
-        color:#fff;
+        color: #fff;
         &:before {
-          content:'';
+          content: '';
           display: block;
           position: absolute;
           left: 0;
@@ -174,32 +170,31 @@
     }
     &.black {
       a {
-        color:#5A5553;
+        color: #5a5553;
         border-bottom: $border;
       }
     }
   }
   a {
-    height: 32px;
+    height: 27px;
     width: 70px;
     text-align: center;
     font-size: 10px;
-    color:#fff;
+    color: #fff;
     position: relative;
     &.active {
-      color:$green;
+      color: $green;
       &:after {
-        content:'';
+        content: '';
         display: block;
-        width: 0;
-        height: 0;
-        border-bottom: 10px solid #fff;
-        border-top: 10px solid transparent;;
-        border-right: 10px solid transparent;;
-        border-left: 10px solid transparent;;
+        width: 20px;
+        height: 18px;
+        background: url('../images/userHeader-icon.png') no-repeat center;
+        background-size: 20px 18px;
         position: absolute;
+        bottom: -11px;
+        z-index: 1;
         left: 50%;
-        bottom: 0;
         transform: translateX(-50%);
       }
     }
@@ -214,9 +209,9 @@
   border-bottom: $border;
   .teamlist__title {
     height: 40px;
-    background:#fff;
+    background: #fff;
     display: flex;
-    justify-content: space-between;;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     span {
@@ -238,7 +233,7 @@
       align-items: center;
       background: url('../images/i-arrow-right.png') no-repeat right center;
       background-size: auto 15px;
-      color:#5A5553;;
+      color: #5a5553;
       .thumb {
         margin-right: 15px;
       }
@@ -248,7 +243,7 @@
     }
     .box {
       background: none;
-      .box-links{
+      .box-links {
         margin-left: auto;
         a {
           width: 65px;
@@ -258,7 +253,7 @@
           font-size: 10px;
           line-height: 22px;
           text-align: center;
-          background:#fff;
+          background: #fff;
           display: block;
           padding: 0;
           &:first-child {
@@ -272,9 +267,9 @@
 
 .cup__datebox {
   overflow: auto;
-  background:#383433;
+  background: #383433;
   .inner {
-    margin:30px;
+    margin: 30px;
     display: flex;
     padding-bottom: 20px;
     border-bottom: $border;
@@ -292,7 +287,7 @@
         width: 7px;
         height: 7px;
         border-radius: 50%;
-        opacity: .5;
+        opacity: 0.5;
         &.i-reservation {
           background: $blue;
         }
@@ -307,7 +302,7 @@
     width: 60px;
     height: 65px;
     border-radius: 7px;
-    background: rgba(255,255,255,.5);
+    background: rgba(255, 255, 255, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -315,17 +310,17 @@
     text-align: center;
     &.active {
       border: 1px solid $green;
-      background:#383433;
+      background: #383433;
       position: relative;
-      .schedule-check span{
+      .schedule-check span {
         opacity: 1;
       }
       h3 {
-        color:#fff;
+        color: #fff;
       }
       p {
-        color:#fff;
-        border-color:$green;
+        color: #fff;
+        border-color: $green;
       }
     }
     &:last-child {
@@ -334,22 +329,21 @@
 
     h3 {
       font-size: 14px;
-      color:#414141;
+      color: #414141;
     }
     p {
       width: 30px;
       font-size: 10px;
-      color:#414141;
+      color: #414141;
       margin-top: 3px;
       padding-top: 3px;
       border-top: 1px solid #414141;
     }
-
   }
 }
 
 .cup__schedule {
-  padding:20px 0;
+  padding: 20px 0;
   display: flex;
   border-bottom: $border;
   .cup__schedule-info {
@@ -364,12 +358,9 @@
     .cup__schedule-info {
       p,
       h2 {
-        color:#fff;
+        color: #fff;
       }
     }
-
-
-
   }
   &.none-flex {
     display: block;
@@ -388,39 +379,39 @@
     width: 100%;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     display: flex;
-    background:$green;
-    border-radius: 7px;
+    background: $green;
+    border-radius: 15px;
     border-top-left-radius: 0;
     &.is_res {
-      background:$blue;
+      background: $blue;
 
       .cup__schedule-item-time {
-        color:#fff;
+        color: #fff;
       }
     }
-    &:nth-child(n+2) {
+    &:nth-child(n + 2) {
       margin-top: 15px;
     }
 
     &.no-team {
       width: 80px;
       height: 90px;
-      margin-left: auto
+      margin-left: auto;
     }
   }
   .cup__schedule-item-content {
-    height: 90px;
+    height: 100px;
     width: 280px;
     flex: none;
-    background:#fff;
-    border-radius: 7px;
+    background: #fff;
+    border-radius: 15px;
     border-top-left-radius: 0;
     display: flex;
     align-items: center;
     justify-content: center;
 
     .teams-vs {
-      margin:0 30px;
+      margin: 0 30px;
       text-align: center;
       strong {
         font-size: 20px;
@@ -433,7 +424,7 @@
     .teams {
       text-align: center;
       div {
-        margin:0 auto;
+        margin: 0 auto;
         width: 50px;
         height: 50px;
         display: flex;
@@ -460,7 +451,6 @@
     p {
       font-size: 10px;
       line-height: 15px;
-
     }
     h3 {
       font-size: 16px;
@@ -468,7 +458,6 @@
       padding-top: 3px;
       border-top: 1px solid #fff;
       min-width: 40px;
-
     }
   }
 
@@ -479,7 +468,7 @@
   }
   .cup__schedule-info {
     .state {
-      color:$blue;
+      color: $blue;
       font-size: 10px;
       padding-left: 15px;
       background: url('../images/star.png') no-repeat left center;
@@ -495,10 +484,10 @@
 
 .cup-detail-record {
   width: 300px;
-  margin:0 auto;
+  margin: 0 auto;
   .item {
     width: 150px;
-    display :flex;
+    display: flex;
     position: absolute;
     left: 0;
     z-index: 2;
@@ -541,19 +530,17 @@
         font-weight: 300;
       }
       &:after {
-        content:'';
+        content: '';
         display: block;
         width: 5px;
         height: 5px;
         border-radius: 50%;
-        background:$green;
+        background: $green;
         position: absolute;
         transform: translateY(50%);
         bottom: 0;
         right: -3px;
       }
-
-
     }
   }
   .half {
@@ -583,16 +570,16 @@
       left: 50%;
       transform: translateX(-50%);
       display: block;
-      background:#5a5553;
+      background: #5a5553;
     }
     &:before,
     &:after {
-      content:'';
+      content: '';
       display: block;
       width: 5px;
       height: 5px;
       border-radius: 50%;
-      background:#5a5553;
+      background: #5a5553;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
@@ -610,7 +597,7 @@
   .record__default-item {
     display: flex;
     align-items: center;
-    padding:10px 0;
+    padding: 10px 0;
     border-bottom: $border;
     &:last-child {
       border-bottom: none;
@@ -623,13 +610,13 @@
   .user {
     line-height: 30px;
     font-size: 10px;
-    color:#5A5553;;
+    color: #5a5553;
     width: 120px;
   }
   .team {
     line-height: 20px;
     font-size: 10px;
-    color:#5A5553;;
+    color: #5a5553;
   }
   .record__item {
     margin-left: auto;
@@ -656,7 +643,6 @@
   background: none !important;
   padding-left: 0 !important;
 }
-
 
 .cup-teamlist {
   .subContent__section {
