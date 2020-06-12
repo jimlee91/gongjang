@@ -19,7 +19,7 @@
   .player__item {
     &:nth-child(n + 2) {
       .inner {
-        border-top: $border;
+        border-top: 2px solid #ededed;;
       }
     }
     a {
