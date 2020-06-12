@@ -144,21 +144,19 @@
     margin-bottom: 25px;
 
     a {
-      width: 95px;
       line-height: 50px;
+      padding:0 15px;
+      white-space: nowrap;;
       height: 50px;
       color: #fff;
-      opacity: 0.5;
       &.active {
-        opacity: 1;
-        color: #fff;
         &:before {
           content: '';
           display: block;
           position: absolute;
-          left: 0;
+          left: 10px;
           bottom: -3px;
-          width: 100%;
+          width: calc(100% - 20px);
           background: $green;
           height: 4px;
           border-radius: 2px;
@@ -170,8 +168,12 @@
     }
     &.black {
       a {
-        color: #5a5553;
-        border-bottom: $border;
+        color: rgba(45,45,45,.5);
+        border-bottom: 1px solid #eaeaea;;
+
+        &.active {
+          color:#5a5553;
+        }
       }
     }
   }
@@ -206,7 +208,7 @@
   &:last-child {
     margin-bottom: 0;
   }
-  border-bottom: $border;
+  border-bottom: 2px solid #ededed;;
   .teamlist__title {
     height: 40px;
     background: #fff;
@@ -225,7 +227,7 @@
   .teamlist__teams {
   }
   .teamlist__item {
-    border-top: $border;
+    border-top: 2px solid #EDEDED;
     .box,
     a {
       padding: 15px 0;
